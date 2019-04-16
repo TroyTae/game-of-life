@@ -8,24 +8,28 @@
 이 속성은 line box 안에서 inline-level 요소에 의해 생성되는 박스들의 수직 위치에 영향을 미칩니다.
 ```
 
-inline-level 요소는 우리가 display 속성을 inline, inline-block, inline-table 등으로 지정한 inline 요소들을 말하는데요.
+inline-level 요소는 한 줄에 나열할 수 있는 요소들을 말합니다.
+display 속성을 inline, inline-block, inline-table 등으로 지정해서 만들 수 있는데요.
+이 요소들에 의해서 만들어진 가상의 박스들은 곧 해당 요소의 크기를 나타냅니다.
+
+간단한 예를 들자면 아래처럼 css가 적용된 요소의 박스 크기는 100x100px입니다.
+```
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+```
+inline은 inline-block와 다르게 width/height가 아니라 폰트 매트릭스에 따른 계산이 필요하므로 추후에 다루겠습니다.
+
+아무튼 각 줄마다 이런 inline-level 박스들을 가지고 있는 박스를 inline-box라고 하는데요.
+이 inline-box를 이해하면 vertical-align에 적용 가능한 값들 중 top/bottom을 완벽하게 이해할 수 있습니다.
+왜냐하면 top은 line-box의 최상단에, bottom은 line-box의 최하단에 정렬시켜주기 때문인데요.
+그렇다면 line-box는 어떻게 계산되는 걸까요?
+
 
 ```
-Inline-level elements are those elements of the source document that do not form new blocks of content; the content is distributed in lines (e.g., emphasized pieces of text within a paragraph, inline images, etc.). The following values of the 'display' property make an element inline-level: 'inline', 'inline-table', and 'inline-block'. Inline-level elements generate inline-level boxes, which are boxes that participate in an inline formatting context.
-
-An inline box is one that is both inline-level and whose contents participate in its containing inline formatting context. A non-replaced element with a 'display' value of 'inline' generates an inline box. Inline-level boxes that are not inline boxes (such as replaced inline-level elements, inline-block elements, and inline-table elements) are called atomic inline-level boxes because they participate in their inline formatting context as a single opaque box.
-
-https://www.w3.org/TR/CSS2/visuren.html#inline-formatting
-```
-
-```
-The following values align the element relative to the line box. Since the element may have children aligned relative to it (which in turn may have descendants aligned relative to them), these values use the bounds of the aligned subtree. The aligned subtree of an inline element contains that element and the aligned subtrees of all children inline elements whose computed 'vertical-align' value is not 'top' or 'bottom'. The top of the aligned subtree is the highest of the tops of the boxes in the subtree, and the bottom is analogous.
-
-top
-Align the top of the aligned subtree with the top of the line box.
-bottom
-Align the bottom of the aligned subtree with the bottom of the line box.
-The baseline of an 'inline-table' is the baseline of the first row of the table.
-
-The baseline of an 'inline-block' is the baseline of its last line box in the normal flow, unless it has either no in-flow line boxes or if its 'overflow' property has a computed value other than 'visible', in which case the baseline is the bottom margin edge.
+1. The height of each inline-level box in the line box is calculated.
+2. The inline-level boxes are aligned vertically according to their 'vertical-align' property. In case they are aligned 'top' or 'bottom', they must be aligned so as to minimize the line box height. If such boxes are tall enough, there are multiple solutions (i.e., the position of the strut, see below).
+3. The line box height is the distance between the uppermost box top and the lowermost box bottom. (This includes the strut, as explained under 'line-height' below.)
 ```
