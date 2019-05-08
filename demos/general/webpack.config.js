@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const config = require('../webpack.config');
+const config = require('../../webpack.config');
 
 config.entry = "./src/index.tsx";
 config.externals = [];
