@@ -14,7 +14,7 @@
     "strictNullChecks": true,
     "removeComments": false
   },
-  "include": ["packages/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"],
   "compileOnSave": false
 }
