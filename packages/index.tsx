@@ -1,4 +1,4 @@
-import MDCButton from './button';
+import MDCButton from './mdc-button';
 
 export {
   MDCButton,
