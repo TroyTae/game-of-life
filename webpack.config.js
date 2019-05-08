@@ -16,10 +16,10 @@ module.exports = {
   module: {
     rules: [{
       test: /\.ts$/,
-      loader: 'ts-loader',
+      loader: "ts-loader",
     }, {
       test: /\.tsx$/,
-      loader: 'ts-loader',
+      loader: "ts-loader",
       options: {
         getCustomTransformers: () => ({
           before: [transformInferno()],

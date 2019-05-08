@@ -23,7 +23,7 @@ export default abstract class AbstractMDCButton<A, E> extends Component<MDCButto
 
   internalRender() {
     const {
-      children
+      children,
     } = this.props;
 
     return <Fragment>

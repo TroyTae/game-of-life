@@ -1,9 +1,9 @@
-import {render} from "inferno";
+import {render} from 'inferno';
 import {MDCButton} from 'material-components-web-inferno';
 
 import '@material/button/mdc-button.scss';
 
-render(<div>
+const Component = () => <div>
   <div>
     <MDCButton>Test!</MDCButton>
     <MDCButton raised={true}>Test!</MDCButton>
@@ -14,4 +14,6 @@ render(<div>
     <MDCButton.Anchor raised={true} href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
     <MDCButton.Anchor unelevated={true} href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
   </div>
-</div>, document.getElementById('app'));
+</div>;
+
+render(<Component/>, document.getElementById('app'));
