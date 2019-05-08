@@ -1,28 +1,51 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const transformInferno = require('ts-transform-inferno').default;
 
-const config = require('../../webpack.config');
-
-config.entry = "./src/index.tsx";
-config.externals = [];
-config.devServer = {
-  contentBase: "src/",
-  historyApiFallback: true
-};
-config.plugins.push(new HtmlWebpackPlugin({
-  template: "./src/index.html",
-  inject: "body"
-}));
-config.module.rules.push({
-  test: /\.scss/,
-  use: [
-    "style-loader",
-    "css-loader",
-    {
-      loader: "sass-loader",
+module.exports = {
+  entry: "./src/index.tsx",
+  output: {
+    path: path.join(process.cwd(), "dist"),
+    libraryTarget: "umd",
+    filename: "[name].js"
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
+  },
+  module: {
+    rules: [{
+      test: /\.ts$/,
+      loader: 'ts-loader',
+    }, {
+      test: /\.tsx$/,
+      loader: 'ts-loader',
       options: {
-        includePaths: ["./node_modules"]
-      }
-    }
-  ]
-});
-module.exports = config;
+        getCustomTransformers: () => ({
+          before: [transformInferno()],
+        }),
+      },
+    }, {
+      test: /\.scss/,
+      use: [
+        "style-loader",
+        "css-loader",
+        {
+          loader: "sass-loader",
+          options: {
+            includePaths: ["./node_modules"]
+          }
+        }
+      ]
+    }]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      inject: "body"
+    })
+  ],
+  devServer: {
+    contentBase: "src/",
+    historyApiFallback: true
+  }
+};

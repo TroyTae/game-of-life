@@ -15,6 +15,9 @@ module.exports = {
   },
   module: {
     rules: [{
+      test: /\.ts$/,
+      loader: 'ts-loader',
+    }, {
       test: /\.tsx$/,
       loader: 'ts-loader',
       options: {
@@ -22,10 +25,7 @@ module.exports = {
           before: [transformInferno()],
         }),
       },
-    }, {
-      test: /\.ts$/,
-      loader: 'ts-loader',
     }]
   },
-  plugins: [],
+  plugins: []
 };

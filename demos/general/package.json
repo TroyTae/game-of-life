@@ -7,6 +7,11 @@
     "css-loader": "^2.1.1",
     "sass-loader": "^7.1.0",
     "node-sass": "^4.12.0",
+    "ts-transform-inferno": "^4.0.2",
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2",
     "html-webpack-plugin": "^3.2.0",
     "webpack-dev-server": "^3.3.1",
     "material-components-web-inferno": "^0.1.2"
