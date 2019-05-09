@@ -6,18 +6,33 @@ import {CSS_CLASSES} from './constant';
 interface MDCButtonProps {
   raised?: boolean;
   unelevated?: boolean;
+  outlined?: boolean;
 }
 
 export default abstract class AbstractMDCButton<A, E> extends Component<MDCButtonProps & DetailedHTMLProps<A, E>> {
+  getOtherProps() {
+    const {
+      raised,
+      unelevated,
+      outlined,
+      children,
+      ...otherProps
+    } = this.props;
+
+    return otherProps;
+  }
+
   cssClasses(className) {
     const {
       raised,
       unelevated,
+      outlined,
     } = this.props;
 
     return classnames(className, CSS_CLASSES.ROOT, {
       [CSS_CLASSES.RAISED]: raised,
       [CSS_CLASSES.UNELEVATED]: unelevated,
+      [CSS_CLASSES.OUTLINED]: outlined,
     });
   }
 

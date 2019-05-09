@@ -5,10 +5,10 @@ export default class MDCButton extends AbstractMDCButton<ButtonHTMLAttributes<HT
     const {
       className,
       ...otherProps
-    } = this.props;
+    } = super.getOtherProps();
 
-    return <button className={this.cssClasses(className)} {...otherProps}>
-      {this.internalRender()}
+    return <button className={super.cssClasses(className)} {...otherProps}>
+      {super.internalRender()}
     </button>;
   }
 
@@ -17,10 +17,10 @@ export default class MDCButton extends AbstractMDCButton<ButtonHTMLAttributes<HT
       const {
         className,
         ...otherProps
-      } = this.props;
+      } = super.getOtherProps();
 
-      return <a className={this.cssClasses(className)} {...otherProps}>
-        {this.internalRender()}
+      return <a className={super.cssClasses(className)} {...otherProps}>
+        {super.internalRender()}
       </a>;
     }
   }
