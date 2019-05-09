@@ -6,17 +6,20 @@ import '@material/button/mdc-button.scss';
 import './index.scss';
 
 const Component = () => <div className='container'>
+  <h1>Button</h1>
   <div className='wrapper'>
     <MDCButton className='component'>Test!</MDCButton>
     <MDCButton className='component' raised={true}>Test!</MDCButton>
     <MDCButton className='component' unelevated={true}>Test!</MDCButton>
     <MDCButton className='component' outlined={true}>Test!</MDCButton>
+    <MDCButton className='component' disabled={true}>Test!</MDCButton>
   </div>
   <div className='wrapper'>
     <MDCButton.Anchor className='component' href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
     <MDCButton.Anchor className='component' raised={true} href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
     <MDCButton.Anchor className='component' unelevated={true} href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
     <MDCButton.Anchor className='component' outlined={true} href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
+    <MDCButton.Anchor className='component' disabled={true} href={'https://google.com'} target={'blank'}>Test!</MDCButton.Anchor>
   </div>
 </div>;
 

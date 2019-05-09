@@ -7,6 +7,7 @@ interface MDCButtonProps {
   raised?: boolean;
   unelevated?: boolean;
   outlined?: boolean;
+  disabled?: boolean;
 }
 
 export default abstract class AbstractMDCButton<A, E> extends Component<MDCButtonProps & DetailedHTMLProps<A, E>> {
@@ -22,7 +23,7 @@ export default abstract class AbstractMDCButton<A, E> extends Component<MDCButto
     return otherProps;
   }
 
-  cssClasses(className) {
+  cssClasses(className: string = ''): string {
     const {
       raised,
       unelevated,
