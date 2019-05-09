@@ -1,6 +1,6 @@
 import AbstractMDCButton from './base';
 
-export default class MDCButton extends AbstractMDCButton<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+export default class MDCButton extends AbstractMDCButton<JSXButton> {
   render() {
     const {
       className,
@@ -16,7 +16,7 @@ export default class MDCButton extends AbstractMDCButton<ButtonHTMLAttributes<HT
     </button>;
   }
 
-  static Anchor = class extends AbstractMDCButton<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {
+  static Anchor = class extends AbstractMDCButton<JSXAnchor> {
     render() {
       const {
         className,

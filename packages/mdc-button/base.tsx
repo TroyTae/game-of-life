@@ -10,7 +10,7 @@ interface MDCButtonProps {
   disabled?: boolean;
 }
 
-export default abstract class AbstractMDCButton<A, E> extends Component<MDCButtonProps & DetailedHTMLProps<A, E>> {
+export default abstract class AbstractMDCButton<T> extends Component<MDCButtonProps & T> {
   get otherProps() {
     const {
       raised,
