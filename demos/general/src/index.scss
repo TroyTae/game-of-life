@@ -1,0 +1,9 @@
+.container {
+  padding: 5px;
+  > .wrapper {
+    margin-bottom: 10px;
+    > .component {
+      margin-left: 5px;
+    }
+  }
+}
