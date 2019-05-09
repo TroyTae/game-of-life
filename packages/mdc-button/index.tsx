@@ -1,6 +1,6 @@
 import AbstractMDCButton from './base';
 
-export default class MDCButton extends AbstractMDCButton<JSXButton> {
+export default class MDCButton extends AbstractMDCButton<InfernoButton> {
   render() {
     const {
       className,
@@ -16,7 +16,7 @@ export default class MDCButton extends AbstractMDCButton<JSXButton> {
     </button>;
   }
 
-  static Anchor = class extends AbstractMDCButton<JSXAnchor> {
+  static Anchor = class extends AbstractMDCButton<InfernoAnchor> {
     render() {
       const {
         className,

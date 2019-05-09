@@ -8,6 +8,8 @@ interface MDCButtonProps {
   unelevated?: boolean;
   outlined?: boolean;
   disabled?: boolean;
+  icon?: InfernoElement<any>;
+  iconTrailing?: boolean;
 }
 
 export default abstract class AbstractMDCButton<T> extends Component<MDCButtonProps & T> {
