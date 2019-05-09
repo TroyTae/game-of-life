@@ -11,7 +11,7 @@ interface MDCButtonProps {
 }
 
 export default abstract class AbstractMDCButton<A, E> extends Component<MDCButtonProps & DetailedHTMLProps<A, E>> {
-  getOtherProps() {
+  get otherProps() {
     const {
       raised,
       unelevated,

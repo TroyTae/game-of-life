@@ -6,7 +6,7 @@ export default class MDCButton extends AbstractMDCButton<ButtonHTMLAttributes<HT
       className,
       disabled,
       ...otherProps
-    } = super.getOtherProps();
+    } = this.otherProps;
 
     return <button
       disabled={disabled}
@@ -23,7 +23,7 @@ export default class MDCButton extends AbstractMDCButton<ButtonHTMLAttributes<HT
         href,
         disabled,
         ...otherProps
-      } = super.getOtherProps();
+      } = this.otherProps;
 
       return <a
         className={super.cssClasses(className)}
