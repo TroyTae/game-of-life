@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --inline"
+    "start": "webpack-dev-server --inline --hot"
   },
   "devDependencies": {
     "style-loader": "^0.23.1",
