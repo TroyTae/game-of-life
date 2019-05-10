@@ -23,6 +23,7 @@
   "devDependencies": {
     "classnames": "^2.2.6",
     "clean-webpack-plugin": "^2.0.1",
+    "inferno-clone-vnode": "^7.1.12",
     "ts-transform-inferno": "^4.0.2",
     "ts-loader": "^5.4.5",
     "typescript": "^3.4.5",

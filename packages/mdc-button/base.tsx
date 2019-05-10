@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import {Component, Fragment} from 'inferno';
+import {cloneVNode} from 'inferno-clone-vnode';
 
 import {CSS_CLASSES} from './constant';
 
@@ -8,7 +9,7 @@ interface MDCButtonProps {
   unelevated?: boolean;
   outlined?: boolean;
   disabled?: boolean;
-  icon?: InfernoElement<any>;
+  icon?: any;
   iconTrailing?: boolean;
 }
 
@@ -18,6 +19,8 @@ export default abstract class AbstractMDCButton<T> extends Component<MDCButtonPr
       raised,
       unelevated,
       outlined,
+      icon,
+      iconTrailing,
       children,
       ...otherProps
     } = this.props;
@@ -39,13 +42,24 @@ export default abstract class AbstractMDCButton<T> extends Component<MDCButtonPr
     });
   }
 
+  renderIcon(icon) {
+    return cloneVNode(icon, {
+      ['aria-hidden']: true,
+      className: classnames(icon.className, CSS_CLASSES.ICON),
+    });
+  }
+
   internalRender() {
     const {
       children,
+      icon,
+      iconTrailing,
     } = this.props;
 
     return <Fragment>
+      {icon && !iconTrailing && this.renderIcon(icon)}
       <span className={CSS_CLASSES.LABEL}>{children}</span>
+      {icon && iconTrailing && this.renderIcon(icon)}
     </Fragment>;
   }
 }

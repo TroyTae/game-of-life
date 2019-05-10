@@ -13,6 +13,7 @@ const Component = () => <div className='container'>
     <MDCButton className='component' unelevated={true}>BUTTON</MDCButton>
     <MDCButton className='component' outlined={true}>BUTTON</MDCButton>
     <MDCButton className='component' disabled={true}>BUTTON</MDCButton>
+    <MDCButton className='component' icon={<i className='i'/>}>BUTTON</MDCButton>
   </div>
   <div className='wrapper'>
     <MDCButton.Anchor className='component' href={'https://google.com'} target={'blank'}>ANCHOR</MDCButton.Anchor>
@@ -20,6 +21,7 @@ const Component = () => <div className='container'>
     <MDCButton.Anchor className='component' unelevated={true} href={'https://google.com'} target={'blank'}>ANCHOR</MDCButton.Anchor>
     <MDCButton.Anchor className='component' outlined={true} href={'https://google.com'} target={'blank'}>ANCHOR</MDCButton.Anchor>
     <MDCButton.Anchor className='component' disabled={true} href={'https://google.com'} target={'blank'}>ANCHOR</MDCButton.Anchor>
+    <MDCButton.Anchor className='component' icon={<svg className='svg'/>} href={'https://google.com'} target={'blank'}>ANCHOR</MDCButton.Anchor>
   </div>
 </div>;
 
