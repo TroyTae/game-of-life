@@ -55,3 +55,10 @@ render('Pulsar', new GameOfLifeEngine([
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 ]));
+
+render('Block', new GameOfLifeEngine([
+  [false, false, false, false],
+  [false, true, true, false],
+  [false, true, true, false],
+  [false, false, false, false],
+]));
