@@ -1,4 +1,4 @@
-import {GameOfLifeEngine} from './engine';
+import { GameOfLifeEngine } from './engine';
 
 const render = (name: string, engine: GameOfLifeEngine) => {
   const wrapper = document.createElement('DIV');
@@ -13,25 +13,25 @@ const render = (name: string, engine: GameOfLifeEngine) => {
 render('Blinker', new GameOfLifeEngine([
   [false, false, false, false, false],
   [false, false, false, false, false],
-  [false, true,  true,  true,  false],
+  [false, true, true, true, false],
   [false, false, false, false, false],
   [false, false, false, false, false],
 ]));
 
 render('Lighthouse', new GameOfLifeEngine([
   [false, false, false, false, false, false],
-  [false, true,  true,  false, false, false],
-  [false, true,  false, false, false, false],
-  [false, false, false, false, true,  false],
-  [false, false, false, true,  true,  false],
+  [false, true, true, false, false, false],
+  [false, true, false, false, false, false],
+  [false, false, false, false, true, false],
+  [false, false, false, true, true, false],
   [false, false, false, false, false, false],
 ]));
 
 render('Toad', new GameOfLifeEngine([
   [false, false, false, false, false, false],
   [false, false, false, false, false, false],
-  [false, false, true,  true,  true,  false],
-  [false, true,  true,  true,  false, false],
+  [false, false, true, true, true, false],
+  [false, true, true, true, false, false],
   [false, false, false, false, false, false],
   [false, false, false, false, false, false],
 ]));
@@ -39,19 +39,19 @@ render('Toad', new GameOfLifeEngine([
 render('Pulsar', new GameOfLifeEngine([
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-  [false, false, false, false, true,  true,  true,  false, false, false, true,  true,  true,  false, false, false, false],
+  [false, false, false, false, true, true, true, false, false, false, true, true, true, false, false, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-  [false, false, true,  false, false, false, false, true,  false, true,  false, false, false, false, true,  false, false],
-  [false, false, true,  false, false, false, false, true,  false, true,  false, false, false, false, true,  false, false],
-  [false, false, true,  false, false, false, false, true,  false, true,  false, false, false, false, true,  false, false],
-  [false, false, false, false, true,  true,  true,  false, false, false, true,  true,  true,  false, false, false, false],
+  [false, false, true, false, false, false, false, true, false, true, false, false, false, false, true, false, false],
+  [false, false, true, false, false, false, false, true, false, true, false, false, false, false, true, false, false],
+  [false, false, true, false, false, false, false, true, false, true, false, false, false, false, true, false, false],
+  [false, false, false, false, true, true, true, false, false, false, true, true, true, false, false, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-  [false, false, false, false, true,  true,  true,  false, false, false, true,  true,  true,  false, false, false, false],
-  [false, false, true,  false, false, false, false, true,  false, true,  false, false, false, false, true,  false, false],
-  [false, false, true,  false, false, false, false, true,  false, true,  false, false, false, false, true,  false, false],
-  [false, false, true,  false, false, false, false, true,  false, true,  false, false, false, false, true,  false, false],
+  [false, false, false, false, true, true, true, false, false, false, true, true, true, false, false, false, false],
+  [false, false, true, false, false, false, false, true, false, true, false, false, false, false, true, false, false],
+  [false, false, true, false, false, false, false, true, false, true, false, false, false, false, true, false, false],
+  [false, false, true, false, false, false, false, true, false, true, false, false, false, false, true, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
-  [false, false, false, false, true,  true,  true,  false, false, false, true,  true,  true,  false, false, false, false],
+  [false, false, false, false, true, true, true, false, false, false, true, true, true, false, false, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
   [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false],
 ]));
@@ -61,4 +61,12 @@ render('Block', new GameOfLifeEngine([
   [false, true, true, false],
   [false, true, true, false],
   [false, false, false, false],
+]));
+
+render('Boat', new GameOfLifeEngine([
+  [false, false, false, false, false],
+  [false, true, true, false, false],
+  [false, true, false, true, false],
+  [false, false, true, false, false],
+  [false, false, false, false, false],
 ]));
