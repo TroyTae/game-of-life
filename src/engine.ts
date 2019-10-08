@@ -49,7 +49,8 @@ export class GameOfLifeEngine {
   }
 
   clear() {
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.context.fillStyle = BACKGROUND_COLOR;
+    this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
   drawDot(x: number, y: number) {
@@ -63,8 +64,6 @@ export class GameOfLifeEngine {
 
   drawDots() {
     this.clear();
-    this.context.fillStyle = BACKGROUND_COLOR;
-    this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
     this.life.forEach((children, i) => {
       children.forEach((yn, j) => {
         this.context.fillStyle = yn ? DOTS_STYLE.POSITIVE_COLOR : DOTS_STYLE.NEGATIVE_COLOR;
