@@ -70,3 +70,13 @@ render('Boat', new GameOfLifeEngine([
   [false, false, true, false, false],
   [false, false, false, false, false],
 ]));
+
+render('Loaf', new GameOfLifeEngine([
+  [false, false, false, false, false, false],
+  [false, false, true, true, false, false],
+  [false, true, false, false, true, false],
+  [false, false, true, false, true, false],
+  [false, false, false, true, false, false],
+  [false, false, false, false, false, false]
+]));
+
