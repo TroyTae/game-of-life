@@ -63,6 +63,14 @@ render('Block', new GameOfLifeEngine([
   [false, false, false, false],
 ]));
 
+render('Beehive', new GameOfLifeEngine([
+  [false, false, false, false, false, false],
+  [false, false, true, true, false, false],
+  [false, true, false, false, true, false],
+  [false, false, true, true, false, false],
+  [false, false, false, false, false, false],
+]));
+
 render('Boat', new GameOfLifeEngine([
   [false, false, false, false, false],
   [false, true, true, false, false],
