@@ -1,5 +1,5 @@
 export default {
-  title: 'Block on dock',
+  title: "Block on dock",
   life: [
     [0, 0, 0, 0, 0, 0, 0, 0],
     [0, 1, 1, 0, 0, 0, 0, 0],

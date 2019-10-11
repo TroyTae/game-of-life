@@ -1,5 +1,5 @@
 export default {
-  title: 'Block on table',
+  title: "Block on table",
   life: [
     [0, 0, 0, 0, 0, 0],
     [0, 0, 0, 1, 1, 0],
