@@ -27,7 +27,12 @@ import BeehiveWithTail from './life/still-life/beehive-with-tail';
 import BiCap from './life/still-life/bi-cap';
 import BiLoaf2 from './life/still-life/bi-loaf2';
 import BiPond from './life/still-life/bi-pond';
+import BigS from './life/still-life/big-s';
 import Block from './life/still-life/block';
+import BlockOnCap from './life/still-life/block-on-cap';
+import BlockOnCover from './life/still-life/block-on-cover';
+import BlockOnDock from './life/still-life/block-on-dock';
+import BlockOnTable from './life/still-life/block-on-table';
 import Boat from './life/still-life/boat';
 import Loaf from './life/still-life/loaf';
 renderTitle('Strict Still Life', 2);
@@ -57,17 +62,24 @@ renderTitle('Strict Still Life', 2);
   BiCap,
   BiLoaf2,
   BiPond,
+  BigS,
   Block,
+  BlockOnCap,
+  BlockOnCover,
+  BlockOnDock,
+  BlockOnTable,
   Boat,
   Loaf,
 ].forEach(v => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
 import BiBoat from './life/pseudo-still-life/bi-boat';
+import BlockOnBoat from './life/pseudo-still-life/block-on-boat';
 renderTitle('Pseudo Still Life', 2);
 [
   BiBlock,
   BiBoat,
+  BlockOnBoat,
 ].forEach(v => renderLife(v.title, v.life as Life[][]));
 
 // renderTitle('Quasi Still Life', 2);
