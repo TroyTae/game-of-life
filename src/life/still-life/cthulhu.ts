@@ -1,5 +1,5 @@
 export default {
-  title: "Cthulhu",
+  title: 'Cthulhu',
   life: [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
