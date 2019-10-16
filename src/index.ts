@@ -71,6 +71,36 @@ import CarrierSiameseVeryLongSnake from './life/still-life/carrier-siamese-very-
 import CarrierTieBoat from './life/still-life/carrier-tie-boat';
 import CarrierTieShip from './life/still-life/carrier-tie-ship';
 import CarrierWithFeather from './life/still-life/carrier-with-feather';
+import CisBargeWithNine from './life/still-life/cis-barge-with-nine';
+import CisBargeWithTail from './life/still-life/cis-barge-with-tail';
+import CisBlockOnLongHook from './life/still-life/cis-block-on-long-hook';
+import CisBoatAmphisbaena from './life/still-life/cis-boat-amphisbaena';
+import CisBoatAndCap from './life/still-life/cis-boat-and-cap';
+import CisBoatLineTub from './life/still-life/cis-boat-line-tub';
+import CisBoatOnDock from './life/still-life/cis-boat-on-dock';
+import CisBoatOnTable from './life/still-life/cis-boat-on-table';
+import CisBoatWithNine from './life/still-life/cis-boat-with-nine';
+import CisBoatWithTail from './life/still-life/cis-boat-with-tail';
+import CisCarrierDownOnTable from './life/still-life/cis-carrier-down-on-table';
+import CisCarrierTieSnake from './life/still-life/cis-carrier-tie-snake';
+import CisCarrierUpOnTable from './life/still-life/cis-carrier-up-on-table';
+import CisCarrierTie from './life/still-life/cis-carrier-tie';
+import CisFuseWithTwoTails from './life/still-life/cis-fuse-with-two-tails';
+import CisHookAndRBee from './life/still-life/cis-hook-and-R-bee';
+import CisHookWithTail from './life/still-life/cis-hook-with-tail';
+import CisLoafWithTail from './life/still-life/cis-loaf-with-tail';
+import CisLongBargeWithTail from './life/still-life/cis-long-barge-with-tail';
+import CisLongBoatWithTail from './life/still-life/cis-long-boat-with-tail';
+import CisMangoWithTail from './life/still-life/cis-mango-with-tail';
+import CisMirroredRBee from './life/still-life/cis-mirrored-R-bee';
+import CisMirroredWorm from './life/still-life/cis-mirrored-worm';
+import CisMirroredWormSiameseCisMirroredWorm from './life/still-life/cis-mirrored-worm-siamese-cis-mirrored-worm';
+import CisRBeeAndRLoaf from './life/still-life/cis-R-bee-and-R-loaf';
+import CisRotatedHook from './life/still-life/cis-rotated-hook';
+import CisRotatedRBee from './life/still-life/cis-rotated-R-bee';
+import CisShillelagh from './life/still-life/cis-shillelagh';
+import CisShipOnTable from './life/still-life/cis-ship-on-table';
+import CisSnakeTie from './life/still-life/cis-snake-tie';
 import ClawSiameseTubWithCape from './life/still-life/claw-siamese-tub-with-cape';
 import ClawWithBoatWithTail from './life/still-life/claw-with-boat-with-tail';
 import ClawWithTail from './life/still-life/claw-with-tail';
@@ -150,6 +180,36 @@ renderTitle('Strict Still Life', 2);
   CarrierTieBoat,
   CarrierTieShip,
   CarrierWithFeather,
+  CisBargeWithNine,
+  CisBargeWithTail,
+  CisBlockOnLongHook,
+  CisBoatAmphisbaena,
+  CisBoatAndCap,
+  CisBoatLineTub,
+  CisBoatOnDock,
+  CisBoatOnTable,
+  CisBoatWithNine,
+  CisBoatWithTail,
+  CisCarrierDownOnTable,
+  CisCarrierTieSnake,
+  CisCarrierUpOnTable,
+  CisCarrierTie,
+  CisFuseWithTwoTails,
+  CisHookAndRBee,
+  CisHookWithTail,
+  CisLoafWithTail,
+  CisLongBargeWithTail,
+  CisLongBoatWithTail,
+  CisMangoWithTail,
+  CisMirroredRBee,
+  CisMirroredWorm,
+  CisMirroredWormSiameseCisMirroredWorm,
+  CisRBeeAndRLoaf,
+  CisRotatedHook,
+  CisRotatedRBee,
+  CisShillelagh,
+  CisShipOnTable,
+  CisSnakeTie,
   ClawSiameseTubWithCape,
   ClawWithBoatWithTail,
   ClawWithTail,
