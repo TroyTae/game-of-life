@@ -18,14 +18,14 @@ const Util = {
 };
 
 export class GameOfLifeEngine {
-  x: number;
-  y: number;
-  intervalKey: null | number;
-  life: Array<Array<Life>>;
-  canvas: HTMLCanvasElement;
-  context: CanvasRenderingContext2D;
+  public life: Life[][];
+  public canvas: HTMLCanvasElement;
+  public context: CanvasRenderingContext2D;
+  private readonly x: number;
+  private readonly y: number;
+  private intervalKey: null | number;
 
-  constructor(life: Array<Array<Life>>) {
+  constructor(life: Life[][]) {
     const cvs = document.createElement('canvas');
     const ctx = cvs.getContext('2d');
     const x = life
@@ -48,12 +48,33 @@ export class GameOfLifeEngine {
     }
   }
 
-  clear() {
+  public clear() {
     this.context.fillStyle = BACKGROUND_COLOR;
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
-  drawDot(x: number, y: number) {
+  public startLife() {
+    if (!this.intervalKey) {
+      this.intervalKey = window.setInterval(() => {
+        this.drawDots();
+        const life = this.life;
+        this.life = life.map((children, i) => (
+          children.map((isSurvive, j) => (
+            this.isSurviveNextGeneration(j, i, isSurvive)
+          ))
+        ));
+      }, 500);
+    }
+  }
+
+  public stopLife() {
+    if (this.intervalKey !== null) {
+      clearInterval(this.intervalKey);
+      this.intervalKey = null;
+    }
+  }
+
+  protected drawDot(x: number, y: number) {
     this.context.fillRect(
       Util.getCoordinateX(x),
       Util.getCoordinateY(y),
@@ -62,7 +83,7 @@ export class GameOfLifeEngine {
     );
   }
 
-  drawDots() {
+  protected drawDots() {
     this.clear();
     this.life.forEach((children, i) => {
       children.forEach((isSurvive, j) => {
@@ -72,7 +93,7 @@ export class GameOfLifeEngine {
     });
   }
 
-  isSurviveNextGeneration(x: number, y: number, isSurvive: Life) {
+  protected isSurviveNextGeneration(x: number, y: number, isSurvive: Life) {
     const life = this.life;
     const edgeX = this.x - 1;
     const edgeY = this.y - 1;
@@ -87,26 +108,5 @@ export class GameOfLifeEngine {
       + Number(y < edgeY && x < edgeX && life[y + 1][x + 1])
     );
     return (isSurvive && (count === 2 || count === 3)) || (!isSurvive && count === 3) ? 1 : 0;
-  }
-
-  startLife() {
-    if (!this.intervalKey) {
-      this.intervalKey = window.setInterval(() => {
-        this.drawDots();
-        const life = this.life;
-        this.life = life.map((children, i) => (
-          children.map((isSurvive, j) => (
-            this.isSurviveNextGeneration(j, i, isSurvive)
-          ))
-        ));
-      }, 500);
-    }
-  }
-
-  stopLife() {
-    if (this.intervalKey !== null) {
-      clearInterval(this.intervalKey);
-      this.intervalKey = null;
-    }
   }
 }

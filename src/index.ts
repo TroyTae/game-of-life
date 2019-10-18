@@ -1,4 +1,4 @@
-import { renderTitle, renderLife } from './renderer';
+import { renderLife, renderTitle } from './renderer';
 
 renderTitle('Still Life', 1);
 
@@ -34,6 +34,7 @@ import BlockOnCover from './life/still-life/block-on-cover';
 import BlockOnDock from './life/still-life/block-on-dock';
 import BlockOnTable from './life/still-life/block-on-table';
 import Boat from './life/still-life/boat';
+import BoatTie from './life/still-life/boat-tie';
 import BoatTieEaterHead from './life/still-life/boat-tie-eater-head';
 import BoatTieEaterTail from './life/still-life/boat-tie-eater-tail';
 import BoatTieLongBoat from './life/still-life/boat-tie-long-boat';
@@ -50,7 +51,6 @@ import BookendsSiameseTables from './life/still-life/bookends-siamese-tables';
 import BrokenElevener from './life/still-life/broken-elevener';
 import BrokenSnake from './life/still-life/broken-snake';
 import BTS from './life/still-life/BTS';
-import BoatTie from './life/still-life/boat-tie';
 import Canoe from './life/still-life/canoe';
 import CanoeSiameseSnake from './life/still-life/canoe-siamese-snake';
 import CapAndDock from './life/still-life/cap-and-dock';
@@ -82,9 +82,9 @@ import CisBoatOnTable from './life/still-life/cis-boat-on-table';
 import CisBoatWithNine from './life/still-life/cis-boat-with-nine';
 import CisBoatWithTail from './life/still-life/cis-boat-with-tail';
 import CisCarrierDownOnTable from './life/still-life/cis-carrier-down-on-table';
+import CisCarrierTie from './life/still-life/cis-carrier-tie';
 import CisCarrierTieSnake from './life/still-life/cis-carrier-tie-snake';
 import CisCarrierUpOnTable from './life/still-life/cis-carrier-up-on-table';
-import CisCarrierTie from './life/still-life/cis-carrier-tie';
 import CisFuseWithTwoTails from './life/still-life/cis-fuse-with-two-tails';
 import CisHookAndRBee from './life/still-life/cis-hook-and-R-bee';
 import CisHookWithTail from './life/still-life/cis-hook-with-tail';
@@ -218,7 +218,7 @@ renderTitle('Strict Still Life', 2);
   CloverleafInterchange,
   Cthulhu,
   Loaf,
-].forEach(v => renderLife(v.title, v.life as Life[][]));
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
 import BiBoat from './life/pseudo-still-life/bi-boat';
@@ -228,31 +228,31 @@ renderTitle('Pseudo Still Life', 2);
   BiBlock,
   BiBoat,
   BlockOnBoat,
-].forEach(v => renderLife(v.title, v.life as Life[][]));
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 // renderTitle('Quasi Still Life', 2);
 // renderTitle('Enumerating Still Life', 2);
 
 import Lighthouse from './life/oscillator/lighthouse';
-import Toad from './life/oscillator/toad';
 import Pulsar from './life/oscillator/pulsar';
+import Toad from './life/oscillator/toad';
 renderTitle('Oscillator', 1);
 [
   Lighthouse,
   Toad,
   Pulsar,
-].forEach(v => renderLife(v.title, v.life as Life[][]));
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import Blinker from './life/oscillator/blinker';
 renderTitle('Muttering moat', 2);
 [
   Blinker,
-].forEach(v => renderLife(v.title, v.life as Life[][]));
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import _7x9Eater from './life/eater/7x9-eater';
 import CenturyEater from './life/eater/century-eater';
 renderTitle('Eater', 1);
 [
   _7x9Eater,
-  CenturyEater
-].forEach(v => renderLife(v.title, v.life as Life[][]));
+  CenturyEater,
+].forEach((v) => renderLife(v.title, v.life as Life[][]));

@@ -20,7 +20,7 @@ export const renderTitle = (text: string, titleType: TitleType) => {
   document.body.appendChild(title);
 };
 
-export const renderLife = (text: string, life: Array<Array<Life>>) => {
+export const renderLife = (text: string, life: Life[][]) => {
   const title = createTitle(text, 3);
   const engine = new GameOfLifeEngine(life);
   const container = createContainer(title, engine.canvas);
