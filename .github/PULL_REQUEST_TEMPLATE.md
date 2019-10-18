@@ -1,0 +1,1 @@
+resolve #{issue_number}
