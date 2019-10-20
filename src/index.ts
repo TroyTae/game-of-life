@@ -133,6 +133,12 @@ import FuseWithTailAndVeryLongTail from './life/still-life/fuse-with-tail-and-ve
 import FuseWithTwoLongTails from './life/still-life/fuse-with-two-long-tails';
 import GrinReagent from './life/still-life/grin-reagent';
 import GullWithTub from './life/still-life/gull-with-tub';
+import HalfBakery from './life/still-life/half-bakery';
+import Hat from './life/still-life/hat';
+import HatSiameseVase from './life/still-life/hat-siamese-vase';
+import HexagonalKey from './life/still-life/hexagonal-key';
+import Honeybarge from './life/still-life/honeybarge';
+import Honeycomb from './life/still-life/honeycomb';
 import Loaf from './life/still-life/loaf';
 renderTitle('Strict Still Life', 2);
 [
@@ -267,6 +273,12 @@ renderTitle('Strict Still Life', 2);
   FuseWithTwoLongTails,
   GrinReagent,
   GullWithTub,
+  HalfBakery,
+  Hat,
+  HatSiameseVase,
+  HexagonalKey,
+  Honeybarge,
+  Honeycomb,
   Loaf,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
