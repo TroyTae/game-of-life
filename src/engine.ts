@@ -1,21 +1,5 @@
-enum DOTS_STYLE {
-  WIDTH = 16,
-  HEIGHT = 16,
-  MARGIN = 2,
-  DEAD_COLOR = '#F2F2F7',
-  SURVIVE_COLOR = '#1C1C1E',
-}
-
-const BACKGROUND_COLOR = '#AEAEB2';
-
-const Util = {
-  getCoordinateX(x: number) {
-    return (DOTS_STYLE.MARGIN + DOTS_STYLE.WIDTH) * x + DOTS_STYLE.MARGIN;
-  },
-  getCoordinateY(y: number) {
-    return (DOTS_STYLE.MARGIN + DOTS_STYLE.HEIGHT) * y + DOTS_STYLE.MARGIN;
-  },
-};
+import {BACKGROUND_COLOR, DOTS_STYLE} from './constants';
+import {getCoordinateX, getCoordinateY} from './coordinates';
 
 export class GameOfLifeEngine {
   public life: Life[][];
@@ -35,8 +19,8 @@ export class GameOfLifeEngine {
     const y = life.length;
 
     if (ctx) {
-      cvs.width = Util.getCoordinateX(x);
-      cvs.height = Util.getCoordinateY(y);
+      cvs.width = getCoordinateX(x);
+      cvs.height = getCoordinateY(y);
 
       this.x = x;
       this.y = y;
@@ -76,8 +60,8 @@ export class GameOfLifeEngine {
 
   protected drawDot(x: number, y: number) {
     this.context.fillRect(
-      Util.getCoordinateX(x),
-      Util.getCoordinateY(y),
+      getCoordinateX(x),
+      getCoordinateY(y),
       DOTS_STYLE.WIDTH,
       DOTS_STYLE.HEIGHT,
     );

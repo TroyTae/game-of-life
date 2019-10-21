@@ -1,1 +1,1 @@
-resolve #{issue_number}
+resolve #issue_number
