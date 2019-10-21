@@ -108,6 +108,45 @@ import ClawWithTubWithTail from './life/still-life/claw-with-tub-with-tail';
 import Clips from './life/still-life/clips';
 import CloverleafInterchange from './life/still-life/cloverleaf-interchange';
 import Cthulhu from './life/still-life/cthulhu';
+import DeadSparkCoil from './life/still-life/dead-spark-coil';
+import DockAndLongHook from './life/still-life/dock-and-long-hook';
+import DoubleClaw from './life/still-life/double-claw';
+import DownSnakeOnTable from './life/still-life/down-snake-on-table';
+import EaterBridgeEater from './life/still-life/eater-bridge-eater';
+import EaterHeadSiameseEaterHead from './life/still-life/eater-head-siamese-eater-head';
+import EaterHeadSiameseEaterTail from './life/still-life/eater-head-siamese-eater-tail';
+import EaterHeadSiameseLongSnake from './life/still-life/eater-head-siamese-long-snake';
+import EaterHeadSiameseSnake from './life/still-life/eater-head-siamese-snake';
+import EaterTailSiameseEaterTail from './life/still-life/eater-tail-siamese-eater-tail';
+import EaterTailSiameseLongSnake from './life/still-life/eater-tail-siamese-long-snake';
+import EaterTailSiameseSnake from './life/still-life/eater-tail-siamese-snake';
+import EaterWithCape from './life/still-life/eater-with-cape';
+import EaterWithHeadFeather from './life/still-life/eater-with-head-feather';
+import EaterWithTailFeather from './life/still-life/eater-with-tail-feather';
+import EgyptianWalk from './life/still-life/egyptian-walk';
+import ElevenLoop from './life/still-life/eleven-loop';
+import Elevener from './life/still-life/elevener';
+import Fourteener from './life/still-life/fourteener';
+import FuseWithTailAndIntegral from './life/still-life/fuse-with-tail-and-integral';
+import FuseWithTailAndLongTail from './life/still-life/fuse-with-tail-and-long-tail';
+import FuseWithTailAndVeryLongTail from './life/still-life/fuse-with-tail-and-very-long-tail';
+import FuseWithTwoLongTails from './life/still-life/fuse-with-two-long-tails';
+import GrinReagent from './life/still-life/grin-reagent';
+import GullWithTub from './life/still-life/gull-with-tub';
+import HalfBakery from './life/still-life/half-bakery';
+import Hat from './life/still-life/hat';
+import HatSiameseVase from './life/still-life/hat-siamese-vase';
+import HexagonalKey from './life/still-life/hexagonal-key';
+import Honeybarge from './life/still-life/honeybarge';
+import Honeycomb from './life/still-life/honeycomb';
+import HookWithNine from './life/still-life/hook-with-nine';
+import HookWithTail from './life/still-life/hook-with-tail';
+import HookWithTailHookSiameseSnake from './life/still-life/hook-with-tail-hook-siamese-snake';
+import HookWithTailTailSiameseSnake from './life/still-life/hook-with-tail-tail-siamese-snake';
+import HookWithTailWithCape from './life/still-life/hook-with-tail-with-cape';
+import HookWithTwoTails from './life/still-life/hook-with-two-tails';
+import HouseOnHouseSiameseTableOnTableWeldHatSiameseHat from './life/still-life/house-on-house-siamese-table-on-table-weld-hat-siamese-hat';
+import HungryHat from './life/still-life/hungry-hat';
 import Loaf from './life/still-life/loaf';
 renderTitle('Strict Still Life', 2);
 [
@@ -217,6 +256,45 @@ renderTitle('Strict Still Life', 2);
   Clips,
   CloverleafInterchange,
   Cthulhu,
+  DeadSparkCoil,
+  DockAndLongHook,
+  DoubleClaw,
+  DownSnakeOnTable,
+  EaterBridgeEater,
+  EaterHeadSiameseEaterHead,
+  EaterHeadSiameseEaterTail,
+  EaterHeadSiameseLongSnake,
+  EaterHeadSiameseSnake,
+  EaterTailSiameseEaterTail,
+  EaterTailSiameseLongSnake,
+  EaterTailSiameseSnake,
+  EaterWithCape,
+  EaterWithHeadFeather,
+  EaterWithTailFeather,
+  EgyptianWalk,
+  ElevenLoop,
+  Elevener,
+  Fourteener,
+  FuseWithTailAndIntegral,
+  FuseWithTailAndLongTail,
+  FuseWithTailAndVeryLongTail,
+  FuseWithTwoLongTails,
+  GrinReagent,
+  GullWithTub,
+  HalfBakery,
+  Hat,
+  HatSiameseVase,
+  HexagonalKey,
+  Honeybarge,
+  Honeycomb,
+  HookWithNine,
+  HookWithTail,
+  HookWithTailHookSiameseSnake,
+  HookWithTailTailSiameseSnake,
+  HookWithTailWithCape,
+  HookWithTwoTails,
+  HouseOnHouseSiameseTableOnTableWeldHatSiameseHat,
+  HungryHat,
   Loaf,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
@@ -251,8 +329,16 @@ renderTitle('Muttering moat', 2);
 
 import _7x9Eater from './life/eater/7x9-eater';
 import CenturyEater from './life/eater/century-eater';
+import Eater1 from './life/eater/eater-1';
+import Eater2 from './life/eater/eater-2';
+import Eater3 from './life/eater/eater-3';
+import Eater4 from './life/eater/eater-4';
 renderTitle('Eater', 1);
 [
   _7x9Eater,
   CenturyEater,
+  Eater1,
+  Eater2,
+  Eater3,
+  Eater4,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
