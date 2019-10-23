@@ -169,6 +169,8 @@ import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
 import MickeyMouse from './life/still-life/mickey-mouse';
 import MirroredDock from './life/still-life/mirrored-dock';
 import MooseAntlers from './life/still-life/moose-antlers';
+import OmnibusWithTubs from './life/still-life/omnibus-with-tubs'
+
 renderTitle('Strict Still Life', 2);
 [
   _15BentPaperclip,
@@ -337,6 +339,7 @@ renderTitle('Strict Still Life', 2);
   MickeyMouse,
   MirroredDock,
   MooseAntlers,
+  OmnibusWithTubs
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
