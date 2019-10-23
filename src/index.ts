@@ -187,6 +187,7 @@ import LongSnake from './life/still-life/long-snake';
 import LongSnakeSiameseLongSnake from './life/still-life/long-snake-siamese-long-snake';
 import LongTubClawWithTail from './life/still-life/long-tub-claw-with-tail';
 import Longhorn from './life/still-life/longhorn';
+import Loop from './life/still-life/loop';
 import Mango from './life/still-life/mango';
 import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
 import MickeyMouse from './life/still-life/mickey-mouse';
@@ -387,6 +388,7 @@ renderTitle('Strict Still Life', 2);
   LongSnakeSiameseLongSnake,
   LongTubClawWithTail,
   Longhorn,
+  Loop,
   Mango,
   MangoWithBlockOnDock,
   MickeyMouse,
