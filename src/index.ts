@@ -170,7 +170,6 @@ import MickeyMouse from './life/still-life/mickey-mouse';
 import MirroredDock from './life/still-life/mirrored-dock';
 import MooseAntlers from './life/still-life/moose-antlers';
 import OmnibusWithTubs from './life/still-life/omnibus-with-tubs'
-import Omnibus from './life/still-life/omnibus'
 
 renderTitle('Strict Still Life', 2);
 [
@@ -340,8 +339,7 @@ renderTitle('Strict Still Life', 2);
   MickeyMouse,
   MirroredDock,
   MooseAntlers,
-  OmnibusWithTubs,
-  Omnibus
+  OmnibusWithTubs
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
