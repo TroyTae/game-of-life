@@ -169,9 +169,15 @@ import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
 import MickeyMouse from './life/still-life/mickey-mouse';
 import MirroredDock from './life/still-life/mirrored-dock';
 import MooseAntlers from './life/still-life/moose-antlers';
-import OmnibusWithTubs from './life/still-life/omnibus-with-tubs'
-import Omnibus from './life/still-life/omnibus'
-
+import OQuadLoaf from './life/still-life/o-quad-loaf';
+import Omnibus from './life/still-life/omnibus';
+import OmnibusWithTubs from './life/still-life/omnibus-with-tubs';
+import OrthoLoafOnTable from './life/still-life/ortho-loaf-on-table';
+import Paperclip from './life/still-life/paperclip';
+import Pond from './life/still-life/pond';
+import PondOnDock from './life/still-life/pond-on-dock';
+import Professor from './life/still-life/professor';
+import PythonSiameseSnake from './life/still-life/python-siamese-snake';
 renderTitle('Strict Still Life', 2);
 [
   _15BentPaperclip,
@@ -340,18 +346,27 @@ renderTitle('Strict Still Life', 2);
   MickeyMouse,
   MirroredDock,
   MooseAntlers,
+  OQuadLoaf,
+  Omnibus,
   OmnibusWithTubs,
-  Omnibus
+  OrthoLoafOnTable,
+  Paperclip,
+  Pond,
+  PondOnDock,
+  Professor,
+  PythonSiameseSnake,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
 import BiBoat from './life/pseudo-still-life/bi-boat';
 import BlockOnBoat from './life/pseudo-still-life/block-on-boat';
+import PondOnPond from './life/still-life/pond-on-pond';
 renderTitle('Pseudo Still Life', 2);
 [
   BiBlock,
   BiBoat,
   BlockOnBoat,
+  PondOnPond,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 // renderTitle('Quasi Still Life', 2);
