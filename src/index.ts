@@ -164,6 +164,11 @@ import IntegralWithTwoTubs from './life/still-life/integral-with-two-tubs';
 import IntegralWithVeryLongHook from './life/still-life/integral-with-very-long-hook';
 import InvertedDoubleClaw from './life/still-life/inverted-double-claw';
 import Loaf from './life/still-life/loaf';
+import Mango from './life/still-life/mango';
+import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
+import MickeyMouse from './life/still-life/mickey-mouse';
+import MirroredDock from './life/still-life/mirrored-dock';
+import MooseAntlers from './life/still-life/moose-antlers';
 renderTitle('Strict Still Life', 2);
 [
   _15BentPaperclip,
@@ -327,6 +332,11 @@ renderTitle('Strict Still Life', 2);
   IntegralWithVeryLongHook,
   InvertedDoubleClaw,
   Loaf,
+  Mango,
+  MangoWithBlockOnDock,
+  MickeyMouse,
+  MirroredDock,
+  MooseAntlers,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
