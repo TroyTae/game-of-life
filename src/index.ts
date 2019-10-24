@@ -163,7 +163,31 @@ import IntegralWithTubAndTail from './life/still-life/integral-with-tub-and-tail
 import IntegralWithTwoTubs from './life/still-life/integral-with-two-tubs';
 import IntegralWithVeryLongHook from './life/still-life/integral-with-very-long-hook';
 import InvertedDoubleClaw from './life/still-life/inverted-double-claw';
+import Lake2 from './life/still-life/lake2';
 import Loaf from './life/still-life/loaf';
+import LoafBackTieLoaf from './life/still-life/loaf-back-tie-loaf';
+import LoafSiameseLoaf from './life/still-life/loaf-siamese-loaf';
+import LoafTieEaterWithTail from './life/still-life/loaf-tie-eater-with-tail';
+import LongBarge from './life/still-life/long-barge';
+import LongBoat from './life/still-life/long-boat';
+import LongBoatTieShip from './life/still-life/long-boat-tie-ship';
+import LongBoatWithLongTail from './life/still-life/long-boat-with-long-tail';
+import LongCanoe from './life/still-life/long-canoe';
+import LongCisHookWithTail from './life/still-life/long-cis-hook-with-tail';
+import LongCisShillelagh from './life/still-life/long-cis-shillelagh';
+import LongClawWithTail from './life/still-life/long-claw-with-tail';
+import LongHookWithTail from './life/still-life/long-hook-with-tail';
+import LongIntegral from './life/still-life/long-integral';
+import LongIntegralWithBoat from './life/still-life/long-integral-with-boat';
+import LongMelusine from './life/still-life/long-melusine';
+import LongProdigal from './life/still-life/long-prodigal';
+import LongShillelagh from './life/still-life/long-shillelagh';
+import LongShip from './life/still-life/long-ship';
+import LongSnake from './life/still-life/long-snake';
+import LongSnakeSiameseLongSnake from './life/still-life/long-snake-siamese-long-snake';
+import LongTubClawWithTail from './life/still-life/long-tub-claw-with-tail';
+import Longhorn from './life/still-life/longhorn';
+import Loop from './life/still-life/loop';
 import Mango from './life/still-life/mango';
 import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
 import MickeyMouse from './life/still-life/mickey-mouse';
@@ -340,7 +364,31 @@ renderTitle('Strict Still Life', 2);
   IntegralWithTwoTubs,
   IntegralWithVeryLongHook,
   InvertedDoubleClaw,
+  Lake2,
   Loaf,
+  LoafBackTieLoaf,
+  LoafSiameseLoaf,
+  LoafTieEaterWithTail,
+  LongBarge,
+  LongBoat,
+  LongBoatTieShip,
+  LongBoatWithLongTail,
+  LongCanoe,
+  LongCisHookWithTail,
+  LongCisShillelagh,
+  LongClawWithTail,
+  LongHookWithTail,
+  LongIntegral,
+  LongIntegralWithBoat,
+  LongMelusine,
+  LongProdigal,
+  LongShillelagh,
+  LongShip,
+  LongSnake,
+  LongSnakeSiameseLongSnake,
+  LongTubClawWithTail,
+  Longhorn,
+  Loop,
   Mango,
   MangoWithBlockOnDock,
   MickeyMouse,
