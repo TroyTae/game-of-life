@@ -187,6 +187,37 @@ import LongSnake from './life/still-life/long-snake';
 import LongSnakeSiameseLongSnake from './life/still-life/long-snake-siamese-long-snake';
 import LongTubClawWithTail from './life/still-life/long-tub-claw-with-tail';
 import Longhorn from './life/still-life/longhorn';
+import Long3Barge from './life/still-life/long3-barge';
+import Long3Boat from './life/still-life/long3-boat';
+import Long3Canoe from './life/still-life/long3-canoe';
+import Long3HookWithTail from './life/still-life/long3-hook-with-tail';
+import Long3Integral from './life/still-life/long3-integral';
+import Long3Shillelagh from './life/still-life/long3-shillelagh';
+import Long3Ship from './life/still-life/long3-ship';
+import Long3Snake from './life/still-life/long3-snake';
+import Long4Barge from './life/still-life/long4-barge';
+import Long4Boat from './life/still-life/long4-boat';
+import Long4Canoe from './life/still-life/long4-canoe';
+import Long4HookWithTail from './life/still-life/long4-hook-with-tail';
+import Long4Shillelagh from './life/still-life/long4-shillelagh';
+import Long4Ship from './life/still-life/long4-ship';
+import Long4Snake from './life/still-life/long4-snake';
+import Long5Barge from './life/still-life/long5-barge';
+import Long5Boat from './life/still-life/long5-boat';
+import Long5Ship from './life/still-life/long5-ship';
+import Long5Snake from './life/still-life/long5-snake';
+import Long6Barge from './life/still-life/long6-barge';
+import Long6Boat from './life/still-life/long6-boat';
+import Long6Ship from './life/still-life/long6-ship';
+import Long6Snake from './life/still-life/long6-snake';
+import Long7Boat from './life/still-life/long7-boat';
+import Long7Ship from './life/still-life/long7-ship';
+import Long8Boat from './life/still-life/long8-boat';
+import Long8Ship from './life/still-life/long8-ship';
+import Long9Boat from './life/still-life/long9-boat';
+import Long9Ship from './life/still-life/long9-ship';
+import Long10Boat from './life/still-life/long10-boat';
+import Long10Ship from './life/still-life/long10-ship';
 import Loop from './life/still-life/loop';
 import Mango from './life/still-life/mango';
 import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
@@ -388,6 +419,37 @@ renderTitle('Strict Still Life', 2);
   LongSnakeSiameseLongSnake,
   LongTubClawWithTail,
   Longhorn,
+  Long3Barge,
+  Long3Boat,
+  Long3Canoe,
+  Long3HookWithTail,
+  Long3Integral,
+  Long3Shillelagh,
+  Long3Ship,
+  Long3Snake,
+  Long4Barge,
+  Long4Boat,
+  Long4Canoe,
+  Long4HookWithTail,
+  Long4Shillelagh,
+  Long4Ship,
+  Long4Snake,
+  Long5Barge,
+  Long5Boat,
+  Long5Ship,
+  Long5Snake,
+  Long6Barge,
+  Long6Boat,
+  Long6Ship,
+  Long6Snake,
+  Long7Boat,
+  Long7Ship,
+  Long8Boat,
+  Long8Ship,
+  Long9Boat,
+  Long9Ship,
+  Long10Boat,
+  Long10Ship,
   Loop,
   Mango,
   MangoWithBlockOnDock,
