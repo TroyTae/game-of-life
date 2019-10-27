@@ -1,5 +1,5 @@
+import {CONTAINER_CLASS_NAME} from './constants';
 import {GameOfLifeEngine} from './engine';
-import {CONTAINER_CLASS_NAME} from './constants'
 
 const createContainer = (...children) => {
   const tag = document.createElement('DIV');

@@ -145,7 +145,8 @@ import HookWithTailHookSiameseSnake from './life/still-life/hook-with-tail-hook-
 import HookWithTailTailSiameseSnake from './life/still-life/hook-with-tail-tail-siamese-snake';
 import HookWithTailWithCape from './life/still-life/hook-with-tail-with-cape';
 import HookWithTwoTails from './life/still-life/hook-with-two-tails';
-import HouseOnHouseSiameseTableOnTableWeldHatSiameseHat from './life/still-life/house-on-house-siamese-table-on-table-weld-hat-siamese-hat';
+import HouseOnHouseSiameseTableOnTableWeldHatSiameseHat
+  from './life/still-life/house-on-house-siamese-table-on-table-weld-hat-siamese-hat';
 import HungryHat from './life/still-life/hungry-hat';
 import InflectedClips from './life/still-life/inflected-clips';
 import InflectedLongSnake from './life/still-life/inflected-long-snake';
@@ -162,7 +163,83 @@ import IntegralWithTubAndTail from './life/still-life/integral-with-tub-and-tail
 import IntegralWithTwoTubs from './life/still-life/integral-with-two-tubs';
 import IntegralWithVeryLongHook from './life/still-life/integral-with-very-long-hook';
 import InvertedDoubleClaw from './life/still-life/inverted-double-claw';
+import Lake2 from './life/still-life/lake2';
 import Loaf from './life/still-life/loaf';
+import LoafBackTieLoaf from './life/still-life/loaf-back-tie-loaf';
+import LoafSiameseLoaf from './life/still-life/loaf-siamese-loaf';
+import LoafTieEaterWithTail from './life/still-life/loaf-tie-eater-with-tail';
+import LongBarge from './life/still-life/long-barge';
+import LongBoat from './life/still-life/long-boat';
+import LongBoatTieShip from './life/still-life/long-boat-tie-ship';
+import LongBoatWithLongTail from './life/still-life/long-boat-with-long-tail';
+import LongCanoe from './life/still-life/long-canoe';
+import LongCisHookWithTail from './life/still-life/long-cis-hook-with-tail';
+import LongCisShillelagh from './life/still-life/long-cis-shillelagh';
+import LongClawWithTail from './life/still-life/long-claw-with-tail';
+import LongHookWithTail from './life/still-life/long-hook-with-tail';
+import LongIntegral from './life/still-life/long-integral';
+import LongIntegralWithBoat from './life/still-life/long-integral-with-boat';
+import LongMelusine from './life/still-life/long-melusine';
+import LongProdigal from './life/still-life/long-prodigal';
+import LongShillelagh from './life/still-life/long-shillelagh';
+import LongShip from './life/still-life/long-ship';
+import LongSnake from './life/still-life/long-snake';
+import LongSnakeSiameseLongSnake from './life/still-life/long-snake-siamese-long-snake';
+import LongTubClawWithTail from './life/still-life/long-tub-claw-with-tail';
+import Long10Boat from './life/still-life/long10-boat';
+import Long10Ship from './life/still-life/long10-ship';
+import Long3Barge from './life/still-life/long3-barge';
+import Long3Boat from './life/still-life/long3-boat';
+import Long3Canoe from './life/still-life/long3-canoe';
+import Long3HookWithTail from './life/still-life/long3-hook-with-tail';
+import Long3Integral from './life/still-life/long3-integral';
+import Long3Shillelagh from './life/still-life/long3-shillelagh';
+import Long3Ship from './life/still-life/long3-ship';
+import Long3Snake from './life/still-life/long3-snake';
+import Long4Barge from './life/still-life/long4-barge';
+import Long4Boat from './life/still-life/long4-boat';
+import Long4Canoe from './life/still-life/long4-canoe';
+import Long4HookWithTail from './life/still-life/long4-hook-with-tail';
+import Long4Shillelagh from './life/still-life/long4-shillelagh';
+import Long4Ship from './life/still-life/long4-ship';
+import Long4Snake from './life/still-life/long4-snake';
+import Long5Barge from './life/still-life/long5-barge';
+import Long5Boat from './life/still-life/long5-boat';
+import Long5Ship from './life/still-life/long5-ship';
+import Long5Snake from './life/still-life/long5-snake';
+import Long6Barge from './life/still-life/long6-barge';
+import Long6Boat from './life/still-life/long6-boat';
+import Long6Ship from './life/still-life/long6-ship';
+import Long6Snake from './life/still-life/long6-snake';
+import Long7Boat from './life/still-life/long7-boat';
+import Long7Ship from './life/still-life/long7-ship';
+import Long8Boat from './life/still-life/long8-boat';
+import Long8Ship from './life/still-life/long8-ship';
+import Long9Boat from './life/still-life/long9-boat';
+import Long9Ship from './life/still-life/long9-ship';
+import Longhorn from './life/still-life/longhorn';
+import Loop from './life/still-life/loop';
+import Mango from './life/still-life/mango';
+import MangoWithBlockOnDock from './life/still-life/mango-with-block-on-dock';
+import MickeyMouse from './life/still-life/mickey-mouse';
+import MirroredDock from './life/still-life/mirrored-dock';
+import MooseAntlers from './life/still-life/moose-antlers';
+import OQuadLoaf from './life/still-life/o-quad-loaf';
+import Omnibus from './life/still-life/omnibus';
+import OmnibusWithTubs from './life/still-life/omnibus-with-tubs';
+import OrthoLoafOnTable from './life/still-life/ortho-loaf-on-table';
+import Paperclip from './life/still-life/paperclip';
+import Pond from './life/still-life/pond';
+import PondOnDock from './life/still-life/pond-on-dock';
+import Professor from './life/still-life/professor';
+import PythonSiameseSnake from './life/still-life/python-siamese-snake';
+import QuadPseudoStillLife from './life/still-life/quad-pseudo-still-life';
+import RBeeAndSnake from './life/still-life/r-bee-and-snake';
+import RBeeOnHive from './life/still-life/r-bee-on-beehive';
+import RBeeWithFeather from './life/still-life/r-bee-with-feather';
+import RMangoAndHouse from './life/still-life/r-mango-and-house';
+import RotatedC from './life/still-life/rotated-c';
+import RotatedTable from './life/still-life/rotated-table';
 renderTitle('Strict Still Life', 2);
 [
   _15BentPaperclip,
@@ -325,17 +402,95 @@ renderTitle('Strict Still Life', 2);
   IntegralWithTwoTubs,
   IntegralWithVeryLongHook,
   InvertedDoubleClaw,
+  Lake2,
   Loaf,
+  LoafBackTieLoaf,
+  LoafSiameseLoaf,
+  LoafTieEaterWithTail,
+  LongBarge,
+  LongBoat,
+  LongBoatTieShip,
+  LongBoatWithLongTail,
+  LongCanoe,
+  LongCisHookWithTail,
+  LongCisShillelagh,
+  LongClawWithTail,
+  LongHookWithTail,
+  LongIntegral,
+  LongIntegralWithBoat,
+  LongMelusine,
+  LongProdigal,
+  LongShillelagh,
+  LongShip,
+  LongSnake,
+  LongSnakeSiameseLongSnake,
+  LongTubClawWithTail,
+  Longhorn,
+  Long3Barge,
+  Long3Boat,
+  Long3Canoe,
+  Long3HookWithTail,
+  Long3Integral,
+  Long3Shillelagh,
+  Long3Ship,
+  Long3Snake,
+  Long4Barge,
+  Long4Boat,
+  Long4Canoe,
+  Long4HookWithTail,
+  Long4Shillelagh,
+  Long4Ship,
+  Long4Snake,
+  Long5Barge,
+  Long5Boat,
+  Long5Ship,
+  Long5Snake,
+  Long6Barge,
+  Long6Boat,
+  Long6Ship,
+  Long6Snake,
+  Long7Boat,
+  Long7Ship,
+  Long8Boat,
+  Long8Ship,
+  Long9Boat,
+  Long9Ship,
+  Long10Boat,
+  Long10Ship,
+  Loop,
+  Mango,
+  MangoWithBlockOnDock,
+  MickeyMouse,
+  MirroredDock,
+  MooseAntlers,
+  OQuadLoaf,
+  Omnibus,
+  OmnibusWithTubs,
+  OrthoLoafOnTable,
+  Paperclip,
+  Pond,
+  PondOnDock,
+  Professor,
+  PythonSiameseSnake,
+  QuadPseudoStillLife,
+  RBeeAndSnake,
+  RBeeOnHive,
+  RBeeWithFeather,
+  RMangoAndHouse,
+  RotatedC,
+  RotatedTable,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import BiBlock from './life/pseudo-still-life/bi-block';
 import BiBoat from './life/pseudo-still-life/bi-boat';
 import BlockOnBoat from './life/pseudo-still-life/block-on-boat';
+import PondOnPond from './life/still-life/pond-on-pond';
 renderTitle('Pseudo Still Life', 2);
 [
   BiBlock,
   BiBoat,
   BlockOnBoat,
+  PondOnPond,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 // renderTitle('Quasi Still Life', 2);
