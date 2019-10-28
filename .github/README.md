@@ -1,6 +1,6 @@
-# game-of-life
+# Conway's Game of Life
 
-## description
+## Description
 
 Conway's game of life web version!  
 Issue and PR are always welcome :)  
