@@ -546,3 +546,9 @@ renderTitle('Muttering moat', 2);
 [
   Blinker,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
+
+import GliderGun from './life/gun/gliderGun';
+renderTitle('Gun', 2);
+[
+  GliderGun,
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
