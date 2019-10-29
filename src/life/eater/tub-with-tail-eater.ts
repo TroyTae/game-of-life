@@ -1,5 +1,5 @@
 export default {
-  title: "Tub-with-tail eater",
+  title: 'Tub-with-tail eater',
   life: [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0],
