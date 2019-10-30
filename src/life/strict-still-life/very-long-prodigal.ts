@@ -1,5 +1,5 @@
 export default {
-  title: 'Scorpion',
+  title: 'Very long prodigal',
   life: [
     [0, 0, 0],
     [0, 1, 0],

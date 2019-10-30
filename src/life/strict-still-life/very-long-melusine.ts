@@ -1,5 +1,5 @@
 export default {
-  title: 'Shillelagh',
+  title: 'Very long melusine',
   life: [
     [0, 0, 0],
     [0, 1, 0],
