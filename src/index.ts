@@ -94,7 +94,8 @@ import CisLongBoatWithTail from './life/strict-still-life/cis-long-boat-with-tai
 import CisMangoWithTail from './life/strict-still-life/cis-mango-with-tail';
 import CisMirroredRBee from './life/strict-still-life/cis-mirrored-R-bee';
 import CisMirroredWorm from './life/strict-still-life/cis-mirrored-worm';
-import CisMirroredWormSiameseCisMirroredWorm from './life/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm';
+import CisMirroredWormSiameseCisMirroredWorm
+  from './life/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm';
 import CisRBeeAndRLoaf from './life/strict-still-life/cis-R-bee-and-R-loaf';
 import CisRotatedHook from './life/strict-still-life/cis-rotated-hook';
 import CisRotatedRBee from './life/strict-still-life/cis-rotated-R-bee';
@@ -262,6 +263,13 @@ import SuperMango from './life/strict-still-life/super-mango';
 import SuperPond from './life/strict-still-life/super-pond';
 import SymmetricScorpion from './life/strict-still-life/symmetric-scorpion';
 import SymmetricalSynapse from './life/strict-still-life/symmetrical-synapse';
+import TableAndDock from './life/strict-still-life/table-and-dock';
+import TableAndTable from './life/strict-still-life/table-and-table';
+import TeardropWithCape from './life/strict-still-life/teardrop-with-cape';
+import TeardropWithClaw from './life/strict-still-life/teardrop-with-claw';
+import ThirteenLoop from './life/strict-still-life/thirteen-loop';
+import TwelveLoop from './life/strict-still-life/twelve-loop';
+import TwinHat from './life/strict-still-life/twin-hat';
 import UpDoveOnDove from './life/strict-still-life/up-dove-on-dove';
 import UpSnakeOnTable from './life/strict-still-life/up-snake-on-table';
 import UpWingOnWing from './life/strict-still-life/up-wing-on-wing';
@@ -540,6 +548,13 @@ renderTitle('Strict Still Life', 2);
   SuperPond,
   SymmetricScorpion,
   SymmetricalSynapse,
+  TableAndDock,
+  TableAndTable,
+  TeardropWithCape,
+  TeardropWithClaw,
+  ThirteenLoop,
+  TwelveLoop,
+  TwinHat,
   UpDoveOnDove,
   UpSnakeOnTable,
   UpWingOnWing,
