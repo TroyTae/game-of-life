@@ -8,7 +8,7 @@ Issues and PRs are always welcome :)
 ## Installation
 
 ### Prerequisites
-Install [Node.js](https://nodejs.org/en/)
+Install [Node.js](https://nodejs.org)
 
 ### Step 1
 Clone this repository.
