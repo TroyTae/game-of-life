@@ -234,10 +234,10 @@ import Pond from './life/strict-still-life/pond';
 import PondOnDock from './life/strict-still-life/pond-on-dock';
 import Professor from './life/strict-still-life/professor';
 import PythonSiameseSnake from './life/strict-still-life/python-siamese-snake';
-import RBeeAndSnake from './life/strict-still-life/r-bee-and-snake';
-import RBeeOnHive from './life/strict-still-life/r-bee-on-beehive';
-import RBeeWithFeather from './life/strict-still-life/r-bee-with-feather';
-import RMangoAndHouse from './life/strict-still-life/r-mango-and-house';
+import RBeeAndSnake from './life/strict-still-life/R-bee-and-snake';
+import RBeeOnHive from './life/strict-still-life/R-bee-on-beehive';
+import RBeeWithFeather from './life/strict-still-life/R-bee-with-feather';
+import RMangoAndHouse from './life/strict-still-life/R-mango-and-house';
 import RotatedC from './life/strict-still-life/rotated-c';
 import RotatedTable from './life/strict-still-life/rotated-table';
 import Scorpion from './life/strict-still-life/scorpion';
@@ -249,7 +249,7 @@ import ShipTie from './life/strict-still-life/ship-tie';
 import ShipTieSnake from './life/strict-still-life/ship-tie-snake';
 import Shuriken from './life/strict-still-life/shuriken';
 import Sidewalk from './life/strict-still-life/sidewalk';
-import SkewRBees from './life/strict-still-life/skew-r-bees';
+import SkewRBees from './life/strict-still-life/skew-R-bees';
 import SmallLake from './life/strict-still-life/small-lake';
 import Snake from './life/strict-still-life/snake';
 import SnakeBridgeSnake from './life/strict-still-life/snake-bridge-snake';
@@ -268,6 +268,45 @@ import TableAndTable from './life/strict-still-life/table-and-table';
 import TeardropWithCape from './life/strict-still-life/teardrop-with-cape';
 import TeardropWithClaw from './life/strict-still-life/teardrop-with-claw';
 import ThirteenLoop from './life/strict-still-life/thirteen-loop';
+import TransBargeWithNine from './life/strict-still-life/trans-barge-with-nine';
+import TransBargeWithTail from './life/strict-still-life/trans-barge-with-tail';
+import TransBlockOnLongHook from './life/strict-still-life/trans-block-on-long-hook';
+import TransBoatAmphisbaena from './life/strict-still-life/trans-boat-amphisbaena';
+import TransBoatLineTub from './life/strict-still-life/trans-boat-line-tub';
+import TransBoatOnDock from './life/strict-still-life/trans-boat-on-dock';
+import TransBoatOnTable from './life/strict-still-life/trans-boat-on-table';
+import TransBoatWithNine from './life/strict-still-life/trans-boat-with-nine';
+import TransBoatWithTail from './life/strict-still-life/trans-boat-with-tail';
+import TransCarrierDownOnTable from './life/strict-still-life/trans-carrier-down-on-table';
+import TransCarrierTie from './life/strict-still-life/trans-carrier-tie';
+import TransCarrierSnake from './life/strict-still-life/trans-carrier-tie-snake';
+import TransCarrierUpOnTable from './life/strict-still-life/trans-carrier-up-on-table';
+import TransFuseWithTwoTails from './life/strict-still-life/trans-fuse-with-two-tails';
+import TransHookAndRBee from './life/strict-still-life/trans-hook-and-R-bee';
+import TransLoafWithTail from './life/strict-still-life/trans-loaf-with-tail';
+import TransLongBargeWithTail from './life/strict-still-life/trans-long-barge-with-tail';
+import TransLongBoatWithTail from './life/strict-still-life/trans-long-boat-with-tail';
+import TransMangoWithTail from './life/strict-still-life/trans-mango-with-tail';
+import TransMirroredRBee from './life/strict-still-life/trans-mirrored-R-bee';
+import TransRBeeAndRLoaf from './life/strict-still-life/trans-R-bee-and-R-loaf';
+import TransRotatedRBee from './life/strict-still-life/trans-rotated-R-bee';
+import TransShipOnTable from './life/strict-still-life/trans-ship-on-table';
+import TransSnakeTie from './life/strict-still-life/trans-snake-tie';
+import Tub from './life/strict-still-life/tub';
+import TubBendLineTub from './life/strict-still-life/tub-bend-line-tub';
+import TubWithCisTail from './life/strict-still-life/tub-with-cis-tail';
+import TubWithLongCisTail from './life/strict-still-life/tub-with-long-cis-tail';
+import TubWithLongTail from './life/strict-still-life/tub-with-long-tail';
+import TubWithLong3Tail from './life/strict-still-life/tub-with-long3-tail';
+import TubWithLong4Tail from './life/strict-still-life/tub-with-long4-tail';
+import TubWithTail from './life/strict-still-life/tub-with-tail';
+import TubWithTailSiameseSnake from './life/strict-still-life/tub-with-tail-siamese-snake';
+import TubWithTailWithCape from './life/strict-still-life/tub-with-tail-with-cape';
+import TubWithTwoDownCisTails from './life/strict-still-life/tub-with-two-down-cis-tails';
+import TubWithTwoDownTransTails from './life/strict-still-life/tub-with-two-down-trans-tails';
+import TubWithTwoUpCisTails from './life/strict-still-life/tub-with-two-up-cis-tails';
+import TubWithTwoUpTransTails from './life/strict-still-life/tub-with-two-up-trans-tails';
+import TubWithVeryLongTail from './life/strict-still-life/tub-with-very-long-tail';
 import TwelveLoop from './life/strict-still-life/twelve-loop';
 import TwinHat from './life/strict-still-life/twin-hat';
 import UpDoveOnDove from './life/strict-still-life/up-dove-on-dove';
@@ -553,6 +592,45 @@ renderTitle('Strict Still Life', 2);
   TeardropWithCape,
   TeardropWithClaw,
   ThirteenLoop,
+  TransBargeWithNine,
+  TransBargeWithTail,
+  TransBlockOnLongHook,
+  TransBoatAmphisbaena,
+  TransBoatLineTub,
+  TransBoatOnDock,
+  TransBoatOnTable,
+  TransBoatWithNine,
+  TransBoatWithTail,
+  TransCarrierDownOnTable,
+  TransCarrierTie,
+  TransCarrierSnake,
+  TransCarrierUpOnTable,
+  TransFuseWithTwoTails,
+  TransHookAndRBee,
+  TransLoafWithTail,
+  TransLongBargeWithTail,
+  TransLongBoatWithTail,
+  TransMangoWithTail,
+  TransMirroredRBee,
+  TransRBeeAndRLoaf,
+  TransRotatedRBee,
+  TransShipOnTable,
+  TransSnakeTie,
+  Tub,
+  TubBendLineTub,
+  TubWithCisTail,
+  TubWithLong3Tail,
+  TubWithLong4Tail,
+  TubWithLongCisTail,
+  TubWithLongTail,
+  TubWithTail,
+  TubWithTailSiameseSnake,
+  TubWithTailWithCape,
+  TubWithTwoDownCisTails,
+  TubWithTwoDownTransTails,
+  TubWithTwoUpCisTails,
+  TubWithTwoUpTransTails,
+  TubWithVeryLongTail,
   TwelveLoop,
   TwinHat,
   UpDoveOnDove,
