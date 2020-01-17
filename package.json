@@ -16,7 +16,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode=production",
-    "fix:lint": "",
+    "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/"
   }
 }
