@@ -1,9 +1,11 @@
+import OneSpaces from 'one-spaces';
+
 import {CONTAINER_CLASS_NAME} from './constants';
 import {GameOfLifeEngine} from './engine';
 
 const createContainer = (...children) => {
   const tag = document.createElement('DIV');
-  tag.className = CONTAINER_CLASS_NAME;
+  tag.className = OneSpaces(CONTAINER_CLASS_NAME);
   children.forEach((child) => tag.appendChild(child));
   return tag;
 };
