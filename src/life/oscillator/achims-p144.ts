@@ -1,5 +1,5 @@
 export default {
-  title: 'Achim\'s p114',
+  title: 'Achim\'s p144',
   life: [
     [0, 0, 0],
     [0, 1, 0],
