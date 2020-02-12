@@ -14,8 +14,7 @@ export class GameOfLifeEngine {
     const ctx = cvs.getContext('2d');
     const x = life
       .map((children) => children.length)
-      .reduce((prev, next) => Math.min(prev, next))
-    ;
+      .reduce((prev, next) => Math.min(prev, next));
     const y = life.length;
 
     if (ctx) {
