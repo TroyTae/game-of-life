@@ -694,7 +694,7 @@ import AchimsP4 from './life/oscillator/achims-p4';
 import AchimsP8 from './life/oscillator/achims-p8';
 import AchimsP11 from './life/oscillator/achims-p11';
 import AchimsP16 from './life/oscillator/achims-p16';
-import AchimsP114 from './life/oscillator/achims-p114';
+import AchimsP144 from './life/oscillator/achims-p144';
 import Almosymmetric from './life/oscillator/almosymmetric';
 import Lighthouse from './life/oscillator/lighthouse';
 import Pulsar from './life/oscillator/pulsar';
@@ -707,7 +707,7 @@ renderTitle('Oscillator', 1);
   AchimsP8,
   AchimsP11,
   AchimsP16,
-  AchimsP114,
+  AchimsP144,
   Almosymmetric,
   Lighthouse,
   Toad,
