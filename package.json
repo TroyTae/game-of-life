@@ -19,5 +19,8 @@
     "build": "webpack --mode=production",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/"
+  },
+  "dependencies": {
+    "lint": "^0.7.0"
   }
 }
