@@ -710,8 +710,16 @@ renderTitle('Oscillator', 1);
   AchimsP144,
   Almosymmetric,
   Lighthouse,
-  Toad,
   Pulsar,
+  Toad,
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
+
+import AVerage from './life/oscillator/billiard-table/a-verage';
+import Airforce from './life/oscillator/billiard-table/airforce';
+renderTitle('Billiard table', 2);
+[
+  AVerage,
+  Airforce,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import Blinker from './life/oscillator/muttering-moat/blinker';
