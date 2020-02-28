@@ -715,11 +715,13 @@ renderTitle('Oscillator', 1);
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import $rats from './life/oscillator/billiard-table/$rats';
+import _1_2_3 from './life/oscillator/billiard-table/1-2-3';
 import AVerage from './life/oscillator/billiard-table/a-verage';
 import Airforce from './life/oscillator/billiard-table/airforce';
 renderTitle('Billiard table', 2);
 [
   $rats,
+  _1_2_3,
   AVerage,
   Airforce,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
