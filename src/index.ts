@@ -688,6 +688,7 @@ renderTitle('Eater', 2);
   TubWithTailEater,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
+import _1Beacon from './life/oscillator/1-beacon';
 import AForAll from './life/oscillator/a-for-all';
 import AchimsOtherP16 from './life/oscillator/achims-other-p16';
 import AchimsP4 from './life/oscillator/achims-p4';
@@ -696,11 +697,11 @@ import AchimsP11 from './life/oscillator/achims-p11';
 import AchimsP16 from './life/oscillator/achims-p16';
 import AchimsP144 from './life/oscillator/achims-p144';
 import Almosymmetric from './life/oscillator/almosymmetric';
-import Lighthouse from './life/oscillator/lighthouse';
 import Pulsar from './life/oscillator/pulsar';
 import Toad from './life/oscillator/toad';
 renderTitle('Oscillator', 1);
 [
+  _1Beacon,
   AForAll,
   AchimsOtherP16,
   AchimsP4,
@@ -709,15 +710,16 @@ renderTitle('Oscillator', 1);
   AchimsP16,
   AchimsP144,
   Almosymmetric,
-  Lighthouse,
   Pulsar,
   Toad,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
+import $rats from './life/oscillator/billiard-table/$rats';
 import AVerage from './life/oscillator/billiard-table/a-verage';
 import Airforce from './life/oscillator/billiard-table/airforce';
 renderTitle('Billiard table', 2);
 [
+  $rats,
   AVerage,
   Airforce,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
@@ -726,4 +728,10 @@ import Blinker from './life/oscillator/muttering-moat/blinker';
 renderTitle('Muttering moat', 2);
 [
   Blinker,
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
+
+import Beacon from './life/oscillator/babbling-brook/beacon';
+renderTitle('Babbling brook', 2);
+[
+  Beacon,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
