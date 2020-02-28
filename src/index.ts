@@ -689,6 +689,7 @@ renderTitle('Eater', 2);
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import _1Beacon from './life/oscillator/1-beacon';
+import _101 from './life/oscillator/101';
 import AForAll from './life/oscillator/a-for-all';
 import AchimsOtherP16 from './life/oscillator/achims-other-p16';
 import AchimsP4 from './life/oscillator/achims-p4';
@@ -702,6 +703,7 @@ import Toad from './life/oscillator/toad';
 renderTitle('Oscillator', 1);
 [
   _1Beacon,
+  _101,
   AForAll,
   AchimsOtherP16,
   AchimsP4,
