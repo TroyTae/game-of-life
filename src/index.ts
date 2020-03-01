@@ -690,6 +690,10 @@ renderTitle('Eater', 2);
 
 import _1Beacon from './life/oscillator/1-beacon';
 import _101 from './life/oscillator/101';
+import _106P135 from './life/oscillator/106P135';
+import _110P62 from './life/oscillator/110P62';
+import _112P15 from './life/oscillator/112P15';
+import _117P18 from './life/oscillator/117P18';
 import AForAll from './life/oscillator/a-for-all';
 import AchimsOtherP16 from './life/oscillator/achims-other-p16';
 import AchimsP4 from './life/oscillator/achims-p4';
@@ -704,6 +708,10 @@ renderTitle('Oscillator', 1);
 [
   _1Beacon,
   _101,
+  _106P135,
+  _110P62,
+  _112P15,
+  _117P18,
   AForAll,
   AchimsOtherP16,
   AchimsP4,
