@@ -5,24 +5,16 @@ export class GameOfLifeEngine {
   public life: Life[][];
   public canvas: HTMLCanvasElement;
   public context: CanvasRenderingContext2D;
-  private readonly x: number;
-  private readonly y: number;
   private intervalKey: null | number;
 
   constructor(life: Life[][]) {
     const cvs = document.createElement('canvas');
     const ctx = cvs.getContext('2d');
-    const x = life
-      .map((children) => children.length)
-      .reduce((prev, next) => Math.min(prev, next));
-    const y = life.length;
 
     if (ctx) {
-      cvs.width = getCoordinateX(x);
-      cvs.height = getCoordinateY(y);
+      cvs.width = getCoordinateX(life[0].length);
+      cvs.height = getCoordinateY(life.length);
 
-      this.x = x;
-      this.y = y;
       this.life = life;
       this.canvas = cvs;
       this.context = ctx;
@@ -43,7 +35,7 @@ export class GameOfLifeEngine {
         const life = this.life;
         this.life = life.map((children, i) => (
           children.map((isSurvive, j) => (
-            this.isSurviveNextGeneration(j, i, isSurvive)
+            this.nextLife(j, i, isSurvive)
           ))
         ));
       }, 500);
@@ -76,20 +68,21 @@ export class GameOfLifeEngine {
     });
   }
 
-  protected isSurviveNextGeneration(x: number, y: number, isSurvive: Life): Life {
-    const life = this.life;
-    const edgeX = this.x - 1;
-    const edgeY = this.y - 1;
+  protected isSurvive(x: number, y: number): Life {
+    return (this.life[y] && this.life[y][x]) ? 1 : 0;
+  }
+
+  protected nextLife(x: number, y: number, isSurvive: Life): Life {
     const count = (
-      Number(0 < y && 0 < x && life[y - 1][x - 1])
-      + Number(0 < y && life[y - 1][x])
-      + Number(0 < y && x < edgeX && life[y - 1][x + 1])
-      + Number(0 < x && life[y][x - 1])
-      + Number(x < edgeX && life[y][x + 1])
-      + Number(y < edgeY && 0 < x && life[y + 1][x - 1])
-      + Number(y < edgeY && life[y + 1][x])
-      + Number(y < edgeY && x < edgeX && life[y + 1][x + 1])
+      this.isSurvive(x - 1, y - 1) +
+      this.isSurvive(x, y - 1) +
+      this.isSurvive(x + 1, y - 1) +
+      this.isSurvive(x - 1, y) +
+      this.isSurvive(x + 1, y) +
+      this.isSurvive(x - 1, y + 1) +
+      this.isSurvive(x, y + 1) +
+      this.isSurvive(x + 1, y + 1)
     );
-    return (isSurvive && (count === 2 || count === 3)) || (!isSurvive && count === 3) ? 1 : 0;
+    return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
   }
 }
