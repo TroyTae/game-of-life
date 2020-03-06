@@ -22,9 +22,11 @@ export const renderTitle = (text: string, titleType: TitleType): void => {
 };
 
 export const renderLife = (text: string, life: Life[][]): void => {
-  const title = createTitle(text, 3);
-  const engine = new GameOfLifeEngine(life);
-  const container = createContainer(title, engine.canvas);
-  document.body.appendChild(container);
-  engine.startLife();
+  if (life.reduce((sum, columns) => sum + columns.reduce((v1, v2) => v1 + v2, 0), 0) !== 1) {
+    const title = createTitle(text, 3);
+    const engine = new GameOfLifeEngine(life);
+    const container = createContainer(title, engine.canvas);
+    document.body.appendChild(container);
+    engine.startLife();
+  }
 };
