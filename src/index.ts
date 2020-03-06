@@ -696,6 +696,7 @@ import _112P15 from './life/oscillator/112P15';
 import _117P18 from './life/oscillator/117P18';
 import _124P21 from './life/oscillator/124P21';
 import _128P10_2 from './life/oscillator/128P10_2';
+import _134P25 from './life/oscillator/134P25';
 import AForAll from './life/oscillator/a-for-all';
 import AchimsOtherP16 from './life/oscillator/achims-other-p16';
 import AchimsP4 from './life/oscillator/achims-p4';
@@ -716,6 +717,7 @@ renderTitle('Oscillator', 1);
   _117P18,
   _124P21,
   _128P10_2,
+  _134P25,
   AForAll,
   AchimsOtherP16,
   AchimsP4,
