@@ -3,8 +3,8 @@
 ## Description
 
 Conway's Game of Life web version!  
-I hope this repository is a good lab for Game of Life.
-And I also hope this repository is a good start point for first contributor.
+I hope this repository is a good lab for Game of Life.  
+And I also hope this repository is a [good start point](https://github.com/TroyTae/game-of-life/contribute) for first contributor.  
 
 ## Installation
 
@@ -47,4 +47,3 @@ Then you can see the built files in the `docs` directory.
 <a href="https://github.com/TroyTae/game-of-life/graphs/contributors">
   <img src="https://contributors-img.firebaseapp.com/image?repo=TroyTae/game-of-life" />
 </a>
-
