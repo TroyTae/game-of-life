@@ -689,6 +689,7 @@ renderTitle('Eater', 2);
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import _1Beacon from './life/oscillator/1-beacon';
+import _14P2_3 from './life/oscillator/14P2_3';
 import _101 from './life/oscillator/101';
 import _106P135 from './life/oscillator/106P135';
 import _110P62 from './life/oscillator/110P62';
@@ -713,6 +714,7 @@ import Toad from './life/oscillator/toad';
 renderTitle('Oscillator', 1);
 [
   _1Beacon,
+  _14P2_3,
   _101,
   _106P135,
   _110P62,
