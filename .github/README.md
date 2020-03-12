@@ -40,3 +40,10 @@ If you want to build, use this command.
 npm run build
 ```
 Then you can see the built files in the `docs` directory.
+
+## Contributors
+
+<a href="https://github.com/TroyTae/game-of-life/graphs/contributors">
+  <img src="https://contributors-img.firebaseapp.com/image?repo=TroyTae/game-of-life" />
+</a>
+
