@@ -3,7 +3,8 @@
 ## Description
 
 Conway's Game of Life web version!  
-Issues and PRs are always welcome :)  
+I hope this repository is a good lab for Game of Life.
+And I also hope this repository is a good start point for first contributor.
 
 ## Installation
 
