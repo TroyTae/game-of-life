@@ -736,6 +736,12 @@ renderTitle('Oscillator', 1);
   Toad,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
+import Beacon from './life/oscillator/babbling-brook/beacon';
+renderTitle('Babbling brook', 2);
+[
+  Beacon,
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
+
 import $rats from './life/oscillator/billiard-table/$rats';
 import _1_2_3 from './life/oscillator/billiard-table/1-2-3';
 import _1_2_3_4 from './life/oscillator/billiard-table/1-2-3-4';
@@ -752,14 +758,10 @@ renderTitle('Billiard table', 2);
   Airforce,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
+import _14P2_1 from './life/oscillator/muttering-moat/14P2_1';
 import Blinker from './life/oscillator/muttering-moat/blinker';
 renderTitle('Muttering moat', 2);
 [
+  _14P2_1,
   Blinker,
-].forEach((v) => renderLife(v.title, v.life as Life[][]));
-
-import Beacon from './life/oscillator/babbling-brook/beacon';
-renderTitle('Babbling brook', 2);
-[
-  Beacon,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
