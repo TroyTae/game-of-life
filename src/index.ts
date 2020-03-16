@@ -689,6 +689,8 @@ renderTitle('Eater', 2);
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import _1Beacon from './life/oscillator/1-beacon';
+import _14P2_3 from './life/oscillator/14P2_3';
+import _14P2_4 from './life/oscillator/14P2_4';
 import _101 from './life/oscillator/101';
 import _106P135 from './life/oscillator/106P135';
 import _110P62 from './life/oscillator/110P62';
@@ -698,6 +700,10 @@ import _124P21 from './life/oscillator/124P21';
 import _128P10_2 from './life/oscillator/128P10_2';
 import _134P25 from './life/oscillator/134P25';
 import _134P39_1 from './life/oscillator/134P39_1';
+import _144P24 from './life/oscillator/144P24';
+import _145P20 from './life/oscillator/145P20';
+import _168P22_1 from './life/oscillator/168P22_1';
+import _186P24 from './life/oscillator/186P24';
 import AForAll from './life/oscillator/a-for-all';
 import AchimsOtherP16 from './life/oscillator/achims-other-p16';
 import AchimsP4 from './life/oscillator/achims-p4';
@@ -711,6 +717,8 @@ import Toad from './life/oscillator/toad';
 renderTitle('Oscillator', 1);
 [
   _1Beacon,
+  _14P2_3,
+  _14P2_4,
   _101,
   _106P135,
   _110P62,
@@ -720,6 +728,10 @@ renderTitle('Oscillator', 1);
   _128P10_2,
   _134P25,
   _134P39_1,
+  _144P24,
+  _145P20,
+  _168P22_1,
+  _186P24,
   AForAll,
   AchimsOtherP16,
   AchimsP4,
@@ -730,6 +742,12 @@ renderTitle('Oscillator', 1);
   Almosymmetric,
   Pulsar,
   Toad,
+].forEach((v) => renderLife(v.title, v.life as Life[][]));
+
+import Beacon from './life/oscillator/babbling-brook/beacon';
+renderTitle('Babbling brook', 2);
+[
+  Beacon,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
 import $rats from './life/oscillator/billiard-table/$rats';
@@ -748,14 +766,10 @@ renderTitle('Billiard table', 2);
   Airforce,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
 
+import _14P2_1 from './life/oscillator/muttering-moat/14P2_1';
 import Blinker from './life/oscillator/muttering-moat/blinker';
 renderTitle('Muttering moat', 2);
 [
+  _14P2_1,
   Blinker,
-].forEach((v) => renderLife(v.title, v.life as Life[][]));
-
-import Beacon from './life/oscillator/babbling-brook/beacon';
-renderTitle('Babbling brook', 2);
-[
-  Beacon,
 ].forEach((v) => renderLife(v.title, v.life as Life[][]));
