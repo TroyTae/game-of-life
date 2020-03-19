@@ -24,7 +24,9 @@ export class GameOfLifeEngine {
   }
 
   public clear(bg): void {
-    if(!bg){ bg = BACKGROUND_COLOR }
+    if( !bg ){
+      bg = BACKGROUND_COLOR;
+    }
     this.context.fillStyle = bg;
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
@@ -63,8 +65,12 @@ export class GameOfLifeEngine {
     this.clear(bg);
     this.life.forEach((children, i) => {
       children.forEach((isSurvive, j) => {
-        if(!dc) { dc = DOTS_STYLE.DEAD_COLOR; }
-        if(!sc) { sc = DOTS_STYLE.SURVIVE_COLOR; }
+        if(!dc) {
+          dc = DOTS_STYLE.DEAD_COLOR;
+        }
+        if(!sc) {
+          sc = DOTS_STYLE.SURVIVE_COLOR;
+        }
         this.context.fillStyle = isSurvive ? sc : dc;
         this.drawDot(j, i);
       });
