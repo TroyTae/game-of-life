@@ -21,12 +21,12 @@ export const renderTitle = (text: string, titleType: TitleType): void => {
   document.body.appendChild(title);
 };
 
-export const renderLife = (text: string, life: Life[][]): void => {
+export const renderLife = (text: string, life: Life[][], dc: string, sc: string, bg: string): void => {
   if (life.reduce((sum, columns) => sum + columns.reduce((v1, v2) => v1 + v2, 0), 0) !== 1) {
     const title = createTitle(text, 3);
     const engine = new GameOfLifeEngine(life);
     const container = createContainer(title, engine.canvas);
     document.body.appendChild(container);
-    engine.startLife();
+    engine.startLife(dc, sc, bg);
   }
 };

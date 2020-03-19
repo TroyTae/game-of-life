@@ -7,4 +7,7 @@ export default {
     [0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0],
   ],
+  DEAD_COLOR : '#F2F2F7',
+  SURVIVE_COLOR : '#6A5ACD',
+  BACKGROUND_COLOR : 'red',
 };

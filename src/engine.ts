@@ -23,15 +23,16 @@ export class GameOfLifeEngine {
     }
   }
 
-  public clear(): void {
-    this.context.fillStyle = BACKGROUND_COLOR;
+  public clear(bg): void {
+    if(!bg){ bg = BACKGROUND_COLOR }
+    this.context.fillStyle = bg;
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
-  public startLife(): void {
+  public startLife(dc, sc, bg): void {
     if (!this.intervalKey) {
       this.intervalKey = window.setInterval(() => {
-        this.drawDots();
+        this.drawDots(dc, sc, bg);
         const life = this.life;
         this.life = life.map((children, i) => (
           children.map((isSurvive, j) => (
@@ -58,11 +59,13 @@ export class GameOfLifeEngine {
     );
   }
 
-  protected drawDots(): void {
-    this.clear();
+  protected drawDots(dc, sc, bg): void {
+    this.clear(bg);
     this.life.forEach((children, i) => {
       children.forEach((isSurvive, j) => {
-        this.context.fillStyle = isSurvive ? DOTS_STYLE.SURVIVE_COLOR : DOTS_STYLE.DEAD_COLOR;
+        if(!dc) { dc = DOTS_STYLE.DEAD_COLOR; }
+        if(!sc) { sc = DOTS_STYLE.SURVIVE_COLOR; }
+        this.context.fillStyle = isSurvive ? sc : dc;
         this.drawDot(j, i);
       });
     });
