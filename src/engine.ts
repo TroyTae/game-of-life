@@ -5,12 +5,12 @@ export class GameOfLifeEngine {
   public life: Life[][];
   public canvas: HTMLCanvasElement;
   public context: CanvasRenderingContext2D;
-  public deadcolor: string;
-  public survivecolor: string;
-  public backgroundcolor: string;
+  public deadColor: string;
+  public surviveColor: string;
+  public backgroundColor: string;
   private intervalKey: null | number;
 
-  constructor(life: Life[][], deadcolor?: string, survivecolor?: string, backgroundcolor?: string) {
+  constructor(life: Life[][], deadColor?: string, surviveColor?: string, backgroundColor?: string) {
     const cvs = document.createElement('canvas');
     const ctx = cvs.getContext('2d');
 
@@ -21,9 +21,9 @@ export class GameOfLifeEngine {
       this.life = life;
       this.canvas = cvs;
       this.context = ctx;
-      this.deadcolor = deadcolor ? deadcolor : DOTS_STYLE.DEAD_COLOR;
-      this.survivecolor = survivecolor ? survivecolor : DOTS_STYLE.SURVIVE_COLOR;
-      this.backgroundcolor = backgroundcolor ? backgroundcolor : BACKGROUND_COLOR;
+      this.deadColor = deadColor ? deadColor : DOTS_STYLE.DEAD_COLOR;
+      this.surviveColor = surviveColor ? surviveColor : DOTS_STYLE.SURVIVE_COLOR;
+      this.backgroundColor = backgroundColor ? backgroundColor : BACKGROUND_COLOR;
 
 
     } else {
@@ -32,7 +32,7 @@ export class GameOfLifeEngine {
   }
 
   public clear(): void {
-    this.context.fillStyle = this.backgroundcolor;
+    this.context.fillStyle = this.backgroundColor;
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
@@ -70,7 +70,7 @@ export class GameOfLifeEngine {
     this.clear();
     this.life.forEach((children, i) => {
       children.forEach((isSurvive, j) => {
-        this.context.fillStyle = isSurvive ? this.survivecolor : this.deadcolor;
+        this.context.fillStyle = isSurvive ? this.surviveColor : this.deadColor;
         this.drawDot(j, i);
       });
     });

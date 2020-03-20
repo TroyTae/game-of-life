@@ -650,7 +650,7 @@ renderTitle('Strict Still Life', 2);
   VeryLongShip,
   VeryLongSnake,
   ZQuadLoaf,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor, v.survivecolor, v.backgroundcolor));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor, v.surviveColor, v.backgroundColor));
 
 import BiBlock from './life/still-life/pseudo-still-life/bi-block';
 import BiBoat from './life/still-life/pseudo-still-life/bi-boat';
@@ -666,7 +666,7 @@ renderTitle('Pseudo Still Life', 2);
   PondOnPond,
   QuadPseudoStillLife,
   TriplePseudoStillLife,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor, v.survivecolor, v.backgroundcolor));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor, v.surviveColor, v.backgroundColor));
 
 import _7x9Eater from './life/still-life/eater/7x9-eater';
 import CenturyEater from './life/still-life/eater/century-eater';
@@ -686,7 +686,7 @@ renderTitle('Eater', 2);
   Eater4,
   Sidesnagger,
   TubWithTailEater,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor, v.survivecolor, v.backgroundcolor));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor, v.surviveColor, v.backgroundColor));
 
 import _1Beacon from './life/oscillator/1-beacon';
 import _14P2_3 from './life/oscillator/14P2_3';
@@ -742,13 +742,13 @@ renderTitle('Oscillator', 1);
   Almosymmetric,
   Pulsar,
   Toad,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor, v.survivecolor, v.backgroundcolor));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor, v.surviveColor, v.backgroundColor));
 
 import Beacon from './life/oscillator/babbling-brook/beacon';
 renderTitle('Babbling brook', 2);
 [
   Beacon,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor as string, v.survivecolor as string, v.backgroundcolor as string));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor as string, v.surviveColor as string, v.backgroundColor as string));
 
 import $rats from './life/oscillator/billiard-table/$rats';
 import _1_2_3 from './life/oscillator/billiard-table/1-2-3';
@@ -764,7 +764,7 @@ renderTitle('Billiard table', 2);
   _123P27_1,
   AVerage,
   Airforce,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor, v.survivecolor, v.backgroundcolor));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor, v.surviveColor, v.backgroundColor));
 
 import _14P2_1 from './life/oscillator/muttering-moat/14P2_1';
 import Blinker from './life/oscillator/muttering-moat/blinker';
@@ -772,4 +772,4 @@ renderTitle('Muttering moat', 2);
 [
   _14P2_1,
   Blinker,
-].forEach((v) => renderLife(v.title, v.life as Life[][], v.deadcolor, v.survivecolor, v.backgroundcolor));
+].forEach((v: LifePattern) => renderLife(v.title, v.life as Life[][], v.deadColor, v.surviveColor, v.backgroundColor));
