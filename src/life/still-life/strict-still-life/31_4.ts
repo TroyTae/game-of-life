@@ -12,4 +12,7 @@ export default {
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   ],
+  deadColor: '#FFDEAD',
+  surviveColor: '#0000FF',
+  backgroundColor: '#00FFFF',
 };

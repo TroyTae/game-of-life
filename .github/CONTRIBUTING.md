@@ -16,5 +16,13 @@ You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new
    - Pattern is 2D array
    - Fill 1 about black area
    - Fill 0 about white area
-6. Run `npm run test:lint` and validate your code
-7. Please send us PR!!
+6. __This step is optional__
+   - Put colors inside the pattern. Write down:
+     ```typescript
+     deadColor: '',
+     surviveColor: '',
+     backgroundColor: '',
+     ```
+   - Then, fill the single quotation marks with colors from this [page](https://www.w3schools.com/colors/colors_groups.asp)
+7. Run `npm run test:lint` and validate your code
+8. Please send us PR!!
