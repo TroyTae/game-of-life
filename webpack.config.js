@@ -21,8 +21,8 @@ module.exports = (env, arg) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./src/life/index.html",
-        favicon: "./src/life/favicon.gif",
+        template: "./src/index.html",
+        favicon: "./favicon.gif",
         minify: {
           collapseBooleanAttributes: true,
           collapseInlineTagWhitespace: true,
