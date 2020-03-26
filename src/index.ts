@@ -691,6 +691,7 @@ renderTitle('Eater', 2);
 import _1Beacon from './life/oscillator/1-beacon';
 import _14P2_3 from './life/oscillator/14P2_3';
 import _14P2_4 from './life/oscillator/14P2_4';
+import _20P2 from './life/oscillator/20P2';
 import _101 from './life/oscillator/101';
 import _106P135 from './life/oscillator/106P135';
 import _110P62 from './life/oscillator/110P62';
@@ -720,6 +721,7 @@ renderTitle('Oscillator', 1);
   _1Beacon,
   _14P2_3,
   _14P2_4,
+  _20P2,
   _101,
   _106P135,
   _110P62,
