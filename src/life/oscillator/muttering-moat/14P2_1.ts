@@ -2,15 +2,16 @@ export default {
   title: '14P2.1',
   life: [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 1, 1, 0, 1, 1, 1, 0, 0],
     [0, 1, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 1, 0, 0, 0, 1, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 1, 0],
     [0, 0, 1, 1, 1, 0, 1, 1, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
   ],
-    deadColor: '#FFDEAD',
-    surviveColor: '#0000FF',
-    backgroundColor: '#00FFFF',
-
+  deadColor: '#FFDEAD',
+  surviveColor: '#0000FF',
+  backgroundColor: '#00FFFF',
 };
