@@ -8,7 +8,8 @@ And I also hope this repository is a [good start point](https://github.com/TroyT
 
 ## Demo
 
-![Demo gif](./favicon.gif)
+![Demo gif](./favicon.gif)  
+Website: https://troytae.github.io/game-of-life/  
 
 ## Installation
 
