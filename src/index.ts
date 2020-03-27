@@ -709,6 +709,7 @@ import _145P20 from './life/oscillator/145P20';
 import _168P22_1 from './life/oscillator/168P22_1';
 import _186P24 from './life/oscillator/186P24';
 import _209P8 from './life/oscillator/209P8';
+import _230P8 from './life/oscillator/230P8';
 import AForAll from './life/oscillator/a-for-all';
 import AchimsOtherP16 from './life/oscillator/achims-other-p16';
 import AchimsP4 from './life/oscillator/achims-p4';
