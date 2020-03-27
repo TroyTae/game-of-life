@@ -694,6 +694,7 @@ import _14P2_4 from './life/oscillator/14P2_4';
 import _20P2 from './life/oscillator/20P2';
 import _21P2 from './life/oscillator/21P2';
 import _22P2 from './life/oscillator/22P2';
+import _22P36 from './life/oscillator/22P36';
 import _101 from './life/oscillator/101';
 import _106P135 from './life/oscillator/106P135';
 import _110P62 from './life/oscillator/110P62';
@@ -726,6 +727,7 @@ renderTitle('Oscillator', 1);
   _20P2,
   _21P2,
   _22P2,
+  _22P36,
   _101,
   _106P135,
   _110P62,
