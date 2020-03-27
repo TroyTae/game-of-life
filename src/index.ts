@@ -696,6 +696,7 @@ import _21P2 from './life/oscillator/21P2';
 import _22P2 from './life/oscillator/22P2';
 import _22P36 from './life/oscillator/22P36';
 import _23P2 from './life/oscillator/23P2';
+import _24P10 from './life/oscillator/24P10';
 import _101 from './life/oscillator/101';
 import _106P135 from './life/oscillator/106P135';
 import _110P62 from './life/oscillator/110P62';
