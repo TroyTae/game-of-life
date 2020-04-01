@@ -4,7 +4,9 @@ const Path = require("path");
 
 module.exports = (env, arg) => {
   const config = {
-    entry: "./src/index.ts",
+    entry: {
+      ["still-life/strict-still-life/15-bent-paperclip"]: "./src/life/still-life/strict-still-life/15-bent-paperclip.ts"
+    },
     output: {
       path: Path.join(process.cwd(), "docs"),
       filename: "[name].[chunkhash].js",
@@ -21,14 +23,19 @@ module.exports = (env, arg) => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        filename: "15-bent-paperclip.html",
+        template: "./src/template.js",
         favicon: "./favicon.gif",
+        templateParameters: {
+          asd: '11',
+        },
         minify: {
           collapseBooleanAttributes: true,
           collapseInlineTagWhitespace: true,
           collapseWhitespace: true,
           removeComments: true
-        }
+        },
+        chunks: ["15-bent-paperclip"]
       })
     ],
     devServer: {

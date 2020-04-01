@@ -1,0 +1,29 @@
+module.exports = (params) => {
+  return `
+    <!DOCTYPE html>
+
+    <html lang="en">
+      <head>
+        <title>Conway's Game of Life</title>
+        <base href="./">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0">
+        <style>
+          html, body {
+            margin: 0;
+            background-color: #E5E5EA;
+          }
+          body {
+            padding: 0 16px;
+          }
+          .container {
+            display: inline-block;
+            padding: 16px;
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>${params.asd}</body>
+    </html>
+  `;
+};
