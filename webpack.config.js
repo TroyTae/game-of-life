@@ -1,14 +1,44 @@
+const fs  = require("fs");
+const path = require("path");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const Path = require("path");
+
+const entry = (() => {
+  const tsExtRegExp = new RegExp('.ts$', 'g');
+  const rootDirectory = './src/life';
+  const rootDirectoryRegExp = new RegExp(`^${rootDirectory}/`, 'g');
+  const createEntry = (directory) => {
+    return fs.readdirSync(directory).reduce((obj, name) => {
+      const path = `${directory}/${name}`;
+      if (tsExtRegExp.test(name)) {
+        obj[path.replace(rootDirectoryRegExp, '').replace(tsExtRegExp, '')] = path;
+      } else {
+        obj = {
+          ...obj,
+          ...createEntry(path),
+        };
+      }
+      return obj;
+    }, {});
+  };
+  return createEntry(rootDirectory);
+})();
+
+const baseHTMLConfig = {
+  favicon: "./favicon.gif",
+  minify: {
+    collapseBooleanAttributes: true,
+    collapseInlineTagWhitespace: true,
+    collapseWhitespace: true,
+    removeComments: true
+  },
+};
 
 module.exports = (env, arg) => {
   const config = {
-    entry: {
-      ["still-life/strict-still-life/15-bent-paperclip"]: "./src/life/still-life/strict-still-life/15-bent-paperclip.ts"
-    },
+    entry,
     output: {
-      path: Path.join(process.cwd(), "docs"),
+      path: path.join(process.cwd(), "docs"),
       filename: "[name].[chunkhash].js",
       crossOriginLoading: false
     },
@@ -21,23 +51,22 @@ module.exports = (env, arg) => {
         loader: "ts-loader"
       }]
     },
-    plugins: [
+    plugins: Object.keys(entry).map((path) => (
       new HtmlWebpackPlugin({
-        filename: "15-bent-paperclip.html",
+        ...baseHTMLConfig,
+        filename: `${path}.html`,
         template: "./src/template.js",
-        favicon: "./favicon.gif",
-        templateParameters: {
-          asd: '11',
-        },
-        minify: {
-          collapseBooleanAttributes: true,
-          collapseInlineTagWhitespace: true,
-          collapseWhitespace: true,
-          removeComments: true
-        },
-        chunks: ["15-bent-paperclip"]
+        chunks: [path]
       })
-    ],
+    )).concat(
+      new HtmlWebpackPlugin({
+        ...baseHTMLConfig,
+        filename: `index.html`,
+        template: "./src/template.js",
+        templateParameters: { entry },
+        chunks: []
+      })
+    ),
     devServer: {
       port: 4200,
       historyApiFallback: true
