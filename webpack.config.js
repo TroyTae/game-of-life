@@ -2,6 +2,7 @@ const fs  = require("fs");
 const path = require("path");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const entry = (() => {
   const tsExtRegExp = new RegExp('.ts$', 'g');
@@ -43,7 +44,8 @@ module.exports = (env, arg) => {
       crossOriginLoading: false
     },
     resolve: {
-      extensions: [".js", ".ts"]
+      extensions: [".js", ".ts"],
+      plugins: [new TsconfigPathsPlugin()]
     },
     module: {
       rules: [{

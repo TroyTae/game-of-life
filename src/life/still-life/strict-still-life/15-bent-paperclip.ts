@@ -1,4 +1,4 @@
-import { renderLife } from "../../../renderer";
+import {renderLife} from 'renderer';
 
 renderLife('15 Bent Paperclip', [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
