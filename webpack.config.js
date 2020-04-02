@@ -58,6 +58,7 @@ module.exports = (env, arg) => {
         ...baseHTMLConfig,
         filename: `${path}.html`,
         template: "./src/template.js",
+        templateParameters: { path },
         chunks: [path]
       })
     )).concat(
