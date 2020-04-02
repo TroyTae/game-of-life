@@ -57,7 +57,7 @@ module.exports = (env, arg) => {
       new HtmlWebpackPlugin({
         ...baseHTMLConfig,
         filename: `${path}.html`,
-        template: "./src/template.js",
+        template: "./src/template/life.js",
         templateParameters: { path },
         chunks: [path]
       })
@@ -65,7 +65,7 @@ module.exports = (env, arg) => {
       new HtmlWebpackPlugin({
         ...baseHTMLConfig,
         filename: `index.html`,
-        template: "./src/template.js",
+        template: "./src/template/index.js",
         templateParameters: { entry },
         chunks: []
       })
