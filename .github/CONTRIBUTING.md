@@ -26,3 +26,7 @@ You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new
    - Then, fill the single quotation marks with colors from this [page](https://www.w3schools.com/colors/colors_groups.asp)
 7. Run `npm run test:lint` and validate your code
 8. Please send us PR!!
+
+## Helpful Tool
+
+[Bool Array Filler](https://lukestorry.github.io/bool-array-filler/) by @LukeStorry
