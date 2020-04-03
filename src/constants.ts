@@ -7,5 +7,3 @@ export enum DOTS_STYLE {
 }
 
 export const BACKGROUND_COLOR = '#AEAEB2';
-
-export const CONTAINER_CLASS_NAME = 'container';

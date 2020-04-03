@@ -38,6 +38,18 @@ const baseHTMLConfig = {
 module.exports = (env, arg) => {
   const config = {
     entry,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          common: {
+            name: 'common',
+            minChunks: 3,
+            chunks: 'all',
+            enforce: true,
+          }
+        },
+      },
+    },
     output: {
       path: path.join(process.cwd(), "docs"),
       filename: "[name].[chunkhash].js",
