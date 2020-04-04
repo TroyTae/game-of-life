@@ -4,16 +4,17 @@
     "extends": "troy-recommended"
   },
   "devDependencies": {
-    "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
+    "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.4",
     "one-spaces": "^1.3.4",
     "ts-loader": "^6.2.2",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3",
-    "tsconfig-paths-webpack-plugin": "^3.2.0"
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
     "start": "webpack-dev-server",

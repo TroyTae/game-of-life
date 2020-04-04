@@ -63,6 +63,9 @@ module.exports = (env, arg) => {
       rules: [{
         test: /\.ts$/,
         loader: "ts-loader"
+      }, {
+        test: /\.css$/,
+        loader: "file-loader"
       }]
     },
     plugins: Object.keys(entry).map((path) => (
