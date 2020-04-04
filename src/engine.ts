@@ -38,14 +38,14 @@ export class GameOfLifeEngine {
 
   public startLife(): void {
     if (!this.intervalKey) {
+      this.drawDots();
       this.intervalKey = window.setInterval(() => {
-        this.drawDots();
-        const life = this.life;
-        this.life = life.map((children, i) => (
+        this.life = this.life.map((children, i) => (
           children.map((isSurvive, j) => (
             this.nextLife(j, i, isSurvive)
           ))
         ));
+        this.drawDots();
       }, 500);
     }
   }
