@@ -2,8 +2,8 @@ export enum DOTS_STYLE {
   WIDTH = 16,
   HEIGHT = 16,
   MARGIN = 2,
-  DEAD_COLOR = '#F2F2F7',
-  SURVIVE_COLOR = '#1C1C1E',
+  DEAD_COLOR = '#FFF',
+  SURVIVE_COLOR = '#000',
 }
 
-export const BACKGROUND_COLOR = '#AEAEB2';
+export const BACKGROUND_COLOR = '#FFF';
