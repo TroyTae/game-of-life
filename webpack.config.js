@@ -4,27 +4,6 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-const entries = (() => {
-  const tsExtRegExp = new RegExp('.ts$', 'g');
-  const rootDirectory = './src/life';
-  const rootDirectoryRegExp = new RegExp(`^${rootDirectory}/`, 'g');
-  const createEntry = (directory) => {
-    return fs.readdirSync(directory).reduce((obj, name) => {
-      const path = `${directory}/${name}`;
-      if (tsExtRegExp.test(name)) {
-        obj[path.replace(rootDirectoryRegExp, '').replace(tsExtRegExp, '')] = path;
-      } else {
-        obj = {
-          ...obj,
-          ...createEntry(path),
-        };
-      }
-      return obj;
-    }, {});
-  };
-  return createEntry(rootDirectory);
-})();
-
 const baseHTMLConfig = {
   minify: {
     collapseBooleanAttributes: true,
@@ -34,9 +13,37 @@ const baseHTMLConfig = {
   },
 };
 
+const data = (() => {
+  const tsExtRegExp = new RegExp('.ts$', 'g');
+  const rootDirectory = './src/life';
+  const rootDirectoryRegExp = new RegExp(`^${rootDirectory}/`, 'g');
+  const parseDirectory = (directory) => {
+    return fs.readdirSync(directory).reduce((obj, name) => {
+      const path = `${directory}/${name}`;
+      if (tsExtRegExp.test(name)) {
+        const entry = path.replace(rootDirectoryRegExp, '').replace(tsExtRegExp, '');
+        obj.entries[entry] = path;
+        obj.hierarchy[name] = entry;
+      } else {
+        const data = parseDirectory(path);
+        obj.entries = {
+          ...obj.entries,
+          ...data.entries,
+        };
+        obj.hierarchy[name] = data.hierarchy;
+      }
+      return obj;
+    }, {
+      entries: {},
+      hierarchy: {},
+    });
+  };
+  return parseDirectory(rootDirectory);
+})();
+
 module.exports = (env, arg) => {
   const config = {
-    entry: entries,
+    entry: data.entries,
     optimization: {
       splitChunks: {
         cacheGroups: {
@@ -67,23 +74,24 @@ module.exports = (env, arg) => {
         loader: "file-loader"
       }]
     },
-    plugins: Object.keys(entries).map((entry) => (
-      new HtmlWebpackPlugin({
-        ...baseHTMLConfig,
-        filename: `${entry}.html`,
-        template: "./src/template/life.js",
-        templateParameters: { entry },
-        chunks: [entry]
-      })
-    )).concat(
+    plugins: [
+      ...Object.keys(data.entries).map((entry) => (
+        new HtmlWebpackPlugin({
+          ...baseHTMLConfig,
+          filename: `${entry}.html`,
+          template: "./src/template/life.js",
+          templateParameters: { entry },
+          chunks: [entry]
+        })
+      )),
       new HtmlWebpackPlugin({
         ...baseHTMLConfig,
         filename: `index.html`,
         template: "./src/template/index.js",
-        templateParameters: { entries },
+        templateParameters: { hierarchy: data.hierarchy },
         chunks: []
       })
-    ),
+    ],
     devServer: {
       port: 4200,
       historyApiFallback: true

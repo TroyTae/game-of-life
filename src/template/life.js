@@ -1,8 +1,7 @@
 const document = require('./document');
 
-module.exports = (params) => {
-  const entry = params.entry;
-  const title = require(`../life/${entry}`).title;
+module.exports = ({entry}) => {
+  const {title} = require(`../life/${entry}`);
   return document({
     title,
     bodyHTML: `<h1>${title}</h1>`,
