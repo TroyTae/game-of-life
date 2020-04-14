@@ -1,1 +1,1 @@
-resolve #issue_number
+closes #NUM
