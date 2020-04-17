@@ -41,12 +41,6 @@ npm run start
 ```
 Then you can go to http://localhost:4200 in your browser.
 
-If you want to build, use this command.
-```
-npm run build
-```
-Then you can see the built files in the `docs` directory.
-
 ## Contributors
 
 <a href="https://github.com/TroyTae/game-of-life/graphs/contributors">
