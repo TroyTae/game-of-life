@@ -1,6 +1,7 @@
 const fs  = require("fs");
 const path = require("path");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const {clearDirectory} = require("troyjs/node");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
@@ -69,9 +70,6 @@ module.exports = (env, arg) => {
       rules: [{
         test: /\.ts$/,
         loader: "ts-loader"
-      }, {
-        test: /\.(css|gif)$/,
-        loader: "file-loader"
       }]
     },
     plugins: [
@@ -90,7 +88,8 @@ module.exports = (env, arg) => {
         template: "./src/template/index.js",
         templateParameters: { hierarchy: data.hierarchy },
         chunks: []
-      })
+      }),
+      new CopyWebpackPlugin([{ from: 'static' }])
     ],
     devServer: {
       port: 4200,
@@ -99,9 +98,7 @@ module.exports = (env, arg) => {
   };
 
   if (arg.mode === "production") {
-    config.plugins = config.plugins.concat([
-      new CleanWebpackPlugin()
-    ]);
+    clearDirectory('./docs');
   }
 
   return config;

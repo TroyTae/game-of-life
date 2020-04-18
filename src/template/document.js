@@ -4,7 +4,7 @@ module.exports = ({
   relativePath,
 }) => {
   const title = `Conway's Game of Life${subTitle ? ` - ${subTitle}` : ''}`;
-  const favicon = relativePath + require('./favicon.gif').default;
+  const favicon = `${relativePath}favicon.gif`;
   const description = `Conway's Game of Life web version!`;
   return `
     <!DOCTYPE html>
@@ -28,7 +28,7 @@ module.exports = ({
         <meta property="og:description" content="${description}">
 
         <link rel="shortcut icon" href="${favicon}">
-        <link rel="stylesheet" href="${relativePath}${require('./style.css').default}">
+        <link rel="stylesheet" href="${relativePath}style.css">
       </head>
       <body>
         ${bodyHTML}
