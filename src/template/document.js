@@ -1,9 +1,9 @@
 module.exports = ({
-  title,
+  subTitle,
   bodyHTML,
   relativePath,
 }) => {
-  const title = `Conway's Game of Life${title ? ` - ${title}` : ''}`;
+  const title = `Conway's Game of Life${subTitle ? ` - ${subTitle}` : ''}`;
   const favicon = relativePath + require('./favicon.gif').default;
   const description = `Conway's Game of Life web version!`;
   return `
