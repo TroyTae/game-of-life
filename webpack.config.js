@@ -1,9 +1,9 @@
-const fs  = require("fs");
-const path = require("path");
-const {clearDirectory} = require("troyjs/node");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const fs  = require('fs-extra');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
+const distDir = 'docs';
 
 const baseHTMLConfig = {
   minify: {
@@ -43,6 +43,7 @@ const data = (() => {
 })();
 
 module.exports = (env, arg) => {
+  const isProd = arg.mode === 'production';
   const config = {
     entry: data.entries,
     optimization: {
@@ -58,18 +59,18 @@ module.exports = (env, arg) => {
       },
     },
     output: {
-      path: path.join(process.cwd(), "docs"),
-      filename: "[name].[chunkhash].js",
+      path: path.join(process.cwd(), distDir),
+      filename: '[name].[chunkhash].js',
       crossOriginLoading: false
     },
     resolve: {
-      extensions: [".js", ".ts"],
+      extensions: ['.js', '.ts'],
       plugins: [new TsconfigPathsPlugin()]
     },
     module: {
       rules: [{
         test: /\.ts$/,
-        loader: "ts-loader"
+        loader: 'ts-loader'
       }]
     },
     plugins: [
@@ -77,7 +78,7 @@ module.exports = (env, arg) => {
         new HtmlWebpackPlugin({
           ...baseHTMLConfig,
           filename: `${entry}.html`,
-          template: "./src/template/life.js",
+          template: './src/template/life.js',
           templateParameters: { entry },
           chunks: [entry]
         })
@@ -85,11 +86,10 @@ module.exports = (env, arg) => {
       new HtmlWebpackPlugin({
         ...baseHTMLConfig,
         filename: `index.html`,
-        template: "./src/template/index.js",
+        template: './src/template/index.js',
         templateParameters: { hierarchy: data.hierarchy },
         chunks: []
-      }),
-      new CopyWebpackPlugin([{ from: 'static' }])
+      })
     ],
     devServer: {
       port: 4200,
@@ -97,9 +97,10 @@ module.exports = (env, arg) => {
     },
   };
 
-  if (arg.mode === "production") {
-    clearDirectory('./docs');
+  if (isProd) {
+    fs.emptyDirSync(distDir);
   }
+  fs.copySync('static', isProd ? distDir : '.');
 
   return config;
 };
