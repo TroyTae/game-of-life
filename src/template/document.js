@@ -3,6 +3,7 @@ module.exports = ({
   bodyHTML,
   relativePath,
 }) => {
+  const url = 'https://troytae.github.io/game-of-life/';
   const title = `Conway's Game of Life${subTitle ? ` - ${subTitle}` : ''}`;
   const favicon = `${relativePath}favicon.gif`;
   const description = `Conway's Game of Life web version!`;
@@ -20,7 +21,7 @@ module.exports = ({
 
         <meta property="og:title" content="${title}">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://troytae.github.io/game-of-life/">
+        <meta property="og:url" content="${url}">
         <meta property="og:image" content="${favicon}">
         <meta property="og:image:type" content="image/gif">
         <meta property="og:image:width" content="336">
@@ -29,6 +30,15 @@ module.exports = ({
 
         <link rel="shortcut icon" href="${favicon}">
         <link rel="stylesheet" href="${relativePath}style.css">
+
+        <script type="application/ld+json">{
+          "@id": "${url}",
+          "@context": "http://schema.org",
+          "@type": "Science",
+          "name": "${title}",
+          "description": "${description}",
+          "image": "${favicon}"
+        }</script>
       </head>
       <body>
         ${bodyHTML}
