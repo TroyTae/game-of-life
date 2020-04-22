@@ -1,6 +1,6 @@
 import {renderLife} from 'renderer';
 
-export const title = 'Achim\'s p11';
+export const title = `Achim's p11`;
 
 renderLife([
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
