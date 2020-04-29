@@ -13,5 +13,8 @@
     "build": "webpack --mode=production",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.0"
   }
 }

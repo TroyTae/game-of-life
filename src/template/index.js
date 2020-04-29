@@ -19,6 +19,8 @@ module.exports = ({hierarchy}) => {
   return document({
     bodyHTML: `
       <h1>Conway's Game of Life</h1>
+      <a href="../../docs/playground.html">Playground</a>
+
       ${renderLife(hierarchy, 2)}
     `,
     relativePath: './'
