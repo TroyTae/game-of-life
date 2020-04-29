@@ -16,8 +16,8 @@ code {
 
 .cell {
   margin: -1px;
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 45px;
+  max-height: 45px;
   border: 2px white solid;
   border-radius: 0;
   background-color: lightgray;
