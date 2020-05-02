@@ -56,6 +56,32 @@ const Resizer = ({ array, updateCallback }) => {
   `;
 };
 
+const LifeProvider = ({array, updateCallback}) => {
+
+  const resetLife = () => {
+    array = Array.from({ length: array.length }, () => Array.from({ length: array[0].length }, () => 0));
+    updateCallback(array);
+  };
+
+  return html`
+      <button
+        type="button"
+        class="btn lifers"
+      >Start Life</button>
+
+    <button
+      type="button"
+      class="btn lifers"
+    >Stop Life</button>
+
+      <button
+        type="button"
+        class="btn lifers"
+        onclick=${() => resetLife()}
+      >Reset Life</button>
+    `;
+};
+
 const Input = ({ array, updateCallback }) => {
   const handleClick = (rowIndex, colIndex) => () => {
     array[rowIndex][colIndex] ^= 1;
@@ -91,6 +117,7 @@ const Input = ({ array, updateCallback }) => {
     <section>
       ${array.map(createRow)}
       <${Resizer} array=${array} updateCallback=${updateCallback} />
+      <${LifeProvider} array=${array} updateCallback=${updateCallback} />
     </section>
   `;
 };
