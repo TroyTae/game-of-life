@@ -58,7 +58,93 @@ const Resizer = ({ array, updateCallback }) => {
 
 const LifeProvider = ({array, updateCallback}) => {
 
+  // let nextLife = (x, y, isSurvive) =>{
+  //   const c = (
+  //     isSurvive(row - 1, col - 1) +
+  //     isSurvive(row - 1, col) +
+  //     isSurvive(row - 1, col + 1) +
+  //     isSurvive(row, col - 1) +
+  //     isSurvive(row, col + 1) +
+  //     isSurvive(row + 1, col - 1) +
+  //     isSurvive(row + 1, col) +
+  //     isSurvive(row + 1, col + 1)
+  //
+  //   );
+  //   return (c === 3 || (isSurvive && c === 2)) ? 1 : 0;
+  // }
+
+  let isSurvive = (x, y) => {
+    return (array[x] && array[x][y]) ? 1 : 0;
+  };
+
+  let firstRow = (row, col, isSurvive) =>{
+    const count = (
+      this.isSurvive(row, col - 1) +
+      this.isSurvive(row, col + 1) +
+      this.isSurvive(row + 1, col - 1) +
+      this.isSurvive(row + 1, col) +
+      this.isSurvive(row + 1, col + 1)
+    );
+    return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
+  }
+
+  let nextArray = [];
+  for(let i = 0; i < array.length; i++) {
+    nextArray[i] = [];
+    for(let j = 0; j < array[0].length; j++) {
+      nextArray[i][j] = 0;
+    }
+  }
+
+  const startLife = () => {
+
+        array.forEach((row, i) => {
+          array.forEach((isSurvive, j) => {
+
+            if(i == 0){
+              if(j == 0){
+                if( (array[i+1][j] == 1) && (array[i+1][j+1]==1) && (array[i][j+1]==1) ){
+                  nextArray[i][j] = 1;
+                }
+
+              // } else if(j < array[0].length-1) {
+              //     nextArray[i][j] = firstRow(i, j, isSurvive);
+
+              } else {//if(j == array[0].length-1) {
+                if( (array[i+1][j] == 1) && (array[i+1][j-1]==1) && (array[i][j-1]==1) ){
+                  nextArray[i][j] = 1;
+                }
+              }
+            }
+
+            if(i == array.length-1){
+              if(j == 0){
+                if( (array[i-1][j] == 1) && (array[i-1][j+1]==1) && (array[i][j+1]==1) ){
+                  nextArray[i][j] = 1;
+                }
+
+              // } else if(j < array[0].length-1) {
+              //     nextArray[i][j] = firstRow(i, j, isSurvive);
+
+              } else {
+                if( (array[i-1][j] == 1) && (array[i-1][j-1]==1) && (array[i][j-1]==1) ){
+                  nextArray[i][j] = 1;
+                }
+              }
+            }
+
+          });
+        });
+      array = nextArray;
+      updateCallback(array);
+    // }, 2000);
+
+  };
+
+
   const resetLife = () => {
+
+    // clearInterval();
     array = Array.from({ length: array.length }, () => Array.from({ length: array[0].length }, () => 0));
     updateCallback(array);
   };
@@ -67,6 +153,7 @@ const LifeProvider = ({array, updateCallback}) => {
       <button
         type="button"
         class="btn lifers"
+        onclick=${() => startLife()}
       >Start Life</button>
 
     <button
