@@ -28,7 +28,7 @@ const Resizer = ({ array, updateCallback }) => {
     updateCallback(array);
   };
 
-  const clamped = (n) => Math.min(Math.max(n, 1), 99);
+  const clamped = (n) => Math.min(Math.max(n, 3), 99);
 
   return html`
     <div class="resizer">
@@ -57,37 +57,70 @@ const Resizer = ({ array, updateCallback }) => {
 };
 
 const LifeProvider = ({array, updateCallback}) => {
-
-  // let nextLife = (x, y, isSurvive) =>{
-  //   const c = (
-  //     isSurvive(row - 1, col - 1) +
-  //     isSurvive(row - 1, col) +
-  //     isSurvive(row - 1, col + 1) +
-  //     isSurvive(row, col - 1) +
-  //     isSurvive(row, col + 1) +
-  //     isSurvive(row + 1, col - 1) +
-  //     isSurvive(row + 1, col) +
-  //     isSurvive(row + 1, col + 1)
-  //
-  //   );
-  //   return (c === 3 || (isSurvive && c === 2)) ? 1 : 0;
-  // }
-
-  let isSurvive = (x, y) => {
-    return (array[x] && array[x][y]) ? 1 : 0;
-  };
-
+  //The lambda that changes the cells of the first row
   let firstRow = (row, col, isSurvive) =>{
     const count = (
-      this.isSurvive(row, col - 1) +
-      this.isSurvive(row, col + 1) +
-      this.isSurvive(row + 1, col - 1) +
-      this.isSurvive(row + 1, col) +
-      this.isSurvive(row + 1, col + 1)
+      array[row][col - 1] +
+      array[row][col + 1] +
+      array[row + 1][col - 1] +
+      array[row + 1][col] +
+      array[row + 1][col + 1]
     );
     return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
   }
 
+  //The lambda that changes the cells of the last row
+  let lastRow = (row, col, isSurvive) =>{
+    const count = (
+      array[row][col - 1] +
+      array[row][col + 1] +
+      array[row - 1][col - 1] +
+      array[row - 1][col] +
+      array[row - 1][col + 1]
+    );
+    return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
+  }
+
+  //The lambda that changes the cells of the first collumn
+  let firstCollumn = (row, col, isSurvive) =>{
+    const count = (
+      array[row - 1][col] +
+      array[row - 1][col + 1] +
+      array[row][col + 1] +
+      array[row + 1][col] +
+      array[row + 1][col + 1]
+    );
+    return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
+  }
+
+  //The lambda that changes cells of the last collumn
+  let lastCollumn = (row, col, isSurvive) =>{
+    const count = (
+      array[row - 1][col] +
+      array[row - 1][col - 1] +
+      array[row][col - 1] +
+      array[row + 1][col] +
+      array[row + 1][col - 1]
+    );
+    return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
+  }
+
+  //The lambda that changes the cells of the middle rows/collumns
+  let middleCells = (row, col, isSurvive) =>{
+    const count = (
+      array[row - 1][col -1] +
+      array[row - 1][col] +
+      array[row - 1][col + 1] +
+      array[row][col - 1] +
+      array[row][col + 1] +
+      array[row + 1][col - 1] +
+      array[row + 1][col] +
+      array[row + 1][col + 1]
+    );
+    return (count === 3 || (isSurvive && count === 2)) ? 1 : 0;
+  }
+
+  //Creating a new array to place the next phase of the current pattern
   let nextArray = [];
   for(let i = 0; i < array.length; i++) {
     nextArray[i] = [];
@@ -98,52 +131,60 @@ const LifeProvider = ({array, updateCallback}) => {
 
   const startLife = () => {
 
-        array.forEach((row, i) => {
-          array.forEach((isSurvive, j) => {
-
-            if(i == 0){
-              if(j == 0){
-                if( (array[i+1][j] == 1) && (array[i+1][j+1]==1) && (array[i][j+1]==1) ){
-                  nextArray[i][j] = 1;
-                }
-
-              // } else if(j < array[0].length-1) {
-              //     nextArray[i][j] = firstRow(i, j, isSurvive);
-
-              } else {//if(j == array[0].length-1) {
-                if( (array[i+1][j] == 1) && (array[i+1][j-1]==1) && (array[i][j-1]==1) ){
-                  nextArray[i][j] = 1;
-                }
-              }
+    array.forEach((row, i) => {
+      row.forEach((isSurvive, j) => {
+        if(i == 0){ //Checking first row's cells
+          if(j == 0){
+            nextArray[i][j] = 0;
+            const count = array[i+1][j] + array[i+1][j+1] + array[i][j+1];
+            if(count === 3 || (isSurvive && count === 2)) {
+              nextArray[i][j] = 1;
             }
-
-            if(i == array.length-1){
-              if(j == 0){
-                if( (array[i-1][j] == 1) && (array[i-1][j+1]==1) && (array[i][j+1]==1) ){
-                  nextArray[i][j] = 1;
-                }
-
-              // } else if(j < array[0].length-1) {
-              //     nextArray[i][j] = firstRow(i, j, isSurvive);
-
-              } else {
-                if( (array[i-1][j] == 1) && (array[i-1][j-1]==1) && (array[i][j-1]==1) ){
-                  nextArray[i][j] = 1;
-                }
-              }
+          } else if(j < array[0].length-1) {
+              nextArray[i][j] = firstRow(i, j, isSurvive);
+          } else {
+            nextArray[i][j] = 0;
+            const count = array[i+1][j] + array[i+1][j-1] + array[i][j-1];
+            if(count ===3 || isSurvive && count === 2) {
+              nextArray[i][j] = 1;
             }
+          }
+        }
+        else if(i < array.length - 1) { //Checking middle rows' cells
+          if(j == 0) { //Checking first collumn
+              nextArray[i][j] = firstCollumn(i, j, isSurvive);
+          } else if(j < array[0].length - 1) { //Checking middle collumns
+              nextArray[i][j] = middleCells(i, j, isSurvive);
+          } else{ //Checking last collumn
+              nextArray[i][j] = lastCollumn(i, j, isSurvive);
+          }
+        }
+        else { //Checking last row's cells
+          if(j == 0){
+            nextArray[i][j] = 0;
+            const count = array[i-1][j] + array[i-1][j+1] + array[i][j+1];
+            if(count ===3 || isSurvive && count === 2){
+              nextArray[i][j] = 1;
+            }
+          } else if(j < array[0].length - 1) {
+              nextArray[i][j] = lastRow(i, j, isSurvive);
+          } else {
+            nextArray[i][j] = 0;
+            const count = array[i-1][j] + array[i-1][j-1] + array[i][j-1];
+            if(count ===3 || isSurvive && count === 2){
+              nextArray[i][j] = 1;
+            }
+          }
+        }
+      });
+    });
 
-          });
-        });
-      array = nextArray;
-      updateCallback(array);
-    // }, 2000);
-
-  };
-
+  array = nextArray;
+  updateCallback(array);
+  // }, 2000);
+};
 
   const resetLife = () => {
-
     // clearInterval();
     array = Array.from({ length: array.length }, () => Array.from({ length: array[0].length }, () => 0));
     updateCallback(array);
