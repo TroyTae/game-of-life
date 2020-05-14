@@ -129,7 +129,8 @@ const LifeProvider = ({array, updateCallback}) => {
       nextArray[i][j] = 0;
     }
   }
-  const intervalKey = null;
+  var intervalKey = null;
+
   const startLife = () => {
 
     intervalKey = window.setInterval(() => {
@@ -187,10 +188,13 @@ const LifeProvider = ({array, updateCallback}) => {
     }, 500);
   };
 
+  const stopLife = () => {
+    clearInterval(intervalKey);
+
+  }
+
   const resetLife = () => {
-    // clearInterval();
-    array = Array.from({ length: array.length }, () => Array.from({ length: array[0].length }, () => 0));
-    updateCallback(array);
+    location.reload(); //reloads the current page, hence resets the table.
   };
 
   return html`
@@ -199,12 +203,11 @@ const LifeProvider = ({array, updateCallback}) => {
         class="btn lifers"
         onclick=${() => startLife()}
       >Start Life</button>
-
     <button
       type="button"
       class="btn lifers"
+      onclick=${() => stopLife()}
     >Stop Life</button>
-
       <button
         type="button"
         class="btn lifers"
