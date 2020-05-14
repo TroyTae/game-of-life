@@ -16,8 +16,8 @@ code {
 
 .cell {
   margin: -1px;
-  max-width: 45px;
-  max-height: 45px;
+  max-width: 30px;
+  max-height: 30px;
   border: 2px white solid;
   border-radius: 0;
   background-color: lightgray;
@@ -29,10 +29,20 @@ button:hover {
   background-color: grey;
 }
 
-.lifers{
-  width:120px;
-  height:30px;"
+.lifers {
+  background-color: #555555; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
+
+
 
 input {
   text-align: center;
