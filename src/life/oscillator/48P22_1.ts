@@ -1,4 +1,4 @@
-import { renderLife } from 'renderer';
+import {renderLife} from 'renderer';
 
 export const title = '48P22.1';
 
