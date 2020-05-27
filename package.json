@@ -13,22 +13,5 @@
     "build": "webpack --mode=production",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/"
-  },
-  "name": "game-of-life",
-  "description": "Conway's Game of Life web version!  \r I hope this repository is a good lab for Game of Life.  \r And I also hope this repository is a [good start point](https://github.com/TroyTae/game-of-life/contribute) for first contributor.",
-  "version": "1.0.0",
-  "main": "webpack.config.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pratima0111/game-of-life.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pratima0111/game-of-life/issues"
-  },
-  "homepage": "https://github.com/pratima0111/game-of-life#readme"
+  }
 }
