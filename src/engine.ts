@@ -24,8 +24,6 @@ export class GameOfLifeEngine {
       this.deadColor = deadColor ? deadColor : DOTS_STYLE.DEAD_COLOR;
       this.surviveColor = surviveColor ? surviveColor : DOTS_STYLE.SURVIVE_COLOR;
       this.backgroundColor = backgroundColor ? backgroundColor : BACKGROUND_COLOR;
-
-
     } else {
       throw 'Failed to create context';
     }
