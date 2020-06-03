@@ -133,25 +133,15 @@ const LifeProvider = ({array, updateTable}) => {
     return nextArray;
   }
   var intervalKey = null;
-
-  var intervalKey;
   var running = false;
 
   function startLife(){
     newarr();
-    intervalKey = window.setInterval(() => {nextPattern()}, 2000);
-
-  }
-
-  function stopLife() {
-    running = false;
-    if (running == false) {window.clearTimeout(intervalKey);}
-    intervalKey = null;
+    intervalKey = window.setInterval(() => {nextPattern()}, 2000); //Works only if button is pressed 2 times
   }
 
   function nextPattern(){
     newarr();
-
       array.forEach((row, i) => {
         row.forEach((isSurvive, j) => {
           if(i == 0){ //Checking first row's cells
@@ -208,7 +198,7 @@ const LifeProvider = ({array, updateTable}) => {
         class="btn lifers"
         onclick=${() => startLife() }
       >Start Life</button>
-      
+
       <button
         type="button"
         class="btn lifers"
