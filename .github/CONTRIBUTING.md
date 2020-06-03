@@ -19,11 +19,12 @@ You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new
 6. __This step is optional__
    - Put colors inside the pattern. Write down:
      ```typescript
-     deadColor: '',
-     surviveColor: '',
-     backgroundColor: '',
+     '',
+     '',
+     '',
      ```
-   - Then, fill the single quotation marks with colors from this [page](https://www.w3schools.com/colors/colors_groups.asp)
+   - Then, fill the single quotation marks with colors from this [page](https://www.w3schools.com/colors/colors_groups.asp).
+     The first line(or else quotes) is for the dead color, the second for the survive, and the third for the background.
 7. Run `npm run test:lint` and validate your code
 8. Please send us PR!!
 
