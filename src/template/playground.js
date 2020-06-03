@@ -58,9 +58,10 @@ const Resizer = ({ array, updateCallback }) => {
 };
 
 const LifeProvider = ({array, updateTable}) => {
+  var count = 0;
   //The lambda that changes the cells of the first row
   function firstRow(row, col, isSurvive){
-    var count = (
+    count = (
       array[row][col - 1] +
       array[row][col + 1] +
       array[row + 1][col - 1] +
@@ -72,7 +73,7 @@ const LifeProvider = ({array, updateTable}) => {
 
   //The lambda that changes the cells of the last row
   function lastRow(row, col, isSurvive){
-    var count = (
+    count = (
       array[row][col - 1] +
       array[row][col + 1] +
       array[row - 1][col - 1] +
@@ -84,7 +85,7 @@ const LifeProvider = ({array, updateTable}) => {
 
   //The lambda that changes the cells of the first collumn
   function firstCollumn(row, col, isSurvive){
-    var count = (
+    count = (
       array[row - 1][col] +
       array[row - 1][col + 1] +
       array[row][col + 1] +
@@ -96,7 +97,7 @@ const LifeProvider = ({array, updateTable}) => {
 
   //The lambda that changes cells of the last collumn
   function lastCollumn(row, col, isSurvive){
-    var count = (
+    count = (
       array[row - 1][col] +
       array[row - 1][col - 1] +
       array[row][col - 1] +
@@ -108,7 +109,7 @@ const LifeProvider = ({array, updateTable}) => {
 
   //The lambda that changes the cells of the middle rows/collumns
   function middleCells(row, col, isSurvive){
-    var count = (
+    count = (
       array[row - 1][col - 1] +
       array[row - 1][col] +
       array[row - 1][col + 1] +
@@ -124,9 +125,9 @@ const LifeProvider = ({array, updateTable}) => {
   //Creating a new array to place the next phase of the current pattern
   var nextArray = [];
   function newarr(){
-    for(var i = 0; i < array.length; i++) {
+    for(let i = 0; i < array.length; i++) {
       nextArray[i] = [];
-      for(var j = 0; j < array[0].length; j++) {
+      for(let j = 0; j < array[0].length; j++) {
         nextArray[i][j] = 0;
       }
     }
@@ -146,14 +147,14 @@ const LifeProvider = ({array, updateTable}) => {
         row.forEach((isSurvive, j) => {
           if(i == 0){ //Checking first row's cells
             if(j == 0){
-              var count = array[i+1][j] + array[i+1][j+1] + array[i][j+1];
+              count = array[i+1][j] + array[i+1][j+1] + array[i][j+1];
               if(count === 3 || (isSurvive && count === 2)) {
                 nextArray[i][j] = 1;
               }
             } else if(j < array[0].length-1) {
                 nextArray[i][j] = firstRow(i, j, isSurvive);
             } else {
-              var count = array[i+1][j] + array[i+1][j-1] + array[i][j-1];
+              count = array[i+1][j] + array[i+1][j-1] + array[i][j-1];
               if(count ===3 || isSurvive && count === 2) {
                 nextArray[i][j] = 1;
               }
@@ -170,14 +171,14 @@ const LifeProvider = ({array, updateTable}) => {
           }
           else { //Checking last row's cells
             if(j == 0){
-              var count = array[i-1][j] + array[i-1][j+1] + array[i][j+1];
+              count = array[i-1][j] + array[i-1][j+1] + array[i][j+1];
               if(count ===3 || isSurvive && count === 2){
                 nextArray[i][j] = 1;
               }
             } else if(j < array[0].length - 1) {
                 nextArray[i][j] = lastRow(i, j, isSurvive);
             } else {
-              var count = array[i-1][j] + array[i-1][j-1] + array[i][j-1];
+              count = array[i-1][j] + array[i-1][j-1] + array[i][j-1];
               if(count ===3 || isSurvive && count === 2){
                 nextArray[i][j] = 1;
               }
