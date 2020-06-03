@@ -4,6 +4,7 @@ import {
   Component,
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
+
 const Resizer = ({ array, updateCallback }) => {
   const setWidth = (n) => {
     if (n > array[0].length) {
@@ -131,6 +132,7 @@ const LifeProvider = ({array, updateTable}) => {
     }
     return nextArray;
   }
+  var intervalKey = null;
 
   var intervalKey;
   var running = false;
@@ -194,7 +196,7 @@ const LifeProvider = ({array, updateTable}) => {
         });
       });
       updateTable(nextArray);
-    }
+  };
 
   const resetLife = () => {
     location.reload();
@@ -206,13 +208,7 @@ const LifeProvider = ({array, updateTable}) => {
         class="btn lifers"
         onclick=${() => startLife() }
       >Start Life</button>
-
-    <button
-      type="button"
-      class="btn lifers"
-      onclick=${() => stopLife() }
-    >Stop Life</button>
-
+      
       <button
         type="button"
         class="btn lifers"
