@@ -1,12 +1,11 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Very long melusine';
-
-renderLife([
+const title = `Very long melusine`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 1, 0, 0, 0],
   [0, 0, 1, 0, 0, 1, 0, 1, 0, 0],
   [0, 0, 1, 0, 1, 0, 0, 1, 0, 0],
   [0, 0, 0, 1, 0, 0, 0, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

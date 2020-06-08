@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Ship-tie';
-
-renderLife([
+const title = `Ship-tie`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 0, 0],
   [0, 1, 0, 1, 0, 0, 0, 0],
@@ -11,4 +8,6 @@ renderLife([
   [0, 0, 0, 0, 1, 0, 1, 0],
   [0, 0, 0, 0, 0, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

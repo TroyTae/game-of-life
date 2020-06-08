@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Tub-with-tail eater';
-
-renderLife([
+const title = `Tub-with-tail eater`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0],
   [0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0],
@@ -11,4 +8,6 @@ renderLife([
   [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

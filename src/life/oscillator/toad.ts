@@ -1,12 +1,11 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Toad';
-
-renderLife([
+const title = `Toad`;
+const life = [
   [0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0],
   [0, 0, 1, 1, 1, 0],
   [0, 1, 1, 1, 0, 0],
   [0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

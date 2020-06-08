@@ -1,11 +1,10 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Long snake';
-
-renderLife([
+const title = `Long snake`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 0],
   [0, 1, 0, 1, 0, 1, 0],
   [0, 0, 0, 0, 1, 1, 0],
   [0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

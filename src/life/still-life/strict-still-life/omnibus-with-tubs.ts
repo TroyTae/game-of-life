@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Omnibus with tubs';
-
-renderLife([
+const title = `Omnibus with tubs`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],
   [0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0],
@@ -16,4 +13,6 @@ renderLife([
   [0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0],
   [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

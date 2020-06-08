@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Fuse with tail and integral';
-
-renderLife([
+const title = `Fuse with tail and integral`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 1, 1, 0],
   [0, 0, 0, 0, 0, 1, 0, 1, 0],
@@ -12,4 +9,6 @@ renderLife([
   [0, 0, 1, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

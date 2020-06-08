@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Triple pseudo still life';
-
-renderLife([
+const title = `Triple pseudo still life`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 1, 1, 0],
   [0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
@@ -15,4 +12,6 @@ renderLife([
   [0, 1, 0, 0, 1, 0, 1, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

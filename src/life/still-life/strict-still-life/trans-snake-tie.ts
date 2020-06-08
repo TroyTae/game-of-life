@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Trans-snake-tie';
-
-renderLife([
+const title = `Trans-snake-tie`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 1, 0, 1, 1, 0],
   [0, 0, 0, 1, 1, 0, 1, 0],
@@ -11,4 +8,6 @@ renderLife([
   [0, 1, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Small lake';
-
-renderLife([
+const title = `Small lake`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
@@ -14,4 +11,6 @@ renderLife([
   [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Cis-hook and R-bee';
-
-renderLife([
+const title = `Cis-hook and R-bee`;
+const life = [
   [0, 0, 0, 0, 0, 0],
   [0, 0, 0, 1, 1, 0],
   [0, 1, 0, 0, 1, 0],
@@ -12,4 +9,6 @@ renderLife([
   [0, 1, 0, 0, 1, 0],
   [0, 0, 1, 1, 0, 0],
   [0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};

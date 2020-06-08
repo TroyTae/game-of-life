@@ -1,8 +1,5 @@
-import {renderLife} from 'renderer';
-
-export const title = 'Block on cover';
-
-renderLife([
+const title = `Block on cover`;
+const life = [
   [0, 0, 0, 0, 0, 0, 0],
   [0, 1, 1, 0, 1, 1, 0],
   [0, 1, 1, 0, 1, 0, 0],
@@ -10,4 +7,6 @@ renderLife([
   [0, 1, 1, 1, 0, 0, 0],
   [0, 1, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
-]);
+];
+
+export {title, life};
