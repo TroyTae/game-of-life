@@ -125,8 +125,8 @@ module.exports = (env, arg) => {
 
   if (isProd) {
     fs.emptyDirSync(distDir);
+    fs.copySync('static', distDir);
   }
-  fs.copySync('static', isProd ? distDir : '.');
 
   return config;
 };
