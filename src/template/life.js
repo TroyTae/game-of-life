@@ -1,7 +1,7 @@
 const document = require('./document');
 
 module.exports = ({entry}) => {
-  const {title} = require(`../life/${entry}`);
+  const {title} = require(`../build/${entry}`);
   return document({
     subTitle: title,
     bodyHTML: `<h1>${title}</h1>`,
