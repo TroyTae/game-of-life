@@ -1,6 +1,5 @@
 const fs  = require('fs-extra');
 const path = require('path');
-const mkdirp = require('mkdirp');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
@@ -15,58 +14,9 @@ const baseHTMLConfig = {
   },
 };
 
-(() => {
-  const rootDirectory = './src/life';
-  const jsonExtRegExp = new RegExp('.json$');
-  const prebuild = (directory) => {
-    return fs.readdirSync(directory).forEach((name) => {
-      const dirpath = `${directory}/${name}`;
-      if (jsonExtRegExp.test(name)) {
-        const parttern = require(dirpath);
-        const buildpath = dirpath
-          .replace(rootDirectory, './src/build')
-          .replace('.json', '.ts');
-        mkdirp.sync(path.dirname(buildpath));
-        fs.writeFileSync(buildpath, `
-          import {renderLife} from 'renderer';
-          export const title = "${parttern.title}";
-          renderLife([${parttern.life.map((arr) => `[${arr.join()}]`).join()}]);
-        `);
-      } else {
-        prebuild(dirpath);
-      }
-    });
-  };
-  prebuild(rootDirectory);
-})();
+require('./prebuild');
 
-const data = (() => {
-  const tsExtRegExp = new RegExp('.ts$', 'g');
-  const rootDirectory = './src/build';
-  const rootDirectoryRegExp = new RegExp(`^${rootDirectory}/`, 'g');
-  const parseDirectory = (directory) => {
-    return fs.readdirSync(directory).reduce((obj, name) => {
-      const dirpath = `${directory}/${name}`;
-      if (tsExtRegExp.test(name)) {
-        const entry = dirpath.replace(rootDirectoryRegExp, '').replace(tsExtRegExp, '');
-        obj.entries[entry] = dirpath;
-        obj.hierarchy[entry] = true;
-      } else {
-        const data = parseDirectory(dirpath);
-        obj.entries = {
-          ...obj.entries,
-          ...data.entries,
-        };
-        obj.hierarchy[name] = data.hierarchy;
-      }
-      return obj;
-    }, {
-      entries: {},
-      hierarchy: {},
-    });
-  };
-  return parseDirectory(rootDirectory);
-})();
+const data = require('./parser');
 
 module.exports = (env, arg) => {
   const isProd = arg.mode === 'production';

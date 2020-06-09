@@ -9,8 +9,8 @@
     "one-spaces": "^1.3.4"
   },
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --config scripts/webpack.config.js",
+    "build": "webpack --mode=production --config  scripts/webpack.config.js",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/"
   }
