@@ -4,7 +4,7 @@ const renderLife = (obj, level) => {
   return Object.keys(obj).reduce((html, key) => {
     const value = obj[key];
     if (value === true) {
-      const {title} = require(`../life/${key}`);
+      const {title} = require(`../build/${key}`);
       html += `<div><a href="./${key}.html">${title}</a></div>`;
     } else {
       const title = key.replace(/-/g, ' ');
