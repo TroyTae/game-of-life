@@ -12,6 +12,6 @@
     "start": "webpack-dev-server --config scripts/webpack.config.js",
     "build": "webpack --mode=production --config  scripts/webpack.config.js",
     "fix:lint": "eslint --fix --ext .ts src/",
-    "test:lint": "eslint --ext .ts src/"
+    "test:lint": "eslint --ext .ts src/ --ignore-pattern 'src/build/*'"
   }
 }
