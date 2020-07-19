@@ -6,7 +6,7 @@
   "devDependencies": {
     "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
     "troyjs": "git+https://github.com/TroyTae/troyjs.git",
-    "one-spaces": "^1.3.4"
+    "one-spaces": "^1.3.7"
   },
   "scripts": {
     "start": "webpack-dev-server --config scripts/webpack.config.js",
