@@ -2,7 +2,7 @@ import {GameOfLifeEngine} from './engine';
 
 export const renderLife = (life: Life[][], deadColor?: string, surviveColor?: string, backgroundColor?: string): void => {
   if (typeof document !== 'undefined') {
-    if (life.reduce((sum, columns) => sum + columns.reduce((v1, v2) => v1 + v2, 0), 0) !== 1) {
+    if (life.reduce((sum, columns) => sum + columns.reduce((v1: number, v2) => v1 + v2, 0), 0) !== 1) {
       const engine = new GameOfLifeEngine(life, deadColor, surviveColor, backgroundColor);
       document.body.appendChild(engine.canvas);
       engine.startLife();

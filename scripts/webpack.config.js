@@ -1,10 +1,13 @@
 const fs  = require('fs-extra');
 const path = require('path');
+const parser = require('./parser');
+const prebuild = require('./prebuild');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-const distDir = 'dist';
+prebuild();
 
+const distDir = 'dist';
 const baseHTMLConfig = {
   minify: {
     collapseBooleanAttributes: true,
@@ -13,15 +16,18 @@ const baseHTMLConfig = {
     removeComments: true
   },
 };
-
-require('./prebuild');
-
-const data = require('./parser');
+const {
+  entries,
+  hierarchy
+} = parser();
 
 module.exports = (env, arg) => {
-  const isProd = arg.mode === 'production';
-  const config = {
-    entry: data.entries,
+  if (arg.mode === 'production') {
+    fs.emptyDirSync(distDir);
+    fs.copySync('static', distDir);
+  }
+  return {
+    entry: entries,
     optimization: {
       splitChunks: {
         cacheGroups: {
@@ -50,7 +56,7 @@ module.exports = (env, arg) => {
       }]
     },
     plugins: [
-      ...Object.keys(data.entries).map((entry) => (
+      ...Object.keys(entries).map((entry) => (
         new HtmlWebpackPlugin({
           ...baseHTMLConfig,
           filename: `${entry}.html`,
@@ -61,9 +67,9 @@ module.exports = (env, arg) => {
       )),
       new HtmlWebpackPlugin({
         ...baseHTMLConfig,
-        filename: `index.html`,
+        filename: 'index.html',
         template: './src/template/index.js',
-        templateParameters: { hierarchy: data.hierarchy },
+        templateParameters: { hierarchy },
         chunks: []
       })
     ],
@@ -72,11 +78,4 @@ module.exports = (env, arg) => {
       historyApiFallback: true
     },
   };
-
-  if (isProd) {
-    fs.emptyDirSync(distDir);
-    fs.copySync('static', distDir);
-  }
-
-  return config;
 };

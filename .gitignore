@@ -1,6 +1,7 @@
 .idea
 .vscode
 .directory
+.DS_Store
 dist
 src/build
 node_modules

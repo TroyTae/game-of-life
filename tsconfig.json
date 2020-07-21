@@ -1,11 +1,8 @@
 {
+  "extends": "troyjs/tsconfig",
   "compilerOptions": {
-    "baseUrl": "src",
-    "target": "es3",
-    "removeComments": true,
-    "strictNullChecks": true
+    "baseUrl": "src"
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
-  "compileOnSave": false
+  "exclude": ["node_modules"]
 }
