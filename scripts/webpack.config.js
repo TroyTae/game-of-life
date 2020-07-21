@@ -61,7 +61,7 @@ module.exports = (env, arg) => {
           ...baseHTMLConfig,
           filename: `${entry}.html`,
           template: './src/template/life.js',
-          templateParameters: { entry },
+          templateParameters: { hierarchy, entry },
           chunks: [entry]
         })
       )),

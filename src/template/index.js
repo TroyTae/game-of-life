@@ -3,9 +3,8 @@ const document = require('./document');
 const renderLife = (obj, level) => {
   return Object.keys(obj).reduce((html, key) => {
     const value = obj[key];
-    if (value === true) {
-      const {title} = require(`../build/${key}`);
-      html += `<div><a href="./${key}.html">${title}</a></div>`;
+    if (typeof value === 'string') {
+      html += `<div><a href="./${key}.html">${value}</a></div>`;
     } else {
       const title = key.replace(/-/g, ' ');
       html += `<h${level}>${title[0].toUpperCase() + title.slice(1)}</h${level}>`;

@@ -27,5 +27,5 @@ function prebuild(dataList) {
 }
 
 module.exports = function() {
-  prebuild(readDirectory(path.join('src', 'life')));
+  prebuild(readDirectory(lifePath));
 };
