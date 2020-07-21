@@ -8,7 +8,7 @@ export class GameOfLifeEngine {
   public deadColor: string;
   public surviveColor: string;
   public backgroundColor: string;
-  private intervalKey: null | number;
+  private intervalKey: null | number = null;
 
   constructor(life: Life[][], deadColor?: string, surviveColor?: string, backgroundColor?: string) {
     const cvs = document.createElement('canvas');

@@ -1,29 +1,31 @@
 const fs  = require('fs-extra');
 const path = require('path');
 const mkdirp = require('mkdirp');
+const {readDirectory} = require('troyjs/node');
 
-const rootDirectory = './src/';
-const lifeDirectory = `${rootDirectory}life`;
-const jsonExtRegExp = new RegExp('.json$');
+const lifePath = path.join('src', 'life');
+const buildPath = path.join('src', 'build');
 
-const prebuild = (directory) => {
-  return fs.readdirSync(directory).forEach((name) => {
-    const dirpath = `${directory}/${name}`;
-    if (jsonExtRegExp.test(name)) {
-      const parttern = require(`.${dirpath}`);
-      const buildpath = dirpath
-        .replace(lifeDirectory, `${rootDirectory}build`)
-        .replace('.json', '.ts');
-      mkdirp.sync(path.dirname(buildpath));
-      fs.writeFileSync(buildpath, `
-        import {renderLife} from 'renderer';
-        export const title = "${parttern.title}";
-        renderLife([${parttern.life.map((arr) => `[${arr.join()}]`).join()}]);
-      `);
+function prebuild(dataList) {
+  dataList.forEach((data) => {
+    if (Array.isArray(data.children)) {
+      prebuild(data.children);
     } else {
-      prebuild(dirpath);
+      const jsonPath = path.join('..', data.path);
+      const tsPath = data.path
+        .replace(path.join(lifePath), buildPath)
+        .replace('.json', '.ts');
+      const pattern = require(jsonPath);
+      mkdirp.sync(path.dirname(tsPath));
+      fs.writeFile(tsPath, `
+        import {renderLife} from 'renderer';
+        export const title = "${pattern.title}";
+        renderLife([${pattern.life.map((arr) => `[${arr.join()}]`).join()}]);
+      `);
     }
   });
-};
+}
 
-prebuild(lifeDirectory);
+module.exports = function() {
+  prebuild(readDirectory(path.join('src', 'life')));
+};
