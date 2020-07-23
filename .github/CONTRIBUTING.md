@@ -19,7 +19,8 @@ You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new
    - Run command `npm install`
    - Run command `npm run start`
    - Open`localhost:4200` in browser
-6. Run `npm run test:lint` and validate your code
+   - Check it out the pattern works right
+6. Run `npm run test:lint`, validate your code
 7. Please send us PR!!
 
 ## Helpful Tool
