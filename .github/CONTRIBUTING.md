@@ -6,26 +6,21 @@ You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new
 
 ## Development Process
 1. Fork this repository
+![Fork](./images/fork.png)  
 2. Clone forked repository in your local
-3. Run dev server
-   - Run command `npm install`
-   - Run command `npm run start`
-   - Open`localhost:4200` in browser
-4. Find file written in issue
-5. Make pattern along image attached in issue
+![Clone](./images/clone.png)  
+3. Find file written in issue
+![Issue](./images/issue.png)  
+4. Make pattern along image attached in issue
    - Pattern is 2D array
    - Fill 1 about black area
    - Fill 0 about white area
-6. __This step is optional__
-   - Put colors inside the pattern. Write down:
-     ```typescript
-     deadColor: '',
-     surviveColor: '',
-     backgroundColor: '',
-     ```
-   - Then, fill the single quotation marks with colors from this [page](https://www.w3schools.com/colors/colors_groups.asp)
-7. Run `npm run test:lint` and validate your code
-8. Please send us PR!!
+5. Run dev server
+   - Run command `npm install`
+   - Run command `npm run start`
+   - Open`localhost:4200` in browser
+6. Run `npm run test:lint` and validate your code
+7. Please send us PR!!
 
 ## Helpful Tool
 
