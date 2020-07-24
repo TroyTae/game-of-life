@@ -10,7 +10,7 @@ And I also hope this repository is a [good start point](https://github.com/TroyT
 
 ## Demo
 
-![Demo gif](./static/favicon.gif)  
+![Demo gif](./.github/images/favicon.gif)  
 Website: https://troytae-game-of-life.netlify.app/  
 
 ## Installation
