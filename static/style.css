@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  color: #FFF;
+  color: #fff;
   background: #000;
   text-align: center;
 }
@@ -13,7 +13,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   text-decoration: underline;
 }
 

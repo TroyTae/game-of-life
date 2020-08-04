@@ -14,12 +14,12 @@ const renderLife = (obj, level) => {
   }, '');
 };
 
-module.exports = ({hierarchy}) => {
+module.exports = ({ hierarchy }) => {
   return document({
     bodyHTML: `
       <h1>Conway's Game of Life</h1>
       ${renderLife(hierarchy, 2)}
     `,
-    relativePath: './'
+    relativePath: './',
   });
 };

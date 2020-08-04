@@ -1,12 +1,8 @@
-const {getTemplate} = require('troyjs/webpack');
+const { getTemplate } = require('troyjs/webpack');
 const css = require('../../static/style.css').default;
 const favicon = require('../../static/favicon.gif').default;
 
-module.exports = ({
-  subTitle,
-  bodyHTML,
-  relativePath,
-}) => {
+module.exports = ({ subTitle, bodyHTML, relativePath }) => {
   return getTemplate({
     title: `${subTitle ? `${subTitle} - ` : ''} Conway's Game of Life`,
     keywords: `Conway,Game of Life,Conway's Game of Life`,
@@ -19,6 +15,6 @@ module.exports = ({
       <meta property="og:image:height" content="336">
       <link rel="stylesheet" href="${relativePath}${css}">
     `,
-    bodyHTML
+    bodyHTML,
   });
 };

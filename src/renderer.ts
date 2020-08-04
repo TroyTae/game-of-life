@@ -1,4 +1,4 @@
-import {GameOfLifeEngine} from './engine';
+import { GameOfLifeEngine } from './engine';
 
 export const renderLife = (life: Life[][], deadColor?: string, surviveColor?: string, backgroundColor?: string): void => {
   if (typeof document !== 'undefined') {

@@ -6,4 +6,4 @@ declare type LifePattern = {
   deadColor?: string;
   surviveColor?: string;
   backgroundColor?: string;
-}
+};

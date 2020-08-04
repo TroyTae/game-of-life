@@ -1,4 +1,4 @@
-import {DOTS_STYLE} from './constants';
+import { DOTS_STYLE } from './constants';
 
 export const getCoordinateX = (x: number): number => {
   return (DOTS_STYLE.MARGIN + DOTS_STYLE.WIDTH) * x + DOTS_STYLE.MARGIN;

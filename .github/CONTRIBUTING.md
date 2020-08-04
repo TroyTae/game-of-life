@@ -1,16 +1,18 @@
 # Conway's Game of Life
 
 ## Issues
+
 If you find some bug or suggestion, please send us :)  
-You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new/choose)  
+You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new/choose)
 
 ## Development Process
+
 1. Fork this repository
-![Fork](./images/fork.png)  
+   ![Fork](./images/fork.png)
 2. Clone forked repository in your local
-![Clone](./images/clone.png)  
+   ![Clone](./images/clone.png)
 3. Find file written in issue
-![Issue](./images/issue.png)  
+   ![Issue](./images/issue.png)
 4. Make pattern along image attached in issue
    - Pattern is 2D array
    - Fill 1 about black area

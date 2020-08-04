@@ -6,4 +6,5 @@ If you send PR about pattern, please check below list:
  2. Did you replace below string from `issue_number` to real issue number? (such as `resolve #123`)
 
 -->
+
 resolve #issue_number
