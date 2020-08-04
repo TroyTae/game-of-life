@@ -1,29 +1,37 @@
-const fs  = require('fs-extra');
+const path = require('path');
+const { readDirectory } = require('troyjs/node');
 
-const tsExtRegExp = new RegExp('.ts$', 'g');
-const buildDirectory = './src/build';
-const buildDirectoryRegExp = new RegExp(`^${buildDirectory}/`, 'g');
+const buildPath = path.join('src', 'build');
+const jsonPath = path.join('..', 'src', 'life');
+const sepRegExp = new RegExp(`\\${path.sep}`, 'g');
 
-const parser = (directory) => {
-  return fs.readdirSync(directory).reduce((obj, name) => {
-    const dirpath = `${directory}/${name}`;
-    if (tsExtRegExp.test(name)) {
-      const entry = dirpath.replace(buildDirectoryRegExp, '').replace(tsExtRegExp, '');
-      obj.entries[entry] = dirpath;
-      obj.hierarchy[entry] = true;
-    } else {
-      const data = parser(dirpath);
-      obj.entries = {
-        ...obj.entries,
-        ...data.entries,
-      };
-      obj.hierarchy[name] = data.hierarchy;
+function parser(dataList) {
+  return dataList.reduce(
+    (obj, data) => {
+      if (Array.isArray(data.children)) {
+        const result = parser(data.children);
+        for (const entry in result.entries) {
+          obj.entries[entry] = result.entries[entry];
+        }
+        obj.hierarchy[data.name] = result.hierarchy;
+      } else {
+        const entry = data.path
+          .replace(buildPath + path.sep, '')
+          .replace('.ts', '')
+          .replace(sepRegExp, '/');
+        obj.entries[entry] = data.path.replace(buildPath, 'build').replace(sepRegExp, '/');
+        const life = require(path.join(jsonPath, `${entry}.json`));
+        obj.hierarchy[entry] = life.title;
+      }
+      return obj;
+    },
+    {
+      entries: {},
+      hierarchy: {},
     }
-    return obj;
-  }, {
-    entries: {},
-    hierarchy: {},
-  });
-};
+  );
+}
 
-module.exports = parser(buildDirectory);
+module.exports = function () {
+  return parser(readDirectory(buildPath));
+};

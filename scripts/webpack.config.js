@@ -1,27 +1,23 @@
-const fs  = require('fs-extra');
+const fs = require('fs-extra');
 const path = require('path');
+const parser = require('./parser');
+const prebuild = require('./prebuild');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const { defaultHtmlWebpackPluginConfig } = require('troyjs/webpack');
 
-const distDir = 'docs';
+prebuild();
 
-const baseHTMLConfig = {
-  minify: {
-    collapseBooleanAttributes: true,
-    collapseInlineTagWhitespace: true,
-    collapseWhitespace: true,
-    removeComments: true
-  },
-};
-
-require('./prebuild');
-
-const data = require('./parser');
+const distDir = 'dist';
+const { entries, hierarchy } = parser();
 
 module.exports = (env, arg) => {
-  const isProd = arg.mode === 'production';
-  const config = {
-    entry: data.entries,
+  if (arg.mode === 'production') {
+    fs.emptyDirSync(distDir);
+    fs.copySync('static', distDir);
+  }
+  return {
+    entry: entries,
     optimization: {
       splitChunks: {
         cacheGroups: {
@@ -30,53 +26,53 @@ module.exports = (env, arg) => {
             minChunks: 3,
             chunks: 'all',
             enforce: true,
-          }
+          },
         },
       },
     },
     output: {
       path: path.join(process.cwd(), distDir),
       filename: '[name].[chunkhash].js',
-      crossOriginLoading: false
+      crossOriginLoading: false,
     },
     resolve: {
       extensions: ['.js', '.ts'],
-      plugins: [new TsconfigPathsPlugin()]
+      plugins: [new TsconfigPathsPlugin()],
     },
     module: {
-      rules: [{
-        test: /\.ts$/,
-        loader: 'ts-loader'
-      }]
+      rules: [
+        {
+          test: /\.(css|gif)$/,
+          loader: 'file-loader',
+        },
+        {
+          test: /\.ts$/,
+          loader: 'ts-loader',
+        },
+      ],
     },
     plugins: [
-      ...Object.keys(data.entries).map((entry) => (
-        new HtmlWebpackPlugin({
-          ...baseHTMLConfig,
-          filename: `${entry}.html`,
-          template: './src/template/life.js',
-          templateParameters: { entry },
-          chunks: [entry]
-        })
-      )),
+      ...Object.keys(entries).map(
+        (entry) =>
+          new HtmlWebpackPlugin({
+            ...defaultHtmlWebpackPluginConfig,
+            filename: `${entry}.html`,
+            template: './src/template/life.js',
+            templateParameters: { hierarchy, entry },
+            chunks: [entry],
+          })
+      ),
       new HtmlWebpackPlugin({
-        ...baseHTMLConfig,
-        filename: `index.html`,
+        ...defaultHtmlWebpackPluginConfig,
+        filename: 'index.html',
         template: './src/template/index.js',
-        templateParameters: { hierarchy: data.hierarchy },
-        chunks: []
-      })
+        templateParameters: { hierarchy },
+        chunks: [],
+      }),
     ],
     devServer: {
       port: 4200,
-      historyApiFallback: true
+      historyApiFallback: true,
     },
   };
-
-  if (isProd) {
-    fs.emptyDirSync(distDir);
-    fs.copySync('static', distDir);
-  }
-
-  return config;
 };
