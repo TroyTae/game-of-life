@@ -12,6 +12,7 @@
   "scripts": {
     "start": "webpack-dev-server --config scripts/webpack.config.js",
     "build": "webpack --mode=production --config  scripts/webpack.config.js",
+    "test": "npm run test:lint & npm run test:prettier",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/ --ignore-pattern 'src/build/*'",
     "fix:prettier": "npx prettier --write .",

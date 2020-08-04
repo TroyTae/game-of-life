@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm install
-      - run: npm run test:lint
+      - run: npm run test
