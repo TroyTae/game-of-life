@@ -1,6 +1,6 @@
 const { getTemplate } = require('troyjs/webpack');
-const css = require('../../static/style.css').default;
-const favicon = require('../../static/favicon.gif').default;
+const css = require('../style.css').default;
+const favicon = require('../favicon.gif').default;
 
 module.exports = ({ subTitle, bodyHTML, relativePath }) => {
   return getTemplate({
