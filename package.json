@@ -7,11 +7,11 @@
     "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
     "troyjs": "git+https://github.com/TroyTae/troyjs.git",
     "one-spaces": "^1.3.8",
-    "prettier": "2.0.5"
+    "prettier": "^2.0.5"
   },
   "scripts": {
     "start": "webpack-dev-server --config scripts/webpack.config.js",
-    "build": "webpack --mode=production --config  scripts/webpack.config.js",
+    "build": "webpack --progress --profile --mode=production --config  scripts/webpack.config.js",
     "test": "npm run test:lint & npm run test:prettier",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/ --ignore-pattern 'src/build/*'",
