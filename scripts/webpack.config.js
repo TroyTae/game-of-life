@@ -14,7 +14,7 @@ const { entries, hierarchy } = parser();
 module.exports = (env, arg) => {
   if (arg.mode === 'production') {
     fs.emptyDirSync(distDir);
-    fs.copySync('static', distDir);
+    fs.copyFileSync('robots.txt', path.join(distDir, 'robots.txt'));
   }
   return {
     entry: entries,
