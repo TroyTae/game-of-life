@@ -15,14 +15,11 @@ function prebuild(dataList) {
       const tsPath = data.path.replace(path.join(lifePath), buildPath).replace('.json', '.ts');
       const pattern = require(jsonPath);
       mkdirp.sync(path.dirname(tsPath));
-      fs.writeFile(
-        tsPath,
-        `
+      fs.writeFileSync(tsPath, `
         import {renderLife} from 'renderer';
         export const title = "${pattern.title}";
         renderLife([${pattern.life.map((arr) => `[${arr.join()}]`).join()}]);
-      `
-      );
+      `);
     }
   });
 }
