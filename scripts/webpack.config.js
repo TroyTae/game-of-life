@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { defaultHtmlWebpackPluginConfig } = require('troyjs/webpack');
 
+require('./prebuild');
 const distDir = 'dist';
 const { entries, hierarchy } = parser();
 
