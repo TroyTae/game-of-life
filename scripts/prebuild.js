@@ -17,7 +17,6 @@ function prebuild(dataList) {
         !fs.existsSync(tsPath) ||
         fs.statSync(data.path).mtime > fs.statSync(tsPath).mtime
       ) {
-        console.warn('update' + tsPath);
         const pattern = require(jsonPath);
         mkdirp.sync(path.dirname(tsPath));
         fs.writeFileSync(tsPath, `
