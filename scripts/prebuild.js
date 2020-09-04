@@ -13,13 +13,18 @@ function prebuild(dataList) {
     } else {
       const jsonPath = path.join('..', data.path);
       const tsPath = data.path.replace(path.join(lifePath), buildPath).replace('.json', '.ts');
-      const pattern = require(jsonPath);
-      mkdirp.sync(path.dirname(tsPath));
-      fs.writeFileSync(tsPath, `
-        import {renderLife} from 'renderer';
-        export const title = "${pattern.title}";
-        renderLife([${pattern.life.map((arr) => `[${arr.join()}]`).join()}]);
-      `);
+      if (
+        !fs.existsSync(tsPath) ||
+        fs.statSync(data.path).mtime > fs.statSync(tsPath).mtime
+      ) {
+        const pattern = require(jsonPath);
+        mkdirp.sync(path.dirname(tsPath));
+        fs.writeFileSync(tsPath, `
+          import {renderLife} from 'renderer';
+          export const title = "${pattern.title}";
+          renderLife([${pattern.life.map((arr) => `[${arr.join()}]`).join()}]);
+        `);
+      }
     }
   });
 }
