@@ -1,16 +1,28 @@
-import { BACKGROUND_COLOR, DOTS_STYLE } from './constants';
-import { getCoordinateX, getCoordinateY } from './coordinates';
+enum DOTS_STYLE {
+  WIDTH = 16,
+  HEIGHT = 16,
+  MARGIN = 2,
+  DEAD_COLOR = '#FFF',
+  SURVIVE_COLOR = '#000',
+}
+
+const BACKGROUND_COLOR = '#FFF';
+
+const getCoordinateX = (x: number): number => {
+  return (DOTS_STYLE.MARGIN + DOTS_STYLE.WIDTH) * x + DOTS_STYLE.MARGIN;
+};
+
+const getCoordinateY = (y: number): number => {
+  return (DOTS_STYLE.MARGIN + DOTS_STYLE.HEIGHT) * y + DOTS_STYLE.MARGIN;
+};
 
 export class GameOfLifeEngine {
   public life: Life[][];
   public canvas: HTMLCanvasElement;
   public context: CanvasRenderingContext2D;
-  public deadColor: string;
-  public surviveColor: string;
-  public backgroundColor: string;
   private intervalKey: null | number = null;
 
-  constructor(life: Life[][], deadColor?: string, surviveColor?: string, backgroundColor?: string) {
+  constructor(life: Life[][]) {
     const cvs = document.createElement('canvas');
     const ctx = cvs.getContext('2d');
 
@@ -21,16 +33,13 @@ export class GameOfLifeEngine {
       this.life = life;
       this.canvas = cvs;
       this.context = ctx;
-      this.deadColor = deadColor ? deadColor : DOTS_STYLE.DEAD_COLOR;
-      this.surviveColor = surviveColor ? surviveColor : DOTS_STYLE.SURVIVE_COLOR;
-      this.backgroundColor = backgroundColor ? backgroundColor : BACKGROUND_COLOR;
     } else {
       throw 'Failed to create context';
     }
   }
 
   public clear(): void {
-    this.context.fillStyle = this.backgroundColor;
+    this.context.fillStyle = BACKGROUND_COLOR;
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
@@ -59,7 +68,7 @@ export class GameOfLifeEngine {
     this.clear();
     this.life.forEach((children, i) => {
       children.forEach((isSurvive, j) => {
-        this.context.fillStyle = isSurvive ? this.surviveColor : this.deadColor;
+        this.context.fillStyle = isSurvive ? DOTS_STYLE.SURVIVE_COLOR : DOTS_STYLE.DEAD_COLOR;
         this.drawDot(j, i);
       });
     });
