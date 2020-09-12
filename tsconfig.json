@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "strict": true,
-    "removeComments": true
+    "paths": {
+      "/*": ["./*"]
+    }
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"],
   "compileOnSave": false
 }
