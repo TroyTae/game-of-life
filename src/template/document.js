@@ -5,8 +5,8 @@ const favicon = require('../favicon.gif').default;
 module.exports = ({ subTitle, bodyHTML, relativePath }) => {
   return getTemplate({
     title: `${subTitle ? `${subTitle} - ` : ''} Conway's Game of Life`,
-    keywords: `Conway,Game of Life,Conway's Game of Life`,
-    description: `Conway's Game of Life web version!`,
+    keywords: ``,
+    description: ``,
     url: 'https://troytae.github.io/game-of-life/',
     favicon: `${relativePath}${favicon}`,
     headHTML: `
