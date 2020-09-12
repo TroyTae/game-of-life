@@ -3,7 +3,9 @@
     "baseUrl": "src",
     "paths": {
       "/*": ["./*"]
-    }
+    },
+    "jsx": "react",
+    "jsxFactory": "h"
   },
   "compileOnSave": false
 }
