@@ -7,7 +7,7 @@ You can leave issue at [here](https://github.com/TroyTae/game-of-life/issues/new
 
 ## Development Process
 
-1. Fork this repository
+1. Fork this repository (Also click star 😉)
    ![Fork](./images/fork.png)
 2. Clone forked repository in your local
    ![Clone](./images/clone.png)
