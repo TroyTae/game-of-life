@@ -10,12 +10,12 @@
     "troyjs": "git+https://github.com/TroyTae/troyjs.git"
   },
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "node ./scripts/prebuild.js & parcel build src/index.html",
-    "test": "npm run test:lint & npm run test:prettier",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/",
     "fix:prettier": "npx prettier --write ./src/life",
-    "test:prettier": "prettier --check ./src/life"
+    "test:prettier": "prettier --check ./src/life",
+    "test": "npm run test:lint & npm run test:prettier",
+    "start": "parcel src/index.html --open",
+    "build": "node ./scripts/prebuild.js & parcel build src/index.html & node ./scripts/postbuild.js"
   }
 }
