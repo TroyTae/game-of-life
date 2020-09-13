@@ -4,3 +4,5 @@ declare type LifePattern = {
   title: string;
   life: Life[][];
 };
+
+declare module '*.json';
