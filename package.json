@@ -16,6 +16,6 @@
     "test:prettier": "prettier --check ./src/life",
     "test": "npm run test:lint & npm run test:prettier",
     "start": "parcel src/index.html --open",
-    "build": "node ./scripts/prebuild.js & parcel build src/index.html & node ./scripts/postbuild.js"
+    "build": "node ./scripts/prebuild.js & parcel build src/index.html"
   }
 }

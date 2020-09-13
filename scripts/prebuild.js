@@ -2,6 +2,13 @@ const fs = require('fs-extra');
 const path = require('path');
 const { readDirectory } = require('troyjs/node');
 
+const distDir = 'dist';
+fs.emptyDirSync(distDir);
+fs.copyFileSync(
+  path.join('src', 'static', 'robots.txt'),
+  path.join(distDir, 'robots.txt')
+);
+
 const directories =  readDirectory(path.join('src', 'life'));
 const generateIndexes = (level, directories) => {
   return directories.reduce((arr, obj) => {
