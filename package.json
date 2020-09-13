@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html",
+    "build": "node ./scripts/prebuild.js & parcel build src/index.html & node ./scripts/postbuild.js",
     "test": "npm run test:lint & npm run test:prettier",
     "fix:lint": "eslint --fix --ext .ts src/",
     "test:lint": "eslint --ext .ts src/",
