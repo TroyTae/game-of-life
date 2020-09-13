@@ -22,8 +22,7 @@ export class GameOfLifeEngine {
   public context: CanvasRenderingContext2D;
   private intervalKey: null | number = null;
 
-  constructor(life: Life[][]) {
-    const cvs = document.createElement('canvas');
+  constructor(cvs: HTMLCanvasElement, life: Life[][]) {
     const ctx = cvs.getContext('2d');
 
     if (ctx) {

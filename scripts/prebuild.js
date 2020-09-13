@@ -48,6 +48,7 @@ fs.writeFileSync(path.join('src', 'index.tsx'), `
   import { h, render } from 'preact';
   import Router from 'preact-router';
   import { Link } from 'preact-router/match';
+  import Page from './page';
   ${lifes
     .map((life) => `
   import ${life.name} from '${life.path}';`)
@@ -64,7 +65,7 @@ fs.writeFileSync(path.join('src', 'index.tsx'), `
       </article>
       ${lifes
         .map((life) => `
-      <h1 path='${life.href}'>aaaa</h1>`)
+      <Page path='${life.href}' lifeData={${life.name}} />`)
         .join('')}
     </Router>
   ), document.getElementById('app'));

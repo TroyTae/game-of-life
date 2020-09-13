@@ -2,6 +2,7 @@
   import { h, render } from 'preact';
   import Router from 'preact-router';
   import { Link } from 'preact-router/match';
+  import Page from './page';
   
   import _1_beacon from './life/oscillator/1-beacon.json';
   import _101 from './life/oscillator/101.json';
@@ -1285,636 +1286,636 @@
         <nav><Link href='/still-life/strict-still-life/z-quad-loaf.json'>{_z_quad_loaf.title}</Link></nav>
       </article>
       
-      <h1 path='/oscillator/1-beacon.json'>aaaa</h1>
-      <h1 path='/oscillator/101.json'>aaaa</h1>
-      <h1 path='/oscillator/110P62.json'>aaaa</h1>
-      <h1 path='/oscillator/112P15.json'>aaaa</h1>
-      <h1 path='/oscillator/117P18.json'>aaaa</h1>
-      <h1 path='/oscillator/124P21.json'>aaaa</h1>
-      <h1 path='/oscillator/128P10_2.json'>aaaa</h1>
-      <h1 path='/oscillator/134P25.json'>aaaa</h1>
-      <h1 path='/oscillator/134P39_1.json'>aaaa</h1>
-      <h1 path='/oscillator/144P24.json'>aaaa</h1>
-      <h1 path='/oscillator/145P20.json'>aaaa</h1>
-      <h1 path='/oscillator/14P2_3.json'>aaaa</h1>
-      <h1 path='/oscillator/14P2_4.json'>aaaa</h1>
-      <h1 path='/oscillator/168P22_1.json'>aaaa</h1>
-      <h1 path='/oscillator/186P24.json'>aaaa</h1>
-      <h1 path='/oscillator/209P8.json'>aaaa</h1>
-      <h1 path='/oscillator/20P2.json'>aaaa</h1>
-      <h1 path='/oscillator/21P2.json'>aaaa</h1>
-      <h1 path='/oscillator/22P2.json'>aaaa</h1>
-      <h1 path='/oscillator/22P36.json'>aaaa</h1>
-      <h1 path='/oscillator/230P8.json'>aaaa</h1>
-      <h1 path='/oscillator/23P2.json'>aaaa</h1>
-      <h1 path='/oscillator/24P10.json'>aaaa</h1>
-      <h1 path='/oscillator/24P2.json'>aaaa</h1>
-      <h1 path='/oscillator/258P3-on-achims-p11.json'>aaaa</h1>
-      <h1 path='/oscillator/258P3.json'>aaaa</h1>
-      <h1 path='/oscillator/26P2.json'>aaaa</h1>
-      <h1 path='/oscillator/28P7_1.json'>aaaa</h1>
-      <h1 path='/oscillator/28P7_2.json'>aaaa</h1>
-      <h1 path='/oscillator/28P7_3.json'>aaaa</h1>
-      <h1 path='/oscillator/30P6_1.json'>aaaa</h1>
-      <h1 path='/oscillator/33P3_1.json'>aaaa</h1>
-      <h1 path='/oscillator/35P12_1.json'>aaaa</h1>
-      <h1 path='/oscillator/37P10_1.json'>aaaa</h1>
-      <h1 path='/oscillator/37P7_1.json'>aaaa</h1>
-      <h1 path='/oscillator/38P7_2.json'>aaaa</h1>
-      <h1 path='/oscillator/41P7_2.json'>aaaa</h1>
-      <h1 path='/oscillator/44P12_3.json'>aaaa</h1>
-      <h1 path='/oscillator/44P7_2.json'>aaaa</h1>
-      <h1 path='/oscillator/48P22_1.json'>aaaa</h1>
-      <h1 path='/oscillator/49P88.json'>aaaa</h1>
-      <h1 path='/oscillator/50P35.json'>aaaa</h1>
-      <h1 path='/oscillator/53P13.json'>aaaa</h1>
-      <h1 path='/oscillator/55P10.json'>aaaa</h1>
-      <h1 path='/oscillator/56P27.json'>aaaa</h1>
-      <h1 path='/oscillator/5blink.json'>aaaa</h1>
-      <h1 path='/oscillator/60P312.json'>aaaa</h1>
-      <h1 path='/oscillator/62P3_1.json'>aaaa</h1>
-      <h1 path='/oscillator/65P48.json'>aaaa</h1>
-      <h1 path='/oscillator/66P13.json'>aaaa</h1>
-      <h1 path='/oscillator/68P16.json'>aaaa</h1>
-      <h1 path='/oscillator/68P32_1.json'>aaaa</h1>
-      <h1 path='/oscillator/68P9.json'>aaaa</h1>
-      <h1 path='/oscillator/69P48.json'>aaaa</h1>
-      <h1 path='/oscillator/77P77.json'>aaaa</h1>
-      <h1 path='/oscillator/78P70.json'>aaaa</h1>
-      <h1 path='/oscillator/80P6.json'>aaaa</h1>
-      <h1 path='/oscillator/84P87.json'>aaaa</h1>
-      <h1 path='/oscillator/87P26.json'>aaaa</h1>
-      <h1 path='/oscillator/92P51.json'>aaaa</h1>
-      <h1 path='/oscillator/94P27_1.json'>aaaa</h1>
-      <h1 path='/oscillator/98P25.json'>aaaa</h1>
-      <h1 path='/oscillator/a-for-all.json'>aaaa</h1>
-      <h1 path='/oscillator/achims-other-p16.json'>aaaa</h1>
-      <h1 path='/oscillator/achims-p11.json'>aaaa</h1>
-      <h1 path='/oscillator/achims-p144.json'>aaaa</h1>
-      <h1 path='/oscillator/achims-p16.json'>aaaa</h1>
-      <h1 path='/oscillator/achims-p4.json'>aaaa</h1>
-      <h1 path='/oscillator/achims-p8.json'>aaaa</h1>
-      <h1 path='/oscillator/almosymmetric.json'>aaaa</h1>
-      <h1 path='/oscillator/babbling-brook/babbling-brook-1.json'>aaaa</h1>
-      <h1 path='/oscillator/babbling-brook/beacon.json'>aaaa</h1>
-      <h1 path='/oscillator/babbling-brook/four-boats.json'>aaaa</h1>
-      <h1 path='/oscillator/babbling-brook/great-on-off.json'>aaaa</h1>
-      <h1 path='/oscillator/babbling-brook/light-bulb.json'>aaaa</h1>
-      <h1 path='/oscillator/bakers-dozen.json'>aaaa</h1>
-      <h1 path='/oscillator/beacon-on-38P11_1.json'>aaaa</h1>
-      <h1 path='/oscillator/beacon-on-cover.json'>aaaa</h1>
-      <h1 path='/oscillator/beehive-on-long-hook-eating-tub.json'>aaaa</h1>
-      <h1 path='/oscillator/beehive-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/beluchenkos-other-p37.json'>aaaa</h1>
-      <h1 path='/oscillator/beluchenkos-p13.json'>aaaa</h1>
-      <h1 path='/oscillator/beluchenkos-p37.json'>aaaa</h1>
-      <h1 path='/oscillator/beluchenkos-p40.json'>aaaa</h1>
-      <h1 path='/oscillator/beluchenkos-p51.json'>aaaa</h1>
-      <h1 path='/oscillator/bent-keys.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/$rats.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/1-2-3-4.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/1-2-3.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/123P27_1.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/29P9.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/38P11_1.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/42P10_3.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/44P14.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/54P17_1.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/a-verage.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/airforce.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/boss.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/burloaferimeter.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/cauldron.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/champagne-glass.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/chemist.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/clock-2.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/cousins.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/crowd.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/diamond-ring.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/en-retard.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/fore-and-back.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/frog-II.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/germ.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/hertz-oscillator.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/hustler-II.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/hustler.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/loading-dock.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/mathematician.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/merzenichs-p18.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/mini-pressure-cooker.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/negentropy.json'>aaaa</h1>
-      <h1 path='/oscillator/billiard-table/new-five.json'>aaaa</h1>
-      <h1 path='/oscillator/biting-off-more-than-they-can-chew.json'>aaaa</h1>
-      <h1 path='/oscillator/blinkers-bit-pole.json'>aaaa</h1>
-      <h1 path='/oscillator/blocked-p4-1.json'>aaaa</h1>
-      <h1 path='/oscillator/blocked-p4-2.json'>aaaa</h1>
-      <h1 path='/oscillator/blocked-p4-3.json'>aaaa</h1>
-      <h1 path='/oscillator/blocked-p4-4.json'>aaaa</h1>
-      <h1 path='/oscillator/blocked-p4-5.json'>aaaa</h1>
-      <h1 path='/oscillator/blocker.json'>aaaa</h1>
-      <h1 path='/oscillator/blonker-on-richs-p16.json'>aaaa</h1>
-      <h1 path='/oscillator/blonker.json'>aaaa</h1>
-      <h1 path='/oscillator/boat-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/boat-tie-quadpole.json'>aaaa</h1>
-      <h1 path='/oscillator/boat-tie-spark-coil.json'>aaaa</h1>
-      <h1 path='/oscillator/boring-p24.json'>aaaa</h1>
-      <h1 path='/oscillator/bottle.json'>aaaa</h1>
-      <h1 path='/oscillator/buckinghams-p13.json'>aaaa</h1>
-      <h1 path='/oscillator/candelabra.json'>aaaa</h1>
-      <h1 path='/oscillator/candlefrobra.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-28P7_3.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-42P7_1.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-44P7_2.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-68P32.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-beluchenkos-p13.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-figure-eight.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-jasons-p22.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-merzenichs-p31.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer-on-rattlesnake.json'>aaaa</h1>
-      <h1 path='/oscillator/caterer.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-beacon-down-on-long-hook.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-beacon-on-anvil.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-beacon-on-cap.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-beacon-on-dock.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-beacon-on-table.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-beacon-up-on-long-hook.json'>aaaa</h1>
-      <h1 path='/oscillator/cis-boat-on-long-hook-eating-tub.json'>aaaa</h1>
-      <h1 path='/oscillator/claw-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/coes-p8.json'>aaaa</h1>
-      <h1 path='/oscillator/confused-eaters.json'>aaaa</h1>
-      <h1 path='/oscillator/cross-2.json'>aaaa</h1>
-      <h1 path='/oscillator/cross.json'>aaaa</h1>
-      <h1 path='/oscillator/crown.json'>aaaa</h1>
-      <h1 path='/oscillator/david-hilbert.json'>aaaa</h1>
-      <h1 path='/oscillator/dinner-table.json'>aaaa</h1>
-      <h1 path='/oscillator/double-caterer.json'>aaaa</h1>
-      <h1 path='/oscillator/double-ewe.json'>aaaa</h1>
-      <h1 path='/oscillator/dueling-banjos.json'>aaaa</h1>
-      <h1 path='/oscillator/eater-block-frob.json'>aaaa</h1>
-      <h1 path='/oscillator/eater-plug.json'>aaaa</h1>
-      <h1 path='/oscillator/electric-fence.json'>aaaa</h1>
-      <h1 path='/oscillator/elkies-p5.json'>aaaa</h1>
-      <h1 path='/oscillator/ellison-p4-HW-emulator-hybrid.json'>aaaa</h1>
-      <h1 path='/oscillator/ellison-p4-HW-emulator.json'>aaaa</h1>
-      <h1 path='/oscillator/extremely-impressive.json'>aaaa</h1>
-      <h1 path='/oscillator/figure-eight-on-22P36.json'>aaaa</h1>
-      <h1 path='/oscillator/figure-eight-on-beluchenkos-p13.json'>aaaa</h1>
-      <h1 path='/oscillator/figure-eight-on-jasons-p22.json'>aaaa</h1>
-      <h1 path='/oscillator/figure-eight-on-pentadecathlon.json'>aaaa</h1>
-      <h1 path='/oscillator/figure-eight-on-rattlesnake.json'>aaaa</h1>
-      <h1 path='/oscillator/figure-eight.json'>aaaa</h1>
-      <h1 path='/oscillator/fire-spitting.json'>aaaa</h1>
-      <h1 path='/oscillator/fountain.json'>aaaa</h1>
-      <h1 path='/oscillator/four-eaters-hassling-four-bookends.json'>aaaa</h1>
-      <h1 path='/oscillator/four-eaters-hassling-lumps-of-muck.json'>aaaa</h1>
-      <h1 path='/oscillator/four-molds-hassling-eight-blocks.json'>aaaa</h1>
-      <h1 path='/oscillator/fox.json'>aaaa</h1>
-      <h1 path='/oscillator/french-kiss.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole-on-34P14-shuttle.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole-on-achims-p11.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole-on-beluchenkos-p13.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole-on-p18-bi-block-hassler.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole-on-richs-p16.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole-on-robs-p16.json'>aaaa</h1>
-      <h1 path='/oscillator/fumarole.json'>aaaa</h1>
-      <h1 path='/oscillator/gabriels-p138.json'>aaaa</h1>
-      <h1 path='/oscillator/glasses.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/beehive-on-griddle.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/block-on-griddle.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/blocks-on-griddle.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/boat-on-griddle.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/by-flops.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/griddle-and-dock.json'>aaaa</h1>
-      <h1 path='/oscillator/griddle/griddle-and-table.json'>aaaa</h1>
-      <h1 path='/oscillator/harbor.json'>aaaa</h1>
-      <h1 path='/oscillator/heart.json'>aaaa</h1>
-      <h1 path='/oscillator/heavyweight-emulator.json'>aaaa</h1>
-      <h1 path='/oscillator/heavyweight-volcano.json'>aaaa</h1>
-      <h1 path='/oscillator/hebdarole.json'>aaaa</h1>
-      <h1 path='/oscillator/hive-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/honey-thieves-with-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/honey-thieves.json'>aaaa</h1>
-      <h1 path='/oscillator/hook-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/hooks.json'>aaaa</h1>
-      <h1 path='/oscillator/jack.json'>aaaa</h1>
-      <h1 path='/oscillator/jam.json'>aaaa</h1>
-      <h1 path='/oscillator/jasons-p11.json'>aaaa</h1>
-      <h1 path='/oscillator/jasons-p156.json'>aaaa</h1>
-      <h1 path='/oscillator/jasons-p22.json'>aaaa</h1>
-      <h1 path='/oscillator/jasons-p33.json'>aaaa</h1>
-      <h1 path='/oscillator/jasons-p36.json'>aaaa</h1>
-      <h1 path='/oscillator/jasons-p6.json'>aaaa</h1>
-      <h1 path='/oscillator/jolson.json'>aaaa</h1>
-      <h1 path='/oscillator/karels-p15.json'>aaaa</h1>
-      <h1 path='/oscillator/karels-p177.json'>aaaa</h1>
-      <h1 path='/oscillator/karels-p28.json'>aaaa</h1>
-      <h1 path='/oscillator/koks-galaxy.json'>aaaa</h1>
-      <h1 path='/oscillator/laputa.json'>aaaa</h1>
-      <h1 path='/oscillator/lei.json'>aaaa</h1>
-      <h1 path='/oscillator/light-speed-oscillator-1.json'>aaaa</h1>
-      <h1 path='/oscillator/light-speed-oscillator-2.json'>aaaa</h1>
-      <h1 path='/oscillator/light-speed-oscillator-3.json'>aaaa</h1>
-      <h1 path='/oscillator/lightweight-emulator.json'>aaaa</h1>
-      <h1 path='/oscillator/loaf-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/loaflipflop.json'>aaaa</h1>
-      <h1 path='/oscillator/mangled-1-beacon.json'>aaaa</h1>
-      <h1 path='/oscillator/mango-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/mazing.json'>aaaa</h1>
-      <h1 path='/oscillator/merzenichs-p11.json'>aaaa</h1>
-      <h1 path='/oscillator/merzenichs-p31.json'>aaaa</h1>
-      <h1 path='/oscillator/merzenichs-p64.json'>aaaa</h1>
-      <h1 path='/oscillator/middleweight-emulator.json'>aaaa</h1>
-      <h1 path='/oscillator/middleweight-volcano.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-34P14-shuttle.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-41P7_2.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-fumarole.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-jasons-p22.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-long-hook-eating-tub.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-merzenichs-p31.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-pentadecathlon.json'>aaaa</h1>
-      <h1 path='/oscillator/mold-on-rattlesnake.json'>aaaa</h1>
-      <h1 path='/oscillator/mold.json'>aaaa</h1>
-      <h1 path='/oscillator/monoclaw-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/monogram.json'>aaaa</h1>
-      <h1 path='/oscillator/montana.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/14P2_1.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/bipole-tie-pseudo-barberpole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/bipole-tie-ship.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/bipole-tie-snake.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/bipole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/blinker.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/boat-tie-bipole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/boat-tie-tripole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/carrier-tie-bipole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/cha-cha.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/circle-of-fire.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/clock.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/cuphook.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/cyclic.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/decapole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/duodecapole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/gray-counter.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/heptapole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/hexapole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/muttering-moat-1.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/nonapole.json'>aaaa</h1>
-      <h1 path='/oscillator/muttering-moat/octapole.json'>aaaa</h1>
-      <h1 path='/oscillator/octagon-2.json'>aaaa</h1>
-      <h1 path='/oscillator/octagon-4.json'>aaaa</h1>
-      <h1 path='/oscillator/odd-keys.json'>aaaa</h1>
-      <h1 path='/oscillator/odd-test-tube-baby.json'>aaaa</h1>
-      <h1 path='/oscillator/overweight-emulator.json'>aaaa</h1>
-      <h1 path='/oscillator/pulsar.json'>aaaa</h1>
-      <h1 path='/oscillator/relay/106P135.json'>aaaa</h1>
-      <h1 path='/oscillator/relay/6-bits.json'>aaaa</h1>
-      <h1 path='/oscillator/relay/double-x.json'>aaaa</h1>
-      <h1 path='/oscillator/relay/hectic.json'>aaaa</h1>
-      <h1 path='/oscillator/relay/metamorphosis-II.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/34P14-shuttle.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/carnival-shuttle.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/centinal.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/diuresis.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/eureka.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/gourmet.json'>aaaa</h1>
-      <h1 path='/oscillator/shuttle/newshuttle.json'>aaaa</h1>
-      <h1 path='/oscillator/t-nose/blocked-p4-t-nose-hybrid.json'>aaaa</h1>
-      <h1 path='/oscillator/t-nose/blocked-p4-t-nose.json'>aaaa</h1>
-      <h1 path='/oscillator/toad.json'>aaaa</h1>
-      <h1 path='/still-life/eater/7x9-eater.json'>aaaa</h1>
-      <h1 path='/still-life/eater/century-eater.json'>aaaa</h1>
-      <h1 path='/still-life/eater/eater-1.json'>aaaa</h1>
-      <h1 path='/still-life/eater/eater-2.json'>aaaa</h1>
-      <h1 path='/still-life/eater/eater-3.json'>aaaa</h1>
-      <h1 path='/still-life/eater/eater-4.json'>aaaa</h1>
-      <h1 path='/still-life/eater/sidesnagger.json'>aaaa</h1>
-      <h1 path='/still-life/eater/tub-with-tail-eater.json'>aaaa</h1>
-      <h1 path='/still-life/pseudo-still-life/bi-block.json'>aaaa</h1>
-      <h1 path='/still-life/pseudo-still-life/bi-boat.json'>aaaa</h1>
-      <h1 path='/still-life/pseudo-still-life/block-on-boat.json'>aaaa</h1>
-      <h1 path='/still-life/pseudo-still-life/pond-on-pond.json'>aaaa</h1>
-      <h1 path='/still-life/pseudo-still-life/quad-pseudo-still-life.json'>aaaa</h1>
-      <h1 path='/still-life/pseudo-still-life/triple-pseudo-still-life.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/15-bent-paperclip.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/29-bit-still-life-no1.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/31_4.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/aircraft-carrier.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/amphisbaena.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/aries-betwixt-two-blocks.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/asymmetric-amphisbaena.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/barge-siamese-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/barge-with-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/barge-with-very-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bee-hat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-at-beehive.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-at-claw.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-at-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-on-cap.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-on-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-with-bend-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-with-nine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/beehive.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bi-cap.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bi-loaf2.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bi-pond.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/big-s.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/block-on-cap.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/block-on-cover.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/block-on-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/block-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/block.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie-eater-head.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie-eater-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie-long-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-tie.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-with-cis-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-with-hooked-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-with-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-with-long3-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat-with-very-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bookend-table-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bookends-siamese-tables.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/bookends.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/broken-elevener.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/broken-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/canoe-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/canoe.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cap-and-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-bridge-carrier.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-bridge-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-bridge-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-canoe.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-carrier.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-eater-head.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-eater-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-hook-with-tail-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-hook-with-tail-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-tub-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-siamese-very-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-tie-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-tie-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/carrier-with-feather.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-barge-with-nine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-barge-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-block-on-long-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-amphisbaena.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-and-cap.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-line-tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-on-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-with-nine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-boat-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-carrier-down-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-carrier-tie-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-carrier-tie.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-carrier-up-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-fuse-with-two-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-hook-and-R-bee.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-loaf-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-long-barge-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-long-boat-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-mango-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-mirrored-R-bee.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-mirrored-worm.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-R-bee-and-R-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-rotated-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-rotated-R-bee.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-ship-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cis-snake-tie.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/claw-siamese-tub-with-cape.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/claw-with-boat-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/claw-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/claw-with-tub-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/clips.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cloverleaf-interchange.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/cthulhu.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/dead-spark-coil.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/dock-and-long-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/double-claw.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/down-snake-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-bridge-eater.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-head-siamese-eater-head.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-head-siamese-eater-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-head-siamese-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-head-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-tail-siamese-eater-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-tail-siamese-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-tail-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-with-cape.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-with-head-feather.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eater-with-tail-feather.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/egyptian-walk.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/eleven-loop.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/elevener.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/fourteener.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/fuse-with-tail-and-integral.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/fuse-with-tail-and-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/fuse-with-tail-and-very-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/fuse-with-two-long-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/grin-reagent.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/gull-with-tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/half-bakery.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hat-siamese-vase.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hexagonal-key.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/honeybarge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/honeycomb.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hook-with-nine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hook-with-tail-hook-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hook-with-tail-tail-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hook-with-tail-with-cape.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hook-with-two-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/house-on-house-siamese-table-on-table-weld-hat-siamese-hat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/hungry-hat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/inflected-clips.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/inflected-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/inflexion.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-sign.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-cis-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-hook-and-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-long-hook-and-tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-long-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-tub-and-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-tub-and-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-two-tubs.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/integral-with-very-long-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/inverted-double-claw.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/lake2.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/loaf-back-tie-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/loaf-siamese-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/loaf-tie-eater-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-boat-tie-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-boat-with-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-canoe.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-cis-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-cis-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-claw-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-integral-with-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-integral.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-melusine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-prodigal.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-snake-siamese-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long-tub-claw-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long10-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long10-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-canoe.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-integral.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long3-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-canoe.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long4-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long5-barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long5-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long5-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long5-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long6-barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long6-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long6-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long6-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long7-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long7-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long8-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long8-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long9-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/long9-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/longhorn.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/loop.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/mango-with-block-on-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/mango.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/mickey-mouse.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/mirrored-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/moose-antlers.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/o-quad-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/omnibus-with-tubs.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/omnibus.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/ortho-loaf-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/paperclip.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/pond-on-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/pond.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/professor.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/python-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/R-bee-and-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/R-bee-on-beehive.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/R-bee-with-feather.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/R-mango-and-house.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/rotated-c.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/rotated-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/scorpion.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/sesquihat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/shillelagh-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/ship-tie-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/ship-tie.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/shuriken.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/sidewalk.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/skew-R-bees.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/small-lake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/snake-bridge-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/snake-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/snake-siamese-very-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/snake-with-feather.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/snorkel-loop.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/spiral.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/super-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/super-mango.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/super-pond.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/symmetric-scorpion.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/symmetrical-synapse.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/table-and-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/table-and-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/teardrop-with-cape.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/teardrop-with-claw.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/thirteen-loop.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-barge-with-nine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-barge-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-block-on-long-hook.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-boat-amphisbaena.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-boat-line-tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-boat-on-dock.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-boat-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-boat-with-nine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-boat-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-carrier-down-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-carrier-tie-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-carrier-tie.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-carrier-up-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-fuse-with-two-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-hook-and-R-bee.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-loaf-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-long-barge-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-long-boat-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-mango-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-mirrored-R-bee.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-R-bee-and-R-loaf.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-rotated-R-bee.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-ship-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/trans-snake-tie.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-bend-line-tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-cis-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-long-cis-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-long3-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-long4-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-tail-siamese-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-tail-with-cape.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-two-down-cis-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-two-down-trans-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-two-up-cis-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-two-up-trans-tails.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub-with-very-long-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/tub.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/twelve-loop.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/twin-hat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/up-dove-on-dove.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/up-snake-on-table.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/up-wing-on-wing.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-barge.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-boat.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-canoe.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-cis-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-cis-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-claw-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-hook-with-tail.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-integral.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-melusine.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-prodigal.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-shillelagh.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-ship.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/very-long-snake.json'>aaaa</h1>
-      <h1 path='/still-life/strict-still-life/z-quad-loaf.json'>aaaa</h1>
+      <Page path='/oscillator/1-beacon.json' lifeData={_1_beacon} />
+      <Page path='/oscillator/101.json' lifeData={_101} />
+      <Page path='/oscillator/110P62.json' lifeData={_110P62} />
+      <Page path='/oscillator/112P15.json' lifeData={_112P15} />
+      <Page path='/oscillator/117P18.json' lifeData={_117P18} />
+      <Page path='/oscillator/124P21.json' lifeData={_124P21} />
+      <Page path='/oscillator/128P10_2.json' lifeData={_128P10_2} />
+      <Page path='/oscillator/134P25.json' lifeData={_134P25} />
+      <Page path='/oscillator/134P39_1.json' lifeData={_134P39_1} />
+      <Page path='/oscillator/144P24.json' lifeData={_144P24} />
+      <Page path='/oscillator/145P20.json' lifeData={_145P20} />
+      <Page path='/oscillator/14P2_3.json' lifeData={_14P2_3} />
+      <Page path='/oscillator/14P2_4.json' lifeData={_14P2_4} />
+      <Page path='/oscillator/168P22_1.json' lifeData={_168P22_1} />
+      <Page path='/oscillator/186P24.json' lifeData={_186P24} />
+      <Page path='/oscillator/209P8.json' lifeData={_209P8} />
+      <Page path='/oscillator/20P2.json' lifeData={_20P2} />
+      <Page path='/oscillator/21P2.json' lifeData={_21P2} />
+      <Page path='/oscillator/22P2.json' lifeData={_22P2} />
+      <Page path='/oscillator/22P36.json' lifeData={_22P36} />
+      <Page path='/oscillator/230P8.json' lifeData={_230P8} />
+      <Page path='/oscillator/23P2.json' lifeData={_23P2} />
+      <Page path='/oscillator/24P10.json' lifeData={_24P10} />
+      <Page path='/oscillator/24P2.json' lifeData={_24P2} />
+      <Page path='/oscillator/258P3-on-achims-p11.json' lifeData={_258P3_on_achims_p11} />
+      <Page path='/oscillator/258P3.json' lifeData={_258P3} />
+      <Page path='/oscillator/26P2.json' lifeData={_26P2} />
+      <Page path='/oscillator/28P7_1.json' lifeData={_28P7_1} />
+      <Page path='/oscillator/28P7_2.json' lifeData={_28P7_2} />
+      <Page path='/oscillator/28P7_3.json' lifeData={_28P7_3} />
+      <Page path='/oscillator/30P6_1.json' lifeData={_30P6_1} />
+      <Page path='/oscillator/33P3_1.json' lifeData={_33P3_1} />
+      <Page path='/oscillator/35P12_1.json' lifeData={_35P12_1} />
+      <Page path='/oscillator/37P10_1.json' lifeData={_37P10_1} />
+      <Page path='/oscillator/37P7_1.json' lifeData={_37P7_1} />
+      <Page path='/oscillator/38P7_2.json' lifeData={_38P7_2} />
+      <Page path='/oscillator/41P7_2.json' lifeData={_41P7_2} />
+      <Page path='/oscillator/44P12_3.json' lifeData={_44P12_3} />
+      <Page path='/oscillator/44P7_2.json' lifeData={_44P7_2} />
+      <Page path='/oscillator/48P22_1.json' lifeData={_48P22_1} />
+      <Page path='/oscillator/49P88.json' lifeData={_49P88} />
+      <Page path='/oscillator/50P35.json' lifeData={_50P35} />
+      <Page path='/oscillator/53P13.json' lifeData={_53P13} />
+      <Page path='/oscillator/55P10.json' lifeData={_55P10} />
+      <Page path='/oscillator/56P27.json' lifeData={_56P27} />
+      <Page path='/oscillator/5blink.json' lifeData={_5blink} />
+      <Page path='/oscillator/60P312.json' lifeData={_60P312} />
+      <Page path='/oscillator/62P3_1.json' lifeData={_62P3_1} />
+      <Page path='/oscillator/65P48.json' lifeData={_65P48} />
+      <Page path='/oscillator/66P13.json' lifeData={_66P13} />
+      <Page path='/oscillator/68P16.json' lifeData={_68P16} />
+      <Page path='/oscillator/68P32_1.json' lifeData={_68P32_1} />
+      <Page path='/oscillator/68P9.json' lifeData={_68P9} />
+      <Page path='/oscillator/69P48.json' lifeData={_69P48} />
+      <Page path='/oscillator/77P77.json' lifeData={_77P77} />
+      <Page path='/oscillator/78P70.json' lifeData={_78P70} />
+      <Page path='/oscillator/80P6.json' lifeData={_80P6} />
+      <Page path='/oscillator/84P87.json' lifeData={_84P87} />
+      <Page path='/oscillator/87P26.json' lifeData={_87P26} />
+      <Page path='/oscillator/92P51.json' lifeData={_92P51} />
+      <Page path='/oscillator/94P27_1.json' lifeData={_94P27_1} />
+      <Page path='/oscillator/98P25.json' lifeData={_98P25} />
+      <Page path='/oscillator/a-for-all.json' lifeData={_a_for_all} />
+      <Page path='/oscillator/achims-other-p16.json' lifeData={_achims_other_p16} />
+      <Page path='/oscillator/achims-p11.json' lifeData={_achims_p11} />
+      <Page path='/oscillator/achims-p144.json' lifeData={_achims_p144} />
+      <Page path='/oscillator/achims-p16.json' lifeData={_achims_p16} />
+      <Page path='/oscillator/achims-p4.json' lifeData={_achims_p4} />
+      <Page path='/oscillator/achims-p8.json' lifeData={_achims_p8} />
+      <Page path='/oscillator/almosymmetric.json' lifeData={_almosymmetric} />
+      <Page path='/oscillator/babbling-brook/babbling-brook-1.json' lifeData={_babbling_brook_1} />
+      <Page path='/oscillator/babbling-brook/beacon.json' lifeData={_beacon} />
+      <Page path='/oscillator/babbling-brook/four-boats.json' lifeData={_four_boats} />
+      <Page path='/oscillator/babbling-brook/great-on-off.json' lifeData={_great_on_off} />
+      <Page path='/oscillator/babbling-brook/light-bulb.json' lifeData={_light_bulb} />
+      <Page path='/oscillator/bakers-dozen.json' lifeData={_bakers_dozen} />
+      <Page path='/oscillator/beacon-on-38P11_1.json' lifeData={_beacon_on_38P11_1} />
+      <Page path='/oscillator/beacon-on-cover.json' lifeData={_beacon_on_cover} />
+      <Page path='/oscillator/beehive-on-long-hook-eating-tub.json' lifeData={_beehive_on_long_hook_eating_tub} />
+      <Page path='/oscillator/beehive-test-tube-baby.json' lifeData={_beehive_test_tube_baby} />
+      <Page path='/oscillator/beluchenkos-other-p37.json' lifeData={_beluchenkos_other_p37} />
+      <Page path='/oscillator/beluchenkos-p13.json' lifeData={_beluchenkos_p13} />
+      <Page path='/oscillator/beluchenkos-p37.json' lifeData={_beluchenkos_p37} />
+      <Page path='/oscillator/beluchenkos-p40.json' lifeData={_beluchenkos_p40} />
+      <Page path='/oscillator/beluchenkos-p51.json' lifeData={_beluchenkos_p51} />
+      <Page path='/oscillator/bent-keys.json' lifeData={_bent_keys} />
+      <Page path='/oscillator/billiard-table/$rats.json' lifeData={_$rats} />
+      <Page path='/oscillator/billiard-table/1-2-3-4.json' lifeData={_1_2_3_4} />
+      <Page path='/oscillator/billiard-table/1-2-3.json' lifeData={_1_2_3} />
+      <Page path='/oscillator/billiard-table/123P27_1.json' lifeData={_123P27_1} />
+      <Page path='/oscillator/billiard-table/29P9.json' lifeData={_29P9} />
+      <Page path='/oscillator/billiard-table/38P11_1.json' lifeData={_38P11_1} />
+      <Page path='/oscillator/billiard-table/42P10_3.json' lifeData={_42P10_3} />
+      <Page path='/oscillator/billiard-table/44P14.json' lifeData={_44P14} />
+      <Page path='/oscillator/billiard-table/54P17_1.json' lifeData={_54P17_1} />
+      <Page path='/oscillator/billiard-table/a-verage.json' lifeData={_a_verage} />
+      <Page path='/oscillator/billiard-table/airforce.json' lifeData={_airforce} />
+      <Page path='/oscillator/billiard-table/boss.json' lifeData={_boss} />
+      <Page path='/oscillator/billiard-table/burloaferimeter.json' lifeData={_burloaferimeter} />
+      <Page path='/oscillator/billiard-table/cauldron.json' lifeData={_cauldron} />
+      <Page path='/oscillator/billiard-table/champagne-glass.json' lifeData={_champagne_glass} />
+      <Page path='/oscillator/billiard-table/chemist.json' lifeData={_chemist} />
+      <Page path='/oscillator/billiard-table/clock-2.json' lifeData={_clock_2} />
+      <Page path='/oscillator/billiard-table/cousins.json' lifeData={_cousins} />
+      <Page path='/oscillator/billiard-table/crowd.json' lifeData={_crowd} />
+      <Page path='/oscillator/billiard-table/diamond-ring.json' lifeData={_diamond_ring} />
+      <Page path='/oscillator/billiard-table/en-retard.json' lifeData={_en_retard} />
+      <Page path='/oscillator/billiard-table/fore-and-back.json' lifeData={_fore_and_back} />
+      <Page path='/oscillator/billiard-table/frog-II.json' lifeData={_frog_II} />
+      <Page path='/oscillator/billiard-table/germ.json' lifeData={_germ} />
+      <Page path='/oscillator/billiard-table/hertz-oscillator.json' lifeData={_hertz_oscillator} />
+      <Page path='/oscillator/billiard-table/hustler-II.json' lifeData={_hustler_II} />
+      <Page path='/oscillator/billiard-table/hustler.json' lifeData={_hustler} />
+      <Page path='/oscillator/billiard-table/loading-dock.json' lifeData={_loading_dock} />
+      <Page path='/oscillator/billiard-table/mathematician.json' lifeData={_mathematician} />
+      <Page path='/oscillator/billiard-table/merzenichs-p18.json' lifeData={_merzenichs_p18} />
+      <Page path='/oscillator/billiard-table/mini-pressure-cooker.json' lifeData={_mini_pressure_cooker} />
+      <Page path='/oscillator/billiard-table/negentropy.json' lifeData={_negentropy} />
+      <Page path='/oscillator/billiard-table/new-five.json' lifeData={_new_five} />
+      <Page path='/oscillator/biting-off-more-than-they-can-chew.json' lifeData={_biting_off_more_than_they_can_chew} />
+      <Page path='/oscillator/blinkers-bit-pole.json' lifeData={_blinkers_bit_pole} />
+      <Page path='/oscillator/blocked-p4-1.json' lifeData={_blocked_p4_1} />
+      <Page path='/oscillator/blocked-p4-2.json' lifeData={_blocked_p4_2} />
+      <Page path='/oscillator/blocked-p4-3.json' lifeData={_blocked_p4_3} />
+      <Page path='/oscillator/blocked-p4-4.json' lifeData={_blocked_p4_4} />
+      <Page path='/oscillator/blocked-p4-5.json' lifeData={_blocked_p4_5} />
+      <Page path='/oscillator/blocker.json' lifeData={_blocker} />
+      <Page path='/oscillator/blonker-on-richs-p16.json' lifeData={_blonker_on_richs_p16} />
+      <Page path='/oscillator/blonker.json' lifeData={_blonker} />
+      <Page path='/oscillator/boat-test-tube-baby.json' lifeData={_boat_test_tube_baby} />
+      <Page path='/oscillator/boat-tie-quadpole.json' lifeData={_boat_tie_quadpole} />
+      <Page path='/oscillator/boat-tie-spark-coil.json' lifeData={_boat_tie_spark_coil} />
+      <Page path='/oscillator/boring-p24.json' lifeData={_boring_p24} />
+      <Page path='/oscillator/bottle.json' lifeData={_bottle} />
+      <Page path='/oscillator/buckinghams-p13.json' lifeData={_buckinghams_p13} />
+      <Page path='/oscillator/candelabra.json' lifeData={_candelabra} />
+      <Page path='/oscillator/candlefrobra.json' lifeData={_candlefrobra} />
+      <Page path='/oscillator/caterer-on-28P7_3.json' lifeData={_caterer_on_28P7_3} />
+      <Page path='/oscillator/caterer-on-42P7_1.json' lifeData={_caterer_on_42P7_1} />
+      <Page path='/oscillator/caterer-on-44P7_2.json' lifeData={_caterer_on_44P7_2} />
+      <Page path='/oscillator/caterer-on-68P32.json' lifeData={_caterer_on_68P32} />
+      <Page path='/oscillator/caterer-on-beluchenkos-p13.json' lifeData={_caterer_on_beluchenkos_p13} />
+      <Page path='/oscillator/caterer-on-figure-eight.json' lifeData={_caterer_on_figure_eight} />
+      <Page path='/oscillator/caterer-on-jasons-p22.json' lifeData={_caterer_on_jasons_p22} />
+      <Page path='/oscillator/caterer-on-merzenichs-p31.json' lifeData={_caterer_on_merzenichs_p31} />
+      <Page path='/oscillator/caterer-on-rattlesnake.json' lifeData={_caterer_on_rattlesnake} />
+      <Page path='/oscillator/caterer.json' lifeData={_caterer} />
+      <Page path='/oscillator/cis-beacon-down-on-long-hook.json' lifeData={_cis_beacon_down_on_long_hook} />
+      <Page path='/oscillator/cis-beacon-on-anvil.json' lifeData={_cis_beacon_on_anvil} />
+      <Page path='/oscillator/cis-beacon-on-cap.json' lifeData={_cis_beacon_on_cap} />
+      <Page path='/oscillator/cis-beacon-on-dock.json' lifeData={_cis_beacon_on_dock} />
+      <Page path='/oscillator/cis-beacon-on-table.json' lifeData={_cis_beacon_on_table} />
+      <Page path='/oscillator/cis-beacon-up-on-long-hook.json' lifeData={_cis_beacon_up_on_long_hook} />
+      <Page path='/oscillator/cis-boat-on-long-hook-eating-tub.json' lifeData={_cis_boat_on_long_hook_eating_tub} />
+      <Page path='/oscillator/claw-test-tube-baby.json' lifeData={_claw_test_tube_baby} />
+      <Page path='/oscillator/coes-p8.json' lifeData={_coes_p8} />
+      <Page path='/oscillator/confused-eaters.json' lifeData={_confused_eaters} />
+      <Page path='/oscillator/cross-2.json' lifeData={_cross_2} />
+      <Page path='/oscillator/cross.json' lifeData={_cross} />
+      <Page path='/oscillator/crown.json' lifeData={_crown} />
+      <Page path='/oscillator/david-hilbert.json' lifeData={_david_hilbert} />
+      <Page path='/oscillator/dinner-table.json' lifeData={_dinner_table} />
+      <Page path='/oscillator/double-caterer.json' lifeData={_double_caterer} />
+      <Page path='/oscillator/double-ewe.json' lifeData={_double_ewe} />
+      <Page path='/oscillator/dueling-banjos.json' lifeData={_dueling_banjos} />
+      <Page path='/oscillator/eater-block-frob.json' lifeData={_eater_block_frob} />
+      <Page path='/oscillator/eater-plug.json' lifeData={_eater_plug} />
+      <Page path='/oscillator/electric-fence.json' lifeData={_electric_fence} />
+      <Page path='/oscillator/elkies-p5.json' lifeData={_elkies_p5} />
+      <Page path='/oscillator/ellison-p4-HW-emulator-hybrid.json' lifeData={_ellison_p4_HW_emulator_hybrid} />
+      <Page path='/oscillator/ellison-p4-HW-emulator.json' lifeData={_ellison_p4_HW_emulator} />
+      <Page path='/oscillator/extremely-impressive.json' lifeData={_extremely_impressive} />
+      <Page path='/oscillator/figure-eight-on-22P36.json' lifeData={_figure_eight_on_22P36} />
+      <Page path='/oscillator/figure-eight-on-beluchenkos-p13.json' lifeData={_figure_eight_on_beluchenkos_p13} />
+      <Page path='/oscillator/figure-eight-on-jasons-p22.json' lifeData={_figure_eight_on_jasons_p22} />
+      <Page path='/oscillator/figure-eight-on-pentadecathlon.json' lifeData={_figure_eight_on_pentadecathlon} />
+      <Page path='/oscillator/figure-eight-on-rattlesnake.json' lifeData={_figure_eight_on_rattlesnake} />
+      <Page path='/oscillator/figure-eight.json' lifeData={_figure_eight} />
+      <Page path='/oscillator/fire-spitting.json' lifeData={_fire_spitting} />
+      <Page path='/oscillator/fountain.json' lifeData={_fountain} />
+      <Page path='/oscillator/four-eaters-hassling-four-bookends.json' lifeData={_four_eaters_hassling_four_bookends} />
+      <Page path='/oscillator/four-eaters-hassling-lumps-of-muck.json' lifeData={_four_eaters_hassling_lumps_of_muck} />
+      <Page path='/oscillator/four-molds-hassling-eight-blocks.json' lifeData={_four_molds_hassling_eight_blocks} />
+      <Page path='/oscillator/fox.json' lifeData={_fox} />
+      <Page path='/oscillator/french-kiss.json' lifeData={_french_kiss} />
+      <Page path='/oscillator/fumarole-on-34P14-shuttle.json' lifeData={_fumarole_on_34P14_shuttle} />
+      <Page path='/oscillator/fumarole-on-achims-p11.json' lifeData={_fumarole_on_achims_p11} />
+      <Page path='/oscillator/fumarole-on-beluchenkos-p13.json' lifeData={_fumarole_on_beluchenkos_p13} />
+      <Page path='/oscillator/fumarole-on-p18-bi-block-hassler.json' lifeData={_fumarole_on_p18_bi_block_hassler} />
+      <Page path='/oscillator/fumarole-on-richs-p16.json' lifeData={_fumarole_on_richs_p16} />
+      <Page path='/oscillator/fumarole-on-robs-p16.json' lifeData={_fumarole_on_robs_p16} />
+      <Page path='/oscillator/fumarole.json' lifeData={_fumarole} />
+      <Page path='/oscillator/gabriels-p138.json' lifeData={_gabriels_p138} />
+      <Page path='/oscillator/glasses.json' lifeData={_glasses} />
+      <Page path='/oscillator/griddle/beehive-on-griddle.json' lifeData={_beehive_on_griddle} />
+      <Page path='/oscillator/griddle/block-on-griddle.json' lifeData={_block_on_griddle} />
+      <Page path='/oscillator/griddle/blocks-on-griddle.json' lifeData={_blocks_on_griddle} />
+      <Page path='/oscillator/griddle/boat-on-griddle.json' lifeData={_boat_on_griddle} />
+      <Page path='/oscillator/griddle/by-flops.json' lifeData={_by_flops} />
+      <Page path='/oscillator/griddle/griddle-and-dock.json' lifeData={_griddle_and_dock} />
+      <Page path='/oscillator/griddle/griddle-and-table.json' lifeData={_griddle_and_table} />
+      <Page path='/oscillator/harbor.json' lifeData={_harbor} />
+      <Page path='/oscillator/heart.json' lifeData={_heart} />
+      <Page path='/oscillator/heavyweight-emulator.json' lifeData={_heavyweight_emulator} />
+      <Page path='/oscillator/heavyweight-volcano.json' lifeData={_heavyweight_volcano} />
+      <Page path='/oscillator/hebdarole.json' lifeData={_hebdarole} />
+      <Page path='/oscillator/hive-test-tube-baby.json' lifeData={_hive_test_tube_baby} />
+      <Page path='/oscillator/honey-thieves-with-test-tube-baby.json' lifeData={_honey_thieves_with_test_tube_baby} />
+      <Page path='/oscillator/honey-thieves.json' lifeData={_honey_thieves} />
+      <Page path='/oscillator/hook-test-tube-baby.json' lifeData={_hook_test_tube_baby} />
+      <Page path='/oscillator/hooks.json' lifeData={_hooks} />
+      <Page path='/oscillator/jack.json' lifeData={_jack} />
+      <Page path='/oscillator/jam.json' lifeData={_jam} />
+      <Page path='/oscillator/jasons-p11.json' lifeData={_jasons_p11} />
+      <Page path='/oscillator/jasons-p156.json' lifeData={_jasons_p156} />
+      <Page path='/oscillator/jasons-p22.json' lifeData={_jasons_p22} />
+      <Page path='/oscillator/jasons-p33.json' lifeData={_jasons_p33} />
+      <Page path='/oscillator/jasons-p36.json' lifeData={_jasons_p36} />
+      <Page path='/oscillator/jasons-p6.json' lifeData={_jasons_p6} />
+      <Page path='/oscillator/jolson.json' lifeData={_jolson} />
+      <Page path='/oscillator/karels-p15.json' lifeData={_karels_p15} />
+      <Page path='/oscillator/karels-p177.json' lifeData={_karels_p177} />
+      <Page path='/oscillator/karels-p28.json' lifeData={_karels_p28} />
+      <Page path='/oscillator/koks-galaxy.json' lifeData={_koks_galaxy} />
+      <Page path='/oscillator/laputa.json' lifeData={_laputa} />
+      <Page path='/oscillator/lei.json' lifeData={_lei} />
+      <Page path='/oscillator/light-speed-oscillator-1.json' lifeData={_light_speed_oscillator_1} />
+      <Page path='/oscillator/light-speed-oscillator-2.json' lifeData={_light_speed_oscillator_2} />
+      <Page path='/oscillator/light-speed-oscillator-3.json' lifeData={_light_speed_oscillator_3} />
+      <Page path='/oscillator/lightweight-emulator.json' lifeData={_lightweight_emulator} />
+      <Page path='/oscillator/loaf-test-tube-baby.json' lifeData={_loaf_test_tube_baby} />
+      <Page path='/oscillator/loaflipflop.json' lifeData={_loaflipflop} />
+      <Page path='/oscillator/mangled-1-beacon.json' lifeData={_mangled_1_beacon} />
+      <Page path='/oscillator/mango-test-tube-baby.json' lifeData={_mango_test_tube_baby} />
+      <Page path='/oscillator/mazing.json' lifeData={_mazing} />
+      <Page path='/oscillator/merzenichs-p11.json' lifeData={_merzenichs_p11} />
+      <Page path='/oscillator/merzenichs-p31.json' lifeData={_merzenichs_p31} />
+      <Page path='/oscillator/merzenichs-p64.json' lifeData={_merzenichs_p64} />
+      <Page path='/oscillator/middleweight-emulator.json' lifeData={_middleweight_emulator} />
+      <Page path='/oscillator/middleweight-volcano.json' lifeData={_middleweight_volcano} />
+      <Page path='/oscillator/mold-on-34P14-shuttle.json' lifeData={_mold_on_34P14_shuttle} />
+      <Page path='/oscillator/mold-on-41P7_2.json' lifeData={_mold_on_41P7_2} />
+      <Page path='/oscillator/mold-on-fumarole.json' lifeData={_mold_on_fumarole} />
+      <Page path='/oscillator/mold-on-jasons-p22.json' lifeData={_mold_on_jasons_p22} />
+      <Page path='/oscillator/mold-on-long-hook-eating-tub.json' lifeData={_mold_on_long_hook_eating_tub} />
+      <Page path='/oscillator/mold-on-merzenichs-p31.json' lifeData={_mold_on_merzenichs_p31} />
+      <Page path='/oscillator/mold-on-pentadecathlon.json' lifeData={_mold_on_pentadecathlon} />
+      <Page path='/oscillator/mold-on-rattlesnake.json' lifeData={_mold_on_rattlesnake} />
+      <Page path='/oscillator/mold.json' lifeData={_mold} />
+      <Page path='/oscillator/monoclaw-test-tube-baby.json' lifeData={_monoclaw_test_tube_baby} />
+      <Page path='/oscillator/monogram.json' lifeData={_monogram} />
+      <Page path='/oscillator/montana.json' lifeData={_montana} />
+      <Page path='/oscillator/muttering-moat/14P2_1.json' lifeData={_14P2_1} />
+      <Page path='/oscillator/muttering-moat/bipole-tie-pseudo-barberpole.json' lifeData={_bipole_tie_pseudo_barberpole} />
+      <Page path='/oscillator/muttering-moat/bipole-tie-ship.json' lifeData={_bipole_tie_ship} />
+      <Page path='/oscillator/muttering-moat/bipole-tie-snake.json' lifeData={_bipole_tie_snake} />
+      <Page path='/oscillator/muttering-moat/bipole.json' lifeData={_bipole} />
+      <Page path='/oscillator/muttering-moat/blinker.json' lifeData={_blinker} />
+      <Page path='/oscillator/muttering-moat/boat-tie-bipole.json' lifeData={_boat_tie_bipole} />
+      <Page path='/oscillator/muttering-moat/boat-tie-tripole.json' lifeData={_boat_tie_tripole} />
+      <Page path='/oscillator/muttering-moat/carrier-tie-bipole.json' lifeData={_carrier_tie_bipole} />
+      <Page path='/oscillator/muttering-moat/cha-cha.json' lifeData={_cha_cha} />
+      <Page path='/oscillator/muttering-moat/circle-of-fire.json' lifeData={_circle_of_fire} />
+      <Page path='/oscillator/muttering-moat/clock.json' lifeData={_clock} />
+      <Page path='/oscillator/muttering-moat/cuphook.json' lifeData={_cuphook} />
+      <Page path='/oscillator/muttering-moat/cyclic.json' lifeData={_cyclic} />
+      <Page path='/oscillator/muttering-moat/decapole.json' lifeData={_decapole} />
+      <Page path='/oscillator/muttering-moat/duodecapole.json' lifeData={_duodecapole} />
+      <Page path='/oscillator/muttering-moat/gray-counter.json' lifeData={_gray_counter} />
+      <Page path='/oscillator/muttering-moat/heptapole.json' lifeData={_heptapole} />
+      <Page path='/oscillator/muttering-moat/hexapole.json' lifeData={_hexapole} />
+      <Page path='/oscillator/muttering-moat/muttering-moat-1.json' lifeData={_muttering_moat_1} />
+      <Page path='/oscillator/muttering-moat/nonapole.json' lifeData={_nonapole} />
+      <Page path='/oscillator/muttering-moat/octapole.json' lifeData={_octapole} />
+      <Page path='/oscillator/octagon-2.json' lifeData={_octagon_2} />
+      <Page path='/oscillator/octagon-4.json' lifeData={_octagon_4} />
+      <Page path='/oscillator/odd-keys.json' lifeData={_odd_keys} />
+      <Page path='/oscillator/odd-test-tube-baby.json' lifeData={_odd_test_tube_baby} />
+      <Page path='/oscillator/overweight-emulator.json' lifeData={_overweight_emulator} />
+      <Page path='/oscillator/pulsar.json' lifeData={_pulsar} />
+      <Page path='/oscillator/relay/106P135.json' lifeData={_106P135} />
+      <Page path='/oscillator/relay/6-bits.json' lifeData={_6_bits} />
+      <Page path='/oscillator/relay/double-x.json' lifeData={_double_x} />
+      <Page path='/oscillator/relay/hectic.json' lifeData={_hectic} />
+      <Page path='/oscillator/relay/metamorphosis-II.json' lifeData={_metamorphosis_II} />
+      <Page path='/oscillator/shuttle/34P14-shuttle.json' lifeData={_34P14_shuttle} />
+      <Page path='/oscillator/shuttle/carnival-shuttle.json' lifeData={_carnival_shuttle} />
+      <Page path='/oscillator/shuttle/centinal.json' lifeData={_centinal} />
+      <Page path='/oscillator/shuttle/diuresis.json' lifeData={_diuresis} />
+      <Page path='/oscillator/shuttle/eureka.json' lifeData={_eureka} />
+      <Page path='/oscillator/shuttle/gourmet.json' lifeData={_gourmet} />
+      <Page path='/oscillator/shuttle/newshuttle.json' lifeData={_newshuttle} />
+      <Page path='/oscillator/t-nose/blocked-p4-t-nose-hybrid.json' lifeData={_blocked_p4_t_nose_hybrid} />
+      <Page path='/oscillator/t-nose/blocked-p4-t-nose.json' lifeData={_blocked_p4_t_nose} />
+      <Page path='/oscillator/toad.json' lifeData={_toad} />
+      <Page path='/still-life/eater/7x9-eater.json' lifeData={_7x9_eater} />
+      <Page path='/still-life/eater/century-eater.json' lifeData={_century_eater} />
+      <Page path='/still-life/eater/eater-1.json' lifeData={_eater_1} />
+      <Page path='/still-life/eater/eater-2.json' lifeData={_eater_2} />
+      <Page path='/still-life/eater/eater-3.json' lifeData={_eater_3} />
+      <Page path='/still-life/eater/eater-4.json' lifeData={_eater_4} />
+      <Page path='/still-life/eater/sidesnagger.json' lifeData={_sidesnagger} />
+      <Page path='/still-life/eater/tub-with-tail-eater.json' lifeData={_tub_with_tail_eater} />
+      <Page path='/still-life/pseudo-still-life/bi-block.json' lifeData={_bi_block} />
+      <Page path='/still-life/pseudo-still-life/bi-boat.json' lifeData={_bi_boat} />
+      <Page path='/still-life/pseudo-still-life/block-on-boat.json' lifeData={_block_on_boat} />
+      <Page path='/still-life/pseudo-still-life/pond-on-pond.json' lifeData={_pond_on_pond} />
+      <Page path='/still-life/pseudo-still-life/quad-pseudo-still-life.json' lifeData={_quad_pseudo_still_life} />
+      <Page path='/still-life/pseudo-still-life/triple-pseudo-still-life.json' lifeData={_triple_pseudo_still_life} />
+      <Page path='/still-life/strict-still-life/15-bent-paperclip.json' lifeData={_15_bent_paperclip} />
+      <Page path='/still-life/strict-still-life/29-bit-still-life-no1.json' lifeData={_29_bit_still_life_no1} />
+      <Page path='/still-life/strict-still-life/31_4.json' lifeData={_31_4} />
+      <Page path='/still-life/strict-still-life/aircraft-carrier.json' lifeData={_aircraft_carrier} />
+      <Page path='/still-life/strict-still-life/amphisbaena.json' lifeData={_amphisbaena} />
+      <Page path='/still-life/strict-still-life/aries-betwixt-two-blocks.json' lifeData={_aries_betwixt_two_blocks} />
+      <Page path='/still-life/strict-still-life/asymmetric-amphisbaena.json' lifeData={_asymmetric_amphisbaena} />
+      <Page path='/still-life/strict-still-life/barge-siamese-loaf.json' lifeData={_barge_siamese_loaf} />
+      <Page path='/still-life/strict-still-life/barge-with-long-tail.json' lifeData={_barge_with_long_tail} />
+      <Page path='/still-life/strict-still-life/barge-with-very-long-tail.json' lifeData={_barge_with_very_long_tail} />
+      <Page path='/still-life/strict-still-life/barge.json' lifeData={_barge} />
+      <Page path='/still-life/strict-still-life/bee-hat.json' lifeData={_bee_hat} />
+      <Page path='/still-life/strict-still-life/beehive-at-beehive.json' lifeData={_beehive_at_beehive} />
+      <Page path='/still-life/strict-still-life/beehive-at-claw.json' lifeData={_beehive_at_claw} />
+      <Page path='/still-life/strict-still-life/beehive-at-loaf.json' lifeData={_beehive_at_loaf} />
+      <Page path='/still-life/strict-still-life/beehive-on-cap.json' lifeData={_beehive_on_cap} />
+      <Page path='/still-life/strict-still-life/beehive-on-dock.json' lifeData={_beehive_on_dock} />
+      <Page path='/still-life/strict-still-life/beehive-on-table.json' lifeData={_beehive_on_table} />
+      <Page path='/still-life/strict-still-life/beehive-with-bend-tail.json' lifeData={_beehive_with_bend_tail} />
+      <Page path='/still-life/strict-still-life/beehive-with-nine.json' lifeData={_beehive_with_nine} />
+      <Page path='/still-life/strict-still-life/beehive-with-tail.json' lifeData={_beehive_with_tail} />
+      <Page path='/still-life/strict-still-life/beehive.json' lifeData={_beehive} />
+      <Page path='/still-life/strict-still-life/bi-cap.json' lifeData={_bi_cap} />
+      <Page path='/still-life/strict-still-life/bi-loaf2.json' lifeData={_bi_loaf2} />
+      <Page path='/still-life/strict-still-life/bi-pond.json' lifeData={_bi_pond} />
+      <Page path='/still-life/strict-still-life/big-s.json' lifeData={_big_s} />
+      <Page path='/still-life/strict-still-life/block-on-cap.json' lifeData={_block_on_cap} />
+      <Page path='/still-life/strict-still-life/block-on-cover.json' lifeData={_block_on_cover} />
+      <Page path='/still-life/strict-still-life/block-on-dock.json' lifeData={_block_on_dock} />
+      <Page path='/still-life/strict-still-life/block-on-table.json' lifeData={_block_on_table} />
+      <Page path='/still-life/strict-still-life/block.json' lifeData={_block} />
+      <Page path='/still-life/strict-still-life/boat-tie-eater-head.json' lifeData={_boat_tie_eater_head} />
+      <Page path='/still-life/strict-still-life/boat-tie-eater-tail.json' lifeData={_boat_tie_eater_tail} />
+      <Page path='/still-life/strict-still-life/boat-tie-long-boat.json' lifeData={_boat_tie_long_boat} />
+      <Page path='/still-life/strict-still-life/boat-tie-long-snake.json' lifeData={_boat_tie_long_snake} />
+      <Page path='/still-life/strict-still-life/boat-tie-ship.json' lifeData={_boat_tie_ship} />
+      <Page path='/still-life/strict-still-life/boat-tie-snake.json' lifeData={_boat_tie_snake} />
+      <Page path='/still-life/strict-still-life/boat-tie.json' lifeData={_boat_tie} />
+      <Page path='/still-life/strict-still-life/boat-with-cis-tail.json' lifeData={_boat_with_cis_tail} />
+      <Page path='/still-life/strict-still-life/boat-with-hooked-tail.json' lifeData={_boat_with_hooked_tail} />
+      <Page path='/still-life/strict-still-life/boat-with-long-tail.json' lifeData={_boat_with_long_tail} />
+      <Page path='/still-life/strict-still-life/boat-with-long3-tail.json' lifeData={_boat_with_long3_tail} />
+      <Page path='/still-life/strict-still-life/boat-with-very-long-tail.json' lifeData={_boat_with_very_long_tail} />
+      <Page path='/still-life/strict-still-life/boat.json' lifeData={_boat} />
+      <Page path='/still-life/strict-still-life/bookend-table-snake.json' lifeData={_bookend_table_snake} />
+      <Page path='/still-life/strict-still-life/bookends-siamese-tables.json' lifeData={_bookends_siamese_tables} />
+      <Page path='/still-life/strict-still-life/bookends.json' lifeData={_bookends} />
+      <Page path='/still-life/strict-still-life/broken-elevener.json' lifeData={_broken_elevener} />
+      <Page path='/still-life/strict-still-life/broken-snake.json' lifeData={_broken_snake} />
+      <Page path='/still-life/strict-still-life/canoe-siamese-snake.json' lifeData={_canoe_siamese_snake} />
+      <Page path='/still-life/strict-still-life/canoe.json' lifeData={_canoe} />
+      <Page path='/still-life/strict-still-life/cap-and-dock.json' lifeData={_cap_and_dock} />
+      <Page path='/still-life/strict-still-life/carrier-bridge-carrier.json' lifeData={_carrier_bridge_carrier} />
+      <Page path='/still-life/strict-still-life/carrier-bridge-snake.json' lifeData={_carrier_bridge_snake} />
+      <Page path='/still-life/strict-still-life/carrier-bridge-table.json' lifeData={_carrier_bridge_table} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-canoe.json' lifeData={_carrier_siamese_canoe} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-carrier.json' lifeData={_carrier_siamese_carrier} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-dock.json' lifeData={_carrier_siamese_dock} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-eater-head.json' lifeData={_carrier_siamese_eater_head} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-eater-tail.json' lifeData={_carrier_siamese_eater_tail} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-hook-with-tail-hook.json' lifeData={_carrier_siamese_hook_with_tail_hook} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-hook-with-tail-tail.json' lifeData={_carrier_siamese_hook_with_tail_tail} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-long-snake.json' lifeData={_carrier_siamese_long_snake} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-shillelagh.json' lifeData={_carrier_siamese_shillelagh} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-tub-with-tail.json' lifeData={_carrier_siamese_tub_with_tail} />
+      <Page path='/still-life/strict-still-life/carrier-siamese-very-long-snake.json' lifeData={_carrier_siamese_very_long_snake} />
+      <Page path='/still-life/strict-still-life/carrier-tie-boat.json' lifeData={_carrier_tie_boat} />
+      <Page path='/still-life/strict-still-life/carrier-tie-ship.json' lifeData={_carrier_tie_ship} />
+      <Page path='/still-life/strict-still-life/carrier-with-feather.json' lifeData={_carrier_with_feather} />
+      <Page path='/still-life/strict-still-life/cis-barge-with-nine.json' lifeData={_cis_barge_with_nine} />
+      <Page path='/still-life/strict-still-life/cis-barge-with-tail.json' lifeData={_cis_barge_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-block-on-long-hook.json' lifeData={_cis_block_on_long_hook} />
+      <Page path='/still-life/strict-still-life/cis-boat-amphisbaena.json' lifeData={_cis_boat_amphisbaena} />
+      <Page path='/still-life/strict-still-life/cis-boat-and-cap.json' lifeData={_cis_boat_and_cap} />
+      <Page path='/still-life/strict-still-life/cis-boat-line-tub.json' lifeData={_cis_boat_line_tub} />
+      <Page path='/still-life/strict-still-life/cis-boat-on-dock.json' lifeData={_cis_boat_on_dock} />
+      <Page path='/still-life/strict-still-life/cis-boat-on-table.json' lifeData={_cis_boat_on_table} />
+      <Page path='/still-life/strict-still-life/cis-boat-with-nine.json' lifeData={_cis_boat_with_nine} />
+      <Page path='/still-life/strict-still-life/cis-boat-with-tail.json' lifeData={_cis_boat_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-carrier-down-on-table.json' lifeData={_cis_carrier_down_on_table} />
+      <Page path='/still-life/strict-still-life/cis-carrier-tie-snake.json' lifeData={_cis_carrier_tie_snake} />
+      <Page path='/still-life/strict-still-life/cis-carrier-tie.json' lifeData={_cis_carrier_tie} />
+      <Page path='/still-life/strict-still-life/cis-carrier-up-on-table.json' lifeData={_cis_carrier_up_on_table} />
+      <Page path='/still-life/strict-still-life/cis-fuse-with-two-tails.json' lifeData={_cis_fuse_with_two_tails} />
+      <Page path='/still-life/strict-still-life/cis-hook-and-R-bee.json' lifeData={_cis_hook_and_R_bee} />
+      <Page path='/still-life/strict-still-life/cis-hook-with-tail.json' lifeData={_cis_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-loaf-with-tail.json' lifeData={_cis_loaf_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-long-barge-with-tail.json' lifeData={_cis_long_barge_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-long-boat-with-tail.json' lifeData={_cis_long_boat_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-mango-with-tail.json' lifeData={_cis_mango_with_tail} />
+      <Page path='/still-life/strict-still-life/cis-mirrored-R-bee.json' lifeData={_cis_mirrored_R_bee} />
+      <Page path='/still-life/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm.json' lifeData={_cis_mirrored_worm_siamese_cis_mirrored_worm} />
+      <Page path='/still-life/strict-still-life/cis-mirrored-worm.json' lifeData={_cis_mirrored_worm} />
+      <Page path='/still-life/strict-still-life/cis-R-bee-and-R-loaf.json' lifeData={_cis_R_bee_and_R_loaf} />
+      <Page path='/still-life/strict-still-life/cis-rotated-hook.json' lifeData={_cis_rotated_hook} />
+      <Page path='/still-life/strict-still-life/cis-rotated-R-bee.json' lifeData={_cis_rotated_R_bee} />
+      <Page path='/still-life/strict-still-life/cis-shillelagh.json' lifeData={_cis_shillelagh} />
+      <Page path='/still-life/strict-still-life/cis-ship-on-table.json' lifeData={_cis_ship_on_table} />
+      <Page path='/still-life/strict-still-life/cis-snake-tie.json' lifeData={_cis_snake_tie} />
+      <Page path='/still-life/strict-still-life/claw-siamese-tub-with-cape.json' lifeData={_claw_siamese_tub_with_cape} />
+      <Page path='/still-life/strict-still-life/claw-with-boat-with-tail.json' lifeData={_claw_with_boat_with_tail} />
+      <Page path='/still-life/strict-still-life/claw-with-tail.json' lifeData={_claw_with_tail} />
+      <Page path='/still-life/strict-still-life/claw-with-tub-with-tail.json' lifeData={_claw_with_tub_with_tail} />
+      <Page path='/still-life/strict-still-life/clips.json' lifeData={_clips} />
+      <Page path='/still-life/strict-still-life/cloverleaf-interchange.json' lifeData={_cloverleaf_interchange} />
+      <Page path='/still-life/strict-still-life/cthulhu.json' lifeData={_cthulhu} />
+      <Page path='/still-life/strict-still-life/dead-spark-coil.json' lifeData={_dead_spark_coil} />
+      <Page path='/still-life/strict-still-life/dock-and-long-hook.json' lifeData={_dock_and_long_hook} />
+      <Page path='/still-life/strict-still-life/double-claw.json' lifeData={_double_claw} />
+      <Page path='/still-life/strict-still-life/down-snake-on-table.json' lifeData={_down_snake_on_table} />
+      <Page path='/still-life/strict-still-life/eater-bridge-eater.json' lifeData={_eater_bridge_eater} />
+      <Page path='/still-life/strict-still-life/eater-head-siamese-eater-head.json' lifeData={_eater_head_siamese_eater_head} />
+      <Page path='/still-life/strict-still-life/eater-head-siamese-eater-tail.json' lifeData={_eater_head_siamese_eater_tail} />
+      <Page path='/still-life/strict-still-life/eater-head-siamese-long-snake.json' lifeData={_eater_head_siamese_long_snake} />
+      <Page path='/still-life/strict-still-life/eater-head-siamese-snake.json' lifeData={_eater_head_siamese_snake} />
+      <Page path='/still-life/strict-still-life/eater-tail-siamese-eater-tail.json' lifeData={_eater_tail_siamese_eater_tail} />
+      <Page path='/still-life/strict-still-life/eater-tail-siamese-long-snake.json' lifeData={_eater_tail_siamese_long_snake} />
+      <Page path='/still-life/strict-still-life/eater-tail-siamese-snake.json' lifeData={_eater_tail_siamese_snake} />
+      <Page path='/still-life/strict-still-life/eater-with-cape.json' lifeData={_eater_with_cape} />
+      <Page path='/still-life/strict-still-life/eater-with-head-feather.json' lifeData={_eater_with_head_feather} />
+      <Page path='/still-life/strict-still-life/eater-with-tail-feather.json' lifeData={_eater_with_tail_feather} />
+      <Page path='/still-life/strict-still-life/egyptian-walk.json' lifeData={_egyptian_walk} />
+      <Page path='/still-life/strict-still-life/eleven-loop.json' lifeData={_eleven_loop} />
+      <Page path='/still-life/strict-still-life/elevener.json' lifeData={_elevener} />
+      <Page path='/still-life/strict-still-life/fourteener.json' lifeData={_fourteener} />
+      <Page path='/still-life/strict-still-life/fuse-with-tail-and-integral.json' lifeData={_fuse_with_tail_and_integral} />
+      <Page path='/still-life/strict-still-life/fuse-with-tail-and-long-tail.json' lifeData={_fuse_with_tail_and_long_tail} />
+      <Page path='/still-life/strict-still-life/fuse-with-tail-and-very-long-tail.json' lifeData={_fuse_with_tail_and_very_long_tail} />
+      <Page path='/still-life/strict-still-life/fuse-with-two-long-tails.json' lifeData={_fuse_with_two_long_tails} />
+      <Page path='/still-life/strict-still-life/grin-reagent.json' lifeData={_grin_reagent} />
+      <Page path='/still-life/strict-still-life/gull-with-tub.json' lifeData={_gull_with_tub} />
+      <Page path='/still-life/strict-still-life/half-bakery.json' lifeData={_half_bakery} />
+      <Page path='/still-life/strict-still-life/hat-siamese-vase.json' lifeData={_hat_siamese_vase} />
+      <Page path='/still-life/strict-still-life/hat.json' lifeData={_hat} />
+      <Page path='/still-life/strict-still-life/hexagonal-key.json' lifeData={_hexagonal_key} />
+      <Page path='/still-life/strict-still-life/honeybarge.json' lifeData={_honeybarge} />
+      <Page path='/still-life/strict-still-life/honeycomb.json' lifeData={_honeycomb} />
+      <Page path='/still-life/strict-still-life/hook-with-nine.json' lifeData={_hook_with_nine} />
+      <Page path='/still-life/strict-still-life/hook-with-tail-hook-siamese-snake.json' lifeData={_hook_with_tail_hook_siamese_snake} />
+      <Page path='/still-life/strict-still-life/hook-with-tail-tail-siamese-snake.json' lifeData={_hook_with_tail_tail_siamese_snake} />
+      <Page path='/still-life/strict-still-life/hook-with-tail-with-cape.json' lifeData={_hook_with_tail_with_cape} />
+      <Page path='/still-life/strict-still-life/hook-with-tail.json' lifeData={_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/hook-with-two-tails.json' lifeData={_hook_with_two_tails} />
+      <Page path='/still-life/strict-still-life/house-on-house-siamese-table-on-table-weld-hat-siamese-hat.json' lifeData={_house_on_house_siamese_table_on_table_weld_hat_siamese_hat} />
+      <Page path='/still-life/strict-still-life/hungry-hat.json' lifeData={_hungry_hat} />
+      <Page path='/still-life/strict-still-life/inflected-clips.json' lifeData={_inflected_clips} />
+      <Page path='/still-life/strict-still-life/inflected-long-snake.json' lifeData={_inflected_long_snake} />
+      <Page path='/still-life/strict-still-life/inflexion.json' lifeData={_inflexion} />
+      <Page path='/still-life/strict-still-life/integral-sign.json' lifeData={_integral_sign} />
+      <Page path='/still-life/strict-still-life/integral-with-cis-hook.json' lifeData={_integral_with_cis_hook} />
+      <Page path='/still-life/strict-still-life/integral-with-hook-and-tail.json' lifeData={_integral_with_hook_and_tail} />
+      <Page path='/still-life/strict-still-life/integral-with-hook.json' lifeData={_integral_with_hook} />
+      <Page path='/still-life/strict-still-life/integral-with-long-hook-and-tub.json' lifeData={_integral_with_long_hook_and_tub} />
+      <Page path='/still-life/strict-still-life/integral-with-long-hook.json' lifeData={_integral_with_long_hook} />
+      <Page path='/still-life/strict-still-life/integral-with-tub-and-hook.json' lifeData={_integral_with_tub_and_hook} />
+      <Page path='/still-life/strict-still-life/integral-with-tub-and-tail.json' lifeData={_integral_with_tub_and_tail} />
+      <Page path='/still-life/strict-still-life/integral-with-tub.json' lifeData={_integral_with_tub} />
+      <Page path='/still-life/strict-still-life/integral-with-two-tubs.json' lifeData={_integral_with_two_tubs} />
+      <Page path='/still-life/strict-still-life/integral-with-very-long-hook.json' lifeData={_integral_with_very_long_hook} />
+      <Page path='/still-life/strict-still-life/inverted-double-claw.json' lifeData={_inverted_double_claw} />
+      <Page path='/still-life/strict-still-life/lake2.json' lifeData={_lake2} />
+      <Page path='/still-life/strict-still-life/loaf-back-tie-loaf.json' lifeData={_loaf_back_tie_loaf} />
+      <Page path='/still-life/strict-still-life/loaf-siamese-loaf.json' lifeData={_loaf_siamese_loaf} />
+      <Page path='/still-life/strict-still-life/loaf-tie-eater-with-tail.json' lifeData={_loaf_tie_eater_with_tail} />
+      <Page path='/still-life/strict-still-life/loaf.json' lifeData={_loaf} />
+      <Page path='/still-life/strict-still-life/long-barge.json' lifeData={_long_barge} />
+      <Page path='/still-life/strict-still-life/long-boat-tie-ship.json' lifeData={_long_boat_tie_ship} />
+      <Page path='/still-life/strict-still-life/long-boat-with-long-tail.json' lifeData={_long_boat_with_long_tail} />
+      <Page path='/still-life/strict-still-life/long-boat.json' lifeData={_long_boat} />
+      <Page path='/still-life/strict-still-life/long-canoe.json' lifeData={_long_canoe} />
+      <Page path='/still-life/strict-still-life/long-cis-hook-with-tail.json' lifeData={_long_cis_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/long-cis-shillelagh.json' lifeData={_long_cis_shillelagh} />
+      <Page path='/still-life/strict-still-life/long-claw-with-tail.json' lifeData={_long_claw_with_tail} />
+      <Page path='/still-life/strict-still-life/long-hook-with-tail.json' lifeData={_long_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/long-integral-with-boat.json' lifeData={_long_integral_with_boat} />
+      <Page path='/still-life/strict-still-life/long-integral.json' lifeData={_long_integral} />
+      <Page path='/still-life/strict-still-life/long-melusine.json' lifeData={_long_melusine} />
+      <Page path='/still-life/strict-still-life/long-prodigal.json' lifeData={_long_prodigal} />
+      <Page path='/still-life/strict-still-life/long-shillelagh.json' lifeData={_long_shillelagh} />
+      <Page path='/still-life/strict-still-life/long-ship.json' lifeData={_long_ship} />
+      <Page path='/still-life/strict-still-life/long-snake-siamese-long-snake.json' lifeData={_long_snake_siamese_long_snake} />
+      <Page path='/still-life/strict-still-life/long-snake.json' lifeData={_long_snake} />
+      <Page path='/still-life/strict-still-life/long-tub-claw-with-tail.json' lifeData={_long_tub_claw_with_tail} />
+      <Page path='/still-life/strict-still-life/long10-boat.json' lifeData={_long10_boat} />
+      <Page path='/still-life/strict-still-life/long10-ship.json' lifeData={_long10_ship} />
+      <Page path='/still-life/strict-still-life/long3-barge.json' lifeData={_long3_barge} />
+      <Page path='/still-life/strict-still-life/long3-boat.json' lifeData={_long3_boat} />
+      <Page path='/still-life/strict-still-life/long3-canoe.json' lifeData={_long3_canoe} />
+      <Page path='/still-life/strict-still-life/long3-hook-with-tail.json' lifeData={_long3_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/long3-integral.json' lifeData={_long3_integral} />
+      <Page path='/still-life/strict-still-life/long3-shillelagh.json' lifeData={_long3_shillelagh} />
+      <Page path='/still-life/strict-still-life/long3-ship.json' lifeData={_long3_ship} />
+      <Page path='/still-life/strict-still-life/long3-snake.json' lifeData={_long3_snake} />
+      <Page path='/still-life/strict-still-life/long4-barge.json' lifeData={_long4_barge} />
+      <Page path='/still-life/strict-still-life/long4-boat.json' lifeData={_long4_boat} />
+      <Page path='/still-life/strict-still-life/long4-canoe.json' lifeData={_long4_canoe} />
+      <Page path='/still-life/strict-still-life/long4-hook-with-tail.json' lifeData={_long4_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/long4-shillelagh.json' lifeData={_long4_shillelagh} />
+      <Page path='/still-life/strict-still-life/long4-ship.json' lifeData={_long4_ship} />
+      <Page path='/still-life/strict-still-life/long4-snake.json' lifeData={_long4_snake} />
+      <Page path='/still-life/strict-still-life/long5-barge.json' lifeData={_long5_barge} />
+      <Page path='/still-life/strict-still-life/long5-boat.json' lifeData={_long5_boat} />
+      <Page path='/still-life/strict-still-life/long5-ship.json' lifeData={_long5_ship} />
+      <Page path='/still-life/strict-still-life/long5-snake.json' lifeData={_long5_snake} />
+      <Page path='/still-life/strict-still-life/long6-barge.json' lifeData={_long6_barge} />
+      <Page path='/still-life/strict-still-life/long6-boat.json' lifeData={_long6_boat} />
+      <Page path='/still-life/strict-still-life/long6-ship.json' lifeData={_long6_ship} />
+      <Page path='/still-life/strict-still-life/long6-snake.json' lifeData={_long6_snake} />
+      <Page path='/still-life/strict-still-life/long7-boat.json' lifeData={_long7_boat} />
+      <Page path='/still-life/strict-still-life/long7-ship.json' lifeData={_long7_ship} />
+      <Page path='/still-life/strict-still-life/long8-boat.json' lifeData={_long8_boat} />
+      <Page path='/still-life/strict-still-life/long8-ship.json' lifeData={_long8_ship} />
+      <Page path='/still-life/strict-still-life/long9-boat.json' lifeData={_long9_boat} />
+      <Page path='/still-life/strict-still-life/long9-ship.json' lifeData={_long9_ship} />
+      <Page path='/still-life/strict-still-life/longhorn.json' lifeData={_longhorn} />
+      <Page path='/still-life/strict-still-life/loop.json' lifeData={_loop} />
+      <Page path='/still-life/strict-still-life/mango-with-block-on-dock.json' lifeData={_mango_with_block_on_dock} />
+      <Page path='/still-life/strict-still-life/mango.json' lifeData={_mango} />
+      <Page path='/still-life/strict-still-life/mickey-mouse.json' lifeData={_mickey_mouse} />
+      <Page path='/still-life/strict-still-life/mirrored-dock.json' lifeData={_mirrored_dock} />
+      <Page path='/still-life/strict-still-life/moose-antlers.json' lifeData={_moose_antlers} />
+      <Page path='/still-life/strict-still-life/o-quad-loaf.json' lifeData={_o_quad_loaf} />
+      <Page path='/still-life/strict-still-life/omnibus-with-tubs.json' lifeData={_omnibus_with_tubs} />
+      <Page path='/still-life/strict-still-life/omnibus.json' lifeData={_omnibus} />
+      <Page path='/still-life/strict-still-life/ortho-loaf-on-table.json' lifeData={_ortho_loaf_on_table} />
+      <Page path='/still-life/strict-still-life/paperclip.json' lifeData={_paperclip} />
+      <Page path='/still-life/strict-still-life/pond-on-dock.json' lifeData={_pond_on_dock} />
+      <Page path='/still-life/strict-still-life/pond.json' lifeData={_pond} />
+      <Page path='/still-life/strict-still-life/professor.json' lifeData={_professor} />
+      <Page path='/still-life/strict-still-life/python-siamese-snake.json' lifeData={_python_siamese_snake} />
+      <Page path='/still-life/strict-still-life/R-bee-and-snake.json' lifeData={_R_bee_and_snake} />
+      <Page path='/still-life/strict-still-life/R-bee-on-beehive.json' lifeData={_R_bee_on_beehive} />
+      <Page path='/still-life/strict-still-life/R-bee-with-feather.json' lifeData={_R_bee_with_feather} />
+      <Page path='/still-life/strict-still-life/R-mango-and-house.json' lifeData={_R_mango_and_house} />
+      <Page path='/still-life/strict-still-life/rotated-c.json' lifeData={_rotated_c} />
+      <Page path='/still-life/strict-still-life/rotated-table.json' lifeData={_rotated_table} />
+      <Page path='/still-life/strict-still-life/scorpion.json' lifeData={_scorpion} />
+      <Page path='/still-life/strict-still-life/sesquihat.json' lifeData={_sesquihat} />
+      <Page path='/still-life/strict-still-life/shillelagh-siamese-snake.json' lifeData={_shillelagh_siamese_snake} />
+      <Page path='/still-life/strict-still-life/shillelagh.json' lifeData={_shillelagh} />
+      <Page path='/still-life/strict-still-life/ship-tie-snake.json' lifeData={_ship_tie_snake} />
+      <Page path='/still-life/strict-still-life/ship-tie.json' lifeData={_ship_tie} />
+      <Page path='/still-life/strict-still-life/ship.json' lifeData={_ship} />
+      <Page path='/still-life/strict-still-life/shuriken.json' lifeData={_shuriken} />
+      <Page path='/still-life/strict-still-life/sidewalk.json' lifeData={_sidewalk} />
+      <Page path='/still-life/strict-still-life/skew-R-bees.json' lifeData={_skew_R_bees} />
+      <Page path='/still-life/strict-still-life/small-lake.json' lifeData={_small_lake} />
+      <Page path='/still-life/strict-still-life/snake-bridge-snake.json' lifeData={_snake_bridge_snake} />
+      <Page path='/still-life/strict-still-life/snake-siamese-snake.json' lifeData={_snake_siamese_snake} />
+      <Page path='/still-life/strict-still-life/snake-siamese-very-long-snake.json' lifeData={_snake_siamese_very_long_snake} />
+      <Page path='/still-life/strict-still-life/snake-with-feather.json' lifeData={_snake_with_feather} />
+      <Page path='/still-life/strict-still-life/snake.json' lifeData={_snake} />
+      <Page path='/still-life/strict-still-life/snorkel-loop.json' lifeData={_snorkel_loop} />
+      <Page path='/still-life/strict-still-life/spiral.json' lifeData={_spiral} />
+      <Page path='/still-life/strict-still-life/super-loaf.json' lifeData={_super_loaf} />
+      <Page path='/still-life/strict-still-life/super-mango.json' lifeData={_super_mango} />
+      <Page path='/still-life/strict-still-life/super-pond.json' lifeData={_super_pond} />
+      <Page path='/still-life/strict-still-life/symmetric-scorpion.json' lifeData={_symmetric_scorpion} />
+      <Page path='/still-life/strict-still-life/symmetrical-synapse.json' lifeData={_symmetrical_synapse} />
+      <Page path='/still-life/strict-still-life/table-and-dock.json' lifeData={_table_and_dock} />
+      <Page path='/still-life/strict-still-life/table-and-table.json' lifeData={_table_and_table} />
+      <Page path='/still-life/strict-still-life/teardrop-with-cape.json' lifeData={_teardrop_with_cape} />
+      <Page path='/still-life/strict-still-life/teardrop-with-claw.json' lifeData={_teardrop_with_claw} />
+      <Page path='/still-life/strict-still-life/thirteen-loop.json' lifeData={_thirteen_loop} />
+      <Page path='/still-life/strict-still-life/trans-barge-with-nine.json' lifeData={_trans_barge_with_nine} />
+      <Page path='/still-life/strict-still-life/trans-barge-with-tail.json' lifeData={_trans_barge_with_tail} />
+      <Page path='/still-life/strict-still-life/trans-block-on-long-hook.json' lifeData={_trans_block_on_long_hook} />
+      <Page path='/still-life/strict-still-life/trans-boat-amphisbaena.json' lifeData={_trans_boat_amphisbaena} />
+      <Page path='/still-life/strict-still-life/trans-boat-line-tub.json' lifeData={_trans_boat_line_tub} />
+      <Page path='/still-life/strict-still-life/trans-boat-on-dock.json' lifeData={_trans_boat_on_dock} />
+      <Page path='/still-life/strict-still-life/trans-boat-on-table.json' lifeData={_trans_boat_on_table} />
+      <Page path='/still-life/strict-still-life/trans-boat-with-nine.json' lifeData={_trans_boat_with_nine} />
+      <Page path='/still-life/strict-still-life/trans-boat-with-tail.json' lifeData={_trans_boat_with_tail} />
+      <Page path='/still-life/strict-still-life/trans-carrier-down-on-table.json' lifeData={_trans_carrier_down_on_table} />
+      <Page path='/still-life/strict-still-life/trans-carrier-tie-snake.json' lifeData={_trans_carrier_tie_snake} />
+      <Page path='/still-life/strict-still-life/trans-carrier-tie.json' lifeData={_trans_carrier_tie} />
+      <Page path='/still-life/strict-still-life/trans-carrier-up-on-table.json' lifeData={_trans_carrier_up_on_table} />
+      <Page path='/still-life/strict-still-life/trans-fuse-with-two-tails.json' lifeData={_trans_fuse_with_two_tails} />
+      <Page path='/still-life/strict-still-life/trans-hook-and-R-bee.json' lifeData={_trans_hook_and_R_bee} />
+      <Page path='/still-life/strict-still-life/trans-loaf-with-tail.json' lifeData={_trans_loaf_with_tail} />
+      <Page path='/still-life/strict-still-life/trans-long-barge-with-tail.json' lifeData={_trans_long_barge_with_tail} />
+      <Page path='/still-life/strict-still-life/trans-long-boat-with-tail.json' lifeData={_trans_long_boat_with_tail} />
+      <Page path='/still-life/strict-still-life/trans-mango-with-tail.json' lifeData={_trans_mango_with_tail} />
+      <Page path='/still-life/strict-still-life/trans-mirrored-R-bee.json' lifeData={_trans_mirrored_R_bee} />
+      <Page path='/still-life/strict-still-life/trans-R-bee-and-R-loaf.json' lifeData={_trans_R_bee_and_R_loaf} />
+      <Page path='/still-life/strict-still-life/trans-rotated-R-bee.json' lifeData={_trans_rotated_R_bee} />
+      <Page path='/still-life/strict-still-life/trans-ship-on-table.json' lifeData={_trans_ship_on_table} />
+      <Page path='/still-life/strict-still-life/trans-snake-tie.json' lifeData={_trans_snake_tie} />
+      <Page path='/still-life/strict-still-life/tub-bend-line-tub.json' lifeData={_tub_bend_line_tub} />
+      <Page path='/still-life/strict-still-life/tub-with-cis-tail.json' lifeData={_tub_with_cis_tail} />
+      <Page path='/still-life/strict-still-life/tub-with-long-cis-tail.json' lifeData={_tub_with_long_cis_tail} />
+      <Page path='/still-life/strict-still-life/tub-with-long-tail.json' lifeData={_tub_with_long_tail} />
+      <Page path='/still-life/strict-still-life/tub-with-long3-tail.json' lifeData={_tub_with_long3_tail} />
+      <Page path='/still-life/strict-still-life/tub-with-long4-tail.json' lifeData={_tub_with_long4_tail} />
+      <Page path='/still-life/strict-still-life/tub-with-tail-siamese-snake.json' lifeData={_tub_with_tail_siamese_snake} />
+      <Page path='/still-life/strict-still-life/tub-with-tail-with-cape.json' lifeData={_tub_with_tail_with_cape} />
+      <Page path='/still-life/strict-still-life/tub-with-tail.json' lifeData={_tub_with_tail} />
+      <Page path='/still-life/strict-still-life/tub-with-two-down-cis-tails.json' lifeData={_tub_with_two_down_cis_tails} />
+      <Page path='/still-life/strict-still-life/tub-with-two-down-trans-tails.json' lifeData={_tub_with_two_down_trans_tails} />
+      <Page path='/still-life/strict-still-life/tub-with-two-up-cis-tails.json' lifeData={_tub_with_two_up_cis_tails} />
+      <Page path='/still-life/strict-still-life/tub-with-two-up-trans-tails.json' lifeData={_tub_with_two_up_trans_tails} />
+      <Page path='/still-life/strict-still-life/tub-with-very-long-tail.json' lifeData={_tub_with_very_long_tail} />
+      <Page path='/still-life/strict-still-life/tub.json' lifeData={_tub} />
+      <Page path='/still-life/strict-still-life/twelve-loop.json' lifeData={_twelve_loop} />
+      <Page path='/still-life/strict-still-life/twin-hat.json' lifeData={_twin_hat} />
+      <Page path='/still-life/strict-still-life/up-dove-on-dove.json' lifeData={_up_dove_on_dove} />
+      <Page path='/still-life/strict-still-life/up-snake-on-table.json' lifeData={_up_snake_on_table} />
+      <Page path='/still-life/strict-still-life/up-wing-on-wing.json' lifeData={_up_wing_on_wing} />
+      <Page path='/still-life/strict-still-life/very-long-barge.json' lifeData={_very_long_barge} />
+      <Page path='/still-life/strict-still-life/very-long-boat.json' lifeData={_very_long_boat} />
+      <Page path='/still-life/strict-still-life/very-long-canoe.json' lifeData={_very_long_canoe} />
+      <Page path='/still-life/strict-still-life/very-long-cis-hook-with-tail.json' lifeData={_very_long_cis_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/very-long-cis-shillelagh.json' lifeData={_very_long_cis_shillelagh} />
+      <Page path='/still-life/strict-still-life/very-long-claw-with-tail.json' lifeData={_very_long_claw_with_tail} />
+      <Page path='/still-life/strict-still-life/very-long-hook-with-tail.json' lifeData={_very_long_hook_with_tail} />
+      <Page path='/still-life/strict-still-life/very-long-integral.json' lifeData={_very_long_integral} />
+      <Page path='/still-life/strict-still-life/very-long-melusine.json' lifeData={_very_long_melusine} />
+      <Page path='/still-life/strict-still-life/very-long-prodigal.json' lifeData={_very_long_prodigal} />
+      <Page path='/still-life/strict-still-life/very-long-shillelagh.json' lifeData={_very_long_shillelagh} />
+      <Page path='/still-life/strict-still-life/very-long-ship.json' lifeData={_very_long_ship} />
+      <Page path='/still-life/strict-still-life/very-long-snake.json' lifeData={_very_long_snake} />
+      <Page path='/still-life/strict-still-life/z-quad-loaf.json' lifeData={_z_quad_loaf} />
     </Router>
   ), document.getElementById('app'));
