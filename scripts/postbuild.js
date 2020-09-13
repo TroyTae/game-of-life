@@ -1,7 +1,8 @@
 const fs = require('fs-extra');
 const path = require('path');
-
-fs.writeFileSync(path.join('dist', 'robots.txt'), `
-User-agent: *
-Allow: /
-`);
+const distDir = 'dist';
+fs.emptyDirSync(distDir);
+fs.copyFileSync(
+  path.join('src', 'static', 'robots.txt'),
+  path.join(distDir, 'robots.txt')
+);
