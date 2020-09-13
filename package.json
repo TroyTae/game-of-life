@@ -5,21 +5,16 @@
   },
   "devDependencies": {
     "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
-    "nodemon": "^2.0.4",
-    "npm-run-all": "^4.1.5",
+    "preact-router": "^3.2.1",
     "prettier": "^2.1.1",
     "troyjs": "git+https://github.com/TroyTae/troyjs.git"
   },
   "scripts": {
-    "watch:json": "nodemon scripts/prebuild",
-    "watch:code": "webpack-dev-server --config scripts/webpack.config.js",
-    "start": "npm-run-all -p watch:json watch:code",
-    "build": "webpack --mode=production --config  scripts/webpack.config.js",
-    "s": "parcel src/index.html --open",
-    "b": "parcel build src/index.html -d docs",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
     "test": "npm run test:lint & npm run test:prettier",
     "fix:lint": "eslint --fix --ext .ts src/",
-    "test:lint": "eslint --ext .ts src/ --ignore-pattern 'src/build/*'",
+    "test:lint": "eslint --ext .ts src/",
     "fix:prettier": "npx prettier --write ./src/life",
     "test:prettier": "prettier --check ./src/life"
   }

@@ -4,6 +4,5 @@
 .DS_Store
 .cache
 dist
-src/build
 node_modules
 package-lock.json
