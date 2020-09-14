@@ -1,6 +1,8 @@
 declare type Life = 0 | 1;
 
-declare type LifePattern = {
+declare type LifeData = {
   title: string;
   life: Life[][];
 };
+
+declare module '*.json';

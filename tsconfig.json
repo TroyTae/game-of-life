@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "strict": true,
-    "removeComments": true
+    "paths": {
+      "/*": ["./*"]
+    },
+    "jsx": "react",
+    "jsxFactory": "h"
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"],
   "compileOnSave": false
 }
