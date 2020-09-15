@@ -3,10 +3,15 @@ const path = require('path');
 const { readDirectory } = require('troyjs/node');
 
 const distDir = 'dist';
+const staticDir = path.join('src', 'static');
 fs.emptyDirSync(distDir);
 fs.copyFileSync(
-  path.join('src', 'static', 'robots.txt'),
+  path.join(staticDir, 'robots.txt'),
   path.join(distDir, 'robots.txt')
+);
+fs.copyFileSync(
+  path.join(staticDir, '_redirects'),
+  path.join(distDir, '_redirects')
 );
 
 const directories =  readDirectory(path.join('src', 'life'));
