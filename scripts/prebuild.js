@@ -1,6 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
-const { readDirectory } = require('troyjs/node');
+const { readDirectory } = require('./memfs');
 
 const distDir = 'dist';
 const staticDir = 'static';

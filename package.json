@@ -1,21 +1,18 @@
 {
   "private": true,
-  "eslintConfig": {
-    "extends": "troy-recommended"
-  },
   "devDependencies": {
-    "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
+    "fs-extra": "^9.0.1",
+    "parcel-bundler": "^1.12.4",
+    "preact": "^10.5.3",
     "preact-router": "^3.2.1",
-    "prettier": "^2.1.1",
-    "troyjs": "git+https://github.com/TroyTae/troyjs.git"
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
   },
   "scripts": {
-    "fix:lint": "eslint --fix --ext .ts src/",
-    "test:lint": "eslint --ext .ts src/",
     "fix:prettier": "npx prettier --write ./life",
     "test:prettier": "prettier --check ./life",
-    "test": "npm run test:lint & npm run test:prettier",
+    "test": "npm run test:prettier",
     "start": "parcel src/index.html --open",
-    "build": "node ./src/prebuild.js & parcel build src/index.html"
+    "build": "node ./scripts/prebuild.js & parcel build src/index.html"
   }
 }
