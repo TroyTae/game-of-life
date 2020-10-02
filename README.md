@@ -14,7 +14,7 @@ And I also hope this repository is a [good starting point](https://github.com/Tr
 ## Demo
 
 ![Demo gif](./.github/images/favicon.gif)  
-Website: https://troytae-game-of-life.netlify.app/
+You can see every patterns in [here](https://troytae-game-of-life.netlify.app/)
 
 ## Contributors
 
