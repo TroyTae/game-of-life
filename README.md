@@ -4,54 +4,17 @@
 
 ## Description
 
-Conway's Game of Life web version!  
-I hope this repository is a good lab for Game of Life.  
-And I also hope this repository is a [good start point](https://github.com/TroyTae/game-of-life/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) for first contributor.
+**Conway's Game of Life web version!**  
+This is a zero-player game, that its evolution is determined by its initial state, with no further input.  
+One interacts with the game of life by creating an initial configuration and observing how it evolves.  
+It is turing complete and can simulate a universal constructor or any other turing machine.  
+I hope this repository is a good lab for game of life.  
+And I also hope this repository is a [good starting point](https://github.com/TroyTae/game-of-life/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) for first-time contributors.
 
 ## Demo
 
-![Demo gif](./.github/images/favicon.gif)  
-Website: https://troytae-game-of-life.netlify.app/
-
-## Installation
-
-### Prerequisites
-
-Install [Node.js](https://nodejs.org)
-
-### Step 1
-
-Clone this repository.
-
-```
-git clone https://github.com/TroyTae/game-of-life.git
-```
-
-### Step 2
-
-Navigate to the folder.
-
-```
-cd game-of-life
-```
-
-### Step 3
-
-Install npm modules.
-
-```
-npm install
-```
-
-### Step 4
-
-If you want to start a server, use this command.
-
-```
-npm run start
-```
-
-Then you can go to http://localhost:4200 in your browser.
+![Demo](./static/favicon.gif)  
+You can see every patterns in [here](https://troytae-game-of-life.netlify.app/)
 
 ## Contributors
 

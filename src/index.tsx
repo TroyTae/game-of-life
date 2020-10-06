@@ -283,12 +283,30 @@ import _octagon_4 from '../life/oscillator/octagon-4.json';
 import _odd_keys from '../life/oscillator/odd-keys.json';
 import _odd_test_tube_baby from '../life/oscillator/odd-test-tube-baby.json';
 import _overweight_emulator from '../life/oscillator/overweight-emulator.json';
+import _p10_traffic_light_hassler from '../life/oscillator/p10-traffic-light-hassler.json';
+import _p11_double_length_signal_injector from '../life/oscillator/p11-double-length-signal-injector.json';
+import _p11_pinwheel from '../life/oscillator/p11-pinwheel.json';
+import _p110_traffic_jam from '../life/oscillator/p110-traffic-jam.json';
+import _p124_lumps_of_muck_hassler from '../life/oscillator/p124-lumps-of-muck-hassler.json';
+import _p156_hans_leo_hassler from '../life/oscillator/p156-hans-leo-hassler.json';
+import _p18_bi_block_hassler from '../life/oscillator/p18-bi-block-hassler.json';
+import _p18_honey_farm_hassler from '../life/oscillator/p18-honey-farm-hassler.json';
+import _p200_traffic_jam from '../life/oscillator/p200-traffic-jam.json';
+import _p22_lumps_of_muck_hassler from '../life/oscillator/p22-lumps-of-muck-hassler.json';
+import _p29_pentadecathlon_hassler from '../life/oscillator/p29-pentadecathlon-hassler.json';
+import _p29_traffic_farm_hassler from '../life/oscillator/p29-traffic-farm-hassler.json';
+import _p32_blinker_hassler_2 from '../life/oscillator/p32-blinker-hassler-2.json';
+import _p32_blinker_hassler from '../life/oscillator/p32-blinker-hassler.json';
+import _p35_beehive_hassler from '../life/oscillator/p35-beehive-hassler.json';
+import _p35_honey_farm_hassler from '../life/oscillator/p35-honey-farm-hassler.json';
+import _p36_toad_hassler from '../life/oscillator/p36-toad-hassler.json';
 import _pulsar from '../life/oscillator/pulsar.json';
 import _106P135 from '../life/oscillator/relay/106P135.json';
 import _6_bits from '../life/oscillator/relay/6-bits.json';
 import _double_x from '../life/oscillator/relay/double-x.json';
 import _hectic from '../life/oscillator/relay/hectic.json';
 import _metamorphosis_II from '../life/oscillator/relay/metamorphosis-II.json';
+import _p26_glider_shuttle from '../life/oscillator/relay/p26-glider-shuttle.json';
 import _34P14_shuttle from '../life/oscillator/shuttle/34P14-shuttle.json';
 import _carnival_shuttle from '../life/oscillator/shuttle/carnival-shuttle.json';
 import _centinal from '../life/oscillator/shuttle/centinal.json';
@@ -296,6 +314,12 @@ import _diuresis from '../life/oscillator/shuttle/diuresis.json';
 import _eureka from '../life/oscillator/shuttle/eureka.json';
 import _gourmet from '../life/oscillator/shuttle/gourmet.json';
 import _newshuttle from '../life/oscillator/shuttle/newshuttle.json';
+import _p130_shuttle from '../life/oscillator/shuttle/p130-shuttle.json';
+import _p24_shuttle from '../life/oscillator/shuttle/p24-shuttle.json';
+import _p26_pre_pulsar_shuttle from '../life/oscillator/shuttle/p26-pre-pulsar-shuttle.json';
+import _p28_pre_pulsar_shuttle from '../life/oscillator/shuttle/p28-pre-pulsar-shuttle.json';
+import _p29_pre_pulsar_shuttle from '../life/oscillator/shuttle/p29-pre-pulsar-shuttle.json';
+import _p36_shuttle from '../life/oscillator/shuttle/p36-shuttle.json';
 import _blocked_p4_t_nose_hybrid from '../life/oscillator/t-nose/blocked-p4-t-nose-hybrid.json';
 import _blocked_p4_t_nose from '../life/oscillator/t-nose/blocked-p4-t-nose.json';
 import _toad from '../life/oscillator/toad.json';
@@ -925,6 +949,23 @@ render((
       <nav><Link href='/odd-keys'>{_odd_keys.title}</Link></nav>
       <nav><Link href='/odd-test-tube-baby'>{_odd_test_tube_baby.title}</Link></nav>
       <nav><Link href='/overweight-emulator'>{_overweight_emulator.title}</Link></nav>
+      <nav><Link href='/p10-traffic-light-hassler'>{_p10_traffic_light_hassler.title}</Link></nav>
+      <nav><Link href='/p11-double-length-signal-injector'>{_p11_double_length_signal_injector.title}</Link></nav>
+      <nav><Link href='/p11-pinwheel'>{_p11_pinwheel.title}</Link></nav>
+      <nav><Link href='/p110-traffic-jam'>{_p110_traffic_jam.title}</Link></nav>
+      <nav><Link href='/p124-lumps-of-muck-hassler'>{_p124_lumps_of_muck_hassler.title}</Link></nav>
+      <nav><Link href='/p156-hans-leo-hassler'>{_p156_hans_leo_hassler.title}</Link></nav>
+      <nav><Link href='/p18-bi-block-hassler'>{_p18_bi_block_hassler.title}</Link></nav>
+      <nav><Link href='/p18-honey-farm-hassler'>{_p18_honey_farm_hassler.title}</Link></nav>
+      <nav><Link href='/p200-traffic-jam'>{_p200_traffic_jam.title}</Link></nav>
+      <nav><Link href='/p22-lumps-of-muck-hassler'>{_p22_lumps_of_muck_hassler.title}</Link></nav>
+      <nav><Link href='/p29-pentadecathlon-hassler'>{_p29_pentadecathlon_hassler.title}</Link></nav>
+      <nav><Link href='/p29-traffic-farm-hassler'>{_p29_traffic_farm_hassler.title}</Link></nav>
+      <nav><Link href='/p32-blinker-hassler-2'>{_p32_blinker_hassler_2.title}</Link></nav>
+      <nav><Link href='/p32-blinker-hassler'>{_p32_blinker_hassler.title}</Link></nav>
+      <nav><Link href='/p35-beehive-hassler'>{_p35_beehive_hassler.title}</Link></nav>
+      <nav><Link href='/p35-honey-farm-hassler'>{_p35_honey_farm_hassler.title}</Link></nav>
+      <nav><Link href='/p36-toad-hassler'>{_p36_toad_hassler.title}</Link></nav>
       <nav><Link href='/pulsar'>{_pulsar.title}</Link></nav>
       <h3>Relay</h3>
       <nav><Link href='/relay/106P135'>{_106P135.title}</Link></nav>
@@ -932,6 +973,7 @@ render((
       <nav><Link href='/relay/double-x'>{_double_x.title}</Link></nav>
       <nav><Link href='/relay/hectic'>{_hectic.title}</Link></nav>
       <nav><Link href='/relay/metamorphosis-II'>{_metamorphosis_II.title}</Link></nav>
+      <nav><Link href='/relay/p26-glider-shuttle'>{_p26_glider_shuttle.title}</Link></nav>
       <h3>Shuttle</h3>
       <nav><Link href='/shuttle/34P14-shuttle'>{_34P14_shuttle.title}</Link></nav>
       <nav><Link href='/shuttle/carnival-shuttle'>{_carnival_shuttle.title}</Link></nav>
@@ -940,6 +982,12 @@ render((
       <nav><Link href='/shuttle/eureka'>{_eureka.title}</Link></nav>
       <nav><Link href='/shuttle/gourmet'>{_gourmet.title}</Link></nav>
       <nav><Link href='/shuttle/newshuttle'>{_newshuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p130-shuttle'>{_p130_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p24-shuttle'>{_p24_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p26-pre-pulsar-shuttle'>{_p26_pre_pulsar_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p28-pre-pulsar-shuttle'>{_p28_pre_pulsar_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p29-pre-pulsar-shuttle'>{_p29_pre_pulsar_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p36-shuttle'>{_p36_shuttle.title}</Link></nav>
       <h3>T Nose</h3>
       <nav><Link href='/t-nose/blocked-p4-t-nose-hybrid'>{_blocked_p4_t_nose_hybrid.title}</Link></nav>
       <nav><Link href='/t-nose/blocked-p4-t-nose'>{_blocked_p4_t_nose.title}</Link></nav>
@@ -1565,12 +1613,30 @@ render((
     <Pattern path='/odd-keys' lifeData={_odd_keys} />
     <Pattern path='/odd-test-tube-baby' lifeData={_odd_test_tube_baby} />
     <Pattern path='/overweight-emulator' lifeData={_overweight_emulator} />
+    <Pattern path='/p10-traffic-light-hassler' lifeData={_p10_traffic_light_hassler} />
+    <Pattern path='/p11-double-length-signal-injector' lifeData={_p11_double_length_signal_injector} />
+    <Pattern path='/p11-pinwheel' lifeData={_p11_pinwheel} />
+    <Pattern path='/p110-traffic-jam' lifeData={_p110_traffic_jam} />
+    <Pattern path='/p124-lumps-of-muck-hassler' lifeData={_p124_lumps_of_muck_hassler} />
+    <Pattern path='/p156-hans-leo-hassler' lifeData={_p156_hans_leo_hassler} />
+    <Pattern path='/p18-bi-block-hassler' lifeData={_p18_bi_block_hassler} />
+    <Pattern path='/p18-honey-farm-hassler' lifeData={_p18_honey_farm_hassler} />
+    <Pattern path='/p200-traffic-jam' lifeData={_p200_traffic_jam} />
+    <Pattern path='/p22-lumps-of-muck-hassler' lifeData={_p22_lumps_of_muck_hassler} />
+    <Pattern path='/p29-pentadecathlon-hassler' lifeData={_p29_pentadecathlon_hassler} />
+    <Pattern path='/p29-traffic-farm-hassler' lifeData={_p29_traffic_farm_hassler} />
+    <Pattern path='/p32-blinker-hassler-2' lifeData={_p32_blinker_hassler_2} />
+    <Pattern path='/p32-blinker-hassler' lifeData={_p32_blinker_hassler} />
+    <Pattern path='/p35-beehive-hassler' lifeData={_p35_beehive_hassler} />
+    <Pattern path='/p35-honey-farm-hassler' lifeData={_p35_honey_farm_hassler} />
+    <Pattern path='/p36-toad-hassler' lifeData={_p36_toad_hassler} />
     <Pattern path='/pulsar' lifeData={_pulsar} />
     <Pattern path='/relay/106P135' lifeData={_106P135} />
     <Pattern path='/relay/6-bits' lifeData={_6_bits} />
     <Pattern path='/relay/double-x' lifeData={_double_x} />
     <Pattern path='/relay/hectic' lifeData={_hectic} />
     <Pattern path='/relay/metamorphosis-II' lifeData={_metamorphosis_II} />
+    <Pattern path='/relay/p26-glider-shuttle' lifeData={_p26_glider_shuttle} />
     <Pattern path='/shuttle/34P14-shuttle' lifeData={_34P14_shuttle} />
     <Pattern path='/shuttle/carnival-shuttle' lifeData={_carnival_shuttle} />
     <Pattern path='/shuttle/centinal' lifeData={_centinal} />
@@ -1578,6 +1644,12 @@ render((
     <Pattern path='/shuttle/eureka' lifeData={_eureka} />
     <Pattern path='/shuttle/gourmet' lifeData={_gourmet} />
     <Pattern path='/shuttle/newshuttle' lifeData={_newshuttle} />
+    <Pattern path='/shuttle/p130-shuttle' lifeData={_p130_shuttle} />
+    <Pattern path='/shuttle/p24-shuttle' lifeData={_p24_shuttle} />
+    <Pattern path='/shuttle/p26-pre-pulsar-shuttle' lifeData={_p26_pre_pulsar_shuttle} />
+    <Pattern path='/shuttle/p28-pre-pulsar-shuttle' lifeData={_p28_pre_pulsar_shuttle} />
+    <Pattern path='/shuttle/p29-pre-pulsar-shuttle' lifeData={_p29_pre_pulsar_shuttle} />
+    <Pattern path='/shuttle/p36-shuttle' lifeData={_p36_shuttle} />
     <Pattern path='/t-nose/blocked-p4-t-nose-hybrid' lifeData={_blocked_p4_t_nose_hybrid} />
     <Pattern path='/t-nose/blocked-p4-t-nose' lifeData={_blocked_p4_t_nose} />
     <Pattern path='/toad' lifeData={_toad} />
