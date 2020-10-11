@@ -1,0 +1,6 @@
+.github
+node_modules
+.gitignore
+.pretierrc.json
+LICENSE
+README.md
