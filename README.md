@@ -5,15 +5,13 @@
 ## Description
 
 **Conway's Game of Life web version!**  
-This is a zero-player game, that its evolution is determined by its initial state, with no further input.  
-One interacts with the game of life by creating an initial configuration and observing how it evolves.  
-It is turing complete and can simulate a universal constructor or any other turing machine.  
+It is turing complete and can simulate a universal constructor.  
 I hope this repository is a good lab for game of life.  
 And I also hope this repository is a [good starting point](https://github.com/TroyTae/game-of-life/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) for first-time contributors.
 
 ## Demo
 
-![Demo gif](./.github/images/favicon.gif)  
+![Demo](./static/favicon.gif)  
 You can see every patterns in [here](https://troytae-game-of-life.netlify.app/)
 
 ## Contributors
