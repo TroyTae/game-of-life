@@ -123,6 +123,9 @@ import _merzenichs_p18 from '../life/oscillator/billiard-table/merzenichs-p18.js
 import _mini_pressure_cooker from '../life/oscillator/billiard-table/mini-pressure-cooker.json';
 import _negentropy from '../life/oscillator/billiard-table/negentropy.json';
 import _new_five from '../life/oscillator/billiard-table/new-five.json';
+import _pinwheel from '../life/oscillator/billiard-table/pinwheel.json';
+import _pressure_cooker from '../life/oscillator/billiard-table/pressure-cooker.json';
+import _protein from '../life/oscillator/billiard-table/protein.json';
 import _biting_off_more_than_they_can_chew from '../life/oscillator/biting-off-more-than-they-can-chew.json';
 import _blinkers_bit_pole from '../life/oscillator/blinkers-bit-pole.json';
 import _blocked_p4_1 from '../life/oscillator/blocked-p4-1.json';
@@ -278,6 +281,7 @@ import _hexapole from '../life/oscillator/muttering-moat/hexapole.json';
 import _muttering_moat_1 from '../life/oscillator/muttering-moat/muttering-moat-1.json';
 import _nonapole from '../life/oscillator/muttering-moat/nonapole.json';
 import _octapole from '../life/oscillator/muttering-moat/octapole.json';
+import _pentapole from '../life/oscillator/muttering-moat/pentapole.json';
 import _octagon_2 from '../life/oscillator/octagon-2.json';
 import _octagon_4 from '../life/oscillator/octagon-4.json';
 import _odd_keys from '../life/oscillator/odd-keys.json';
@@ -300,6 +304,48 @@ import _p32_blinker_hassler from '../life/oscillator/p32-blinker-hassler.json';
 import _p35_beehive_hassler from '../life/oscillator/p35-beehive-hassler.json';
 import _p35_honey_farm_hassler from '../life/oscillator/p35-honey-farm-hassler.json';
 import _p36_toad_hassler from '../life/oscillator/p36-toad-hassler.json';
+import _p44_pi_heptomino_hassler from '../life/oscillator/p44-pi-heptomino-hassler.json';
+import _p44_traffic_light_hassler from '../life/oscillator/p44-traffic-light-hassler.json';
+import _p46_based_prng from '../life/oscillator/p46-based-prng.json';
+import _p48_pi_hassler from '../life/oscillator/p48-pi-hassler.json';
+import _p48_toad_hassler from '../life/oscillator/p48-toad-hassler.json';
+import _p49_skewed_pulsar_hassler from '../life/oscillator/p49-skewed-pulsar-hassler.json';
+import _p5_pipsquirter from '../life/oscillator/p5-pipsquirter.json';
+import _p50_traffic_jam from '../life/oscillator/p50-traffic-jam.json';
+import _p55_pre_pulsar_hassler from '../life/oscillator/p55-pre-pulsar-hassler.json';
+import _p57_herschel_loop_1 from '../life/oscillator/p57-herschel-loop-1.json';
+import _p58_toadsucker from '../life/oscillator/p58-toadsucker.json';
+import _p59_herschel_loop_1 from '../life/oscillator/p59-herschel-loop-1.json';
+import _p59_herschel_loop_2 from '../life/oscillator/p59-herschel-loop-2.json';
+import _p6_shuttle from '../life/oscillator/p6-shuttle.json';
+import _p6_thumb from '../life/oscillator/p6-thumb.json';
+import _p60_b_heptomino_hassler from '../life/oscillator/p60-b-heptomino-hassler.json';
+import _p60_traffic_light_hassler from '../life/oscillator/p60-traffic-light-hassler.json';
+import _p61_herschel_loop_1 from '../life/oscillator/p61-herschel-loop-1.json';
+import _p61_herschel_loop_2 from '../life/oscillator/p61-herschel-loop-2.json';
+import _p64_thunderbird_hassler from '../life/oscillator/p64-thunderbird-hassler.json';
+import _p72_quasi_shuttle from '../life/oscillator/p72-quasi-shuttle.json';
+import _pedestle from '../life/oscillator/pedestle.json';
+import _penny_lane from '../life/oscillator/penny-lane.json';
+import _pentadecathlon_on_37p7_1 from '../life/oscillator/pentadecathlon-on-37p7_1.json';
+import _pentadecathlon_on_snacker from '../life/oscillator/pentadecathlon-on-snacker.json';
+import _pentadecathlon_on_thumb_1 from '../life/oscillator/pentadecathlon-on-thumb-1.json';
+import _pentadecathlon from '../life/oscillator/pentadecathlon.json';
+import _pentant from '../life/oscillator/pentant.json';
+import _pentoad_1h2 from '../life/oscillator/pentoad-1h2.json';
+import _pentoad_2 from '../life/oscillator/pentoad-2.json';
+import _pentoad from '../life/oscillator/pentoad.json';
+import _phoenix_1 from '../life/oscillator/phoenix/phoenix-1.json';
+import _pi_orbital from '../life/oscillator/pi-orbital.json';
+import _pi_portraitor from '../life/oscillator/pi-portraitor.json';
+import _pipsquirter_1 from '../life/oscillator/pipsquirter-1.json';
+import _pipsquirter_2 from '../life/oscillator/pipsquirter-2.json';
+import _piston from '../life/oscillator/piston.json';
+import _popover from '../life/oscillator/popover.json';
+import _pseudo_barberpole_on_jasons_p22 from '../life/oscillator/pseudo-barberpole-on-jasons-p22.json';
+import _pseudo_barberpole_on_rattlesnake from '../life/oscillator/pseudo-barberpole-on-rattlesnake.json';
+import _pseudo_barberpole from '../life/oscillator/pseudo-barberpole.json';
+import _pulsar_quadrant from '../life/oscillator/pulsar-quadrant.json';
 import _pulsar from '../life/oscillator/pulsar.json';
 import _106P135 from '../life/oscillator/relay/106P135.json';
 import _6_bits from '../life/oscillator/relay/6-bits.json';
@@ -307,6 +353,13 @@ import _double_x from '../life/oscillator/relay/double-x.json';
 import _hectic from '../life/oscillator/relay/hectic.json';
 import _metamorphosis_II from '../life/oscillator/relay/metamorphosis-II.json';
 import _p26_glider_shuttle from '../life/oscillator/relay/p26-glider-shuttle.json';
+import _p42_glider_shuttle from '../life/oscillator/relay/p42-glider-shuttle.json';
+import _p43_snark_loop from '../life/oscillator/relay/p43-snark-loop.json';
+import _p49_bumper_loop from '../life/oscillator/relay/p49-bumper-loop.json';
+import _p49_glider_shuttle from '../life/oscillator/relay/p49-glider-shuttle.json';
+import _p50_glider_shuttle from '../life/oscillator/relay/p50-glider-shuttle.json';
+import _p57_bumper_loop from '../life/oscillator/relay/p57-bumper-loop.json';
+import _p60_glider_shuttle from '../life/oscillator/relay/p60-glider-shuttle.json';
 import _34P14_shuttle from '../life/oscillator/shuttle/34P14-shuttle.json';
 import _carnival_shuttle from '../life/oscillator/shuttle/carnival-shuttle.json';
 import _centinal from '../life/oscillator/shuttle/centinal.json';
@@ -320,6 +373,11 @@ import _p26_pre_pulsar_shuttle from '../life/oscillator/shuttle/p26-pre-pulsar-s
 import _p28_pre_pulsar_shuttle from '../life/oscillator/shuttle/p28-pre-pulsar-shuttle.json';
 import _p29_pre_pulsar_shuttle from '../life/oscillator/shuttle/p29-pre-pulsar-shuttle.json';
 import _p36_shuttle from '../life/oscillator/shuttle/p36-shuttle.json';
+import _p40_b_heptomino_shuttle from '../life/oscillator/shuttle/p40-b-heptomino-shuttle.json';
+import _p47_pre_pulsar_shuttle from '../life/oscillator/shuttle/p47-pre-pulsar-shuttle.json';
+import _p54_shuttle from '../life/oscillator/shuttle/p54-shuttle.json';
+import _p56_b_heptomino_shuttle from '../life/oscillator/shuttle/p56-b-heptomino-shuttle.json';
+import _p58_pre_pulsar_shuttle from '../life/oscillator/shuttle/p58-pre-pulsar-shuttle.json';
 import _blocked_p4_t_nose_hybrid from '../life/oscillator/t-nose/blocked-p4-t-nose-hybrid.json';
 import _blocked_p4_t_nose from '../life/oscillator/t-nose/blocked-p4-t-nose.json';
 import _toad from '../life/oscillator/toad.json';
@@ -340,6 +398,10 @@ import _triple_pseudo_still_life from '../life/still-life/pseudo-still-life/trip
 import _15_bent_paperclip from '../life/still-life/strict-still-life/15-bent-paperclip.json';
 import _29_bit_still_life_no1 from '../life/still-life/strict-still-life/29-bit-still-life-no1.json';
 import _31_4 from '../life/still-life/strict-still-life/31_4.json';
+import _R_bee_and_snake from '../life/still-life/strict-still-life/R-bee-and-snake.json';
+import _R_bee_on_beehive from '../life/still-life/strict-still-life/R-bee-on-beehive.json';
+import _R_bee_with_feather from '../life/still-life/strict-still-life/R-bee-with-feather.json';
+import _R_mango_and_house from '../life/still-life/strict-still-life/R-mango-and-house.json';
 import _aircraft_carrier from '../life/still-life/strict-still-life/aircraft-carrier.json';
 import _amphisbaena from '../life/still-life/strict-still-life/amphisbaena.json';
 import _aries_betwixt_two_blocks from '../life/still-life/strict-still-life/aries-betwixt-two-blocks.json';
@@ -406,6 +468,7 @@ import _carrier_siamese_very_long_snake from '../life/still-life/strict-still-li
 import _carrier_tie_boat from '../life/still-life/strict-still-life/carrier-tie-boat.json';
 import _carrier_tie_ship from '../life/still-life/strict-still-life/carrier-tie-ship.json';
 import _carrier_with_feather from '../life/still-life/strict-still-life/carrier-with-feather.json';
+import _cis_R_bee_and_R_loaf from '../life/still-life/strict-still-life/cis-R-bee-and-R-loaf.json';
 import _cis_barge_with_nine from '../life/still-life/strict-still-life/cis-barge-with-nine.json';
 import _cis_barge_with_tail from '../life/still-life/strict-still-life/cis-barge-with-tail.json';
 import _cis_block_on_long_hook from '../life/still-life/strict-still-life/cis-block-on-long-hook.json';
@@ -430,9 +493,8 @@ import _cis_mango_with_tail from '../life/still-life/strict-still-life/cis-mango
 import _cis_mirrored_R_bee from '../life/still-life/strict-still-life/cis-mirrored-R-bee.json';
 import _cis_mirrored_worm_siamese_cis_mirrored_worm from '../life/still-life/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm.json';
 import _cis_mirrored_worm from '../life/still-life/strict-still-life/cis-mirrored-worm.json';
-import _cis_R_bee_and_R_loaf from '../life/still-life/strict-still-life/cis-R-bee-and-R-loaf.json';
-import _cis_rotated_hook from '../life/still-life/strict-still-life/cis-rotated-hook.json';
 import _cis_rotated_R_bee from '../life/still-life/strict-still-life/cis-rotated-R-bee.json';
+import _cis_rotated_hook from '../life/still-life/strict-still-life/cis-rotated-hook.json';
 import _cis_shillelagh from '../life/still-life/strict-still-life/cis-shillelagh.json';
 import _cis_ship_on_table from '../life/still-life/strict-still-life/cis-ship-on-table.json';
 import _cis_snake_tie from '../life/still-life/strict-still-life/cis-snake-tie.json';
@@ -567,10 +629,6 @@ import _pond_on_dock from '../life/still-life/strict-still-life/pond-on-dock.jso
 import _pond from '../life/still-life/strict-still-life/pond.json';
 import _professor from '../life/still-life/strict-still-life/professor.json';
 import _python_siamese_snake from '../life/still-life/strict-still-life/python-siamese-snake.json';
-import _R_bee_and_snake from '../life/still-life/strict-still-life/R-bee-and-snake.json';
-import _R_bee_on_beehive from '../life/still-life/strict-still-life/R-bee-on-beehive.json';
-import _R_bee_with_feather from '../life/still-life/strict-still-life/R-bee-with-feather.json';
-import _R_mango_and_house from '../life/still-life/strict-still-life/R-mango-and-house.json';
 import _rotated_c from '../life/still-life/strict-still-life/rotated-c.json';
 import _rotated_table from '../life/still-life/strict-still-life/rotated-table.json';
 import _scorpion from '../life/still-life/strict-still-life/scorpion.json';
@@ -601,6 +659,7 @@ import _table_and_table from '../life/still-life/strict-still-life/table-and-tab
 import _teardrop_with_cape from '../life/still-life/strict-still-life/teardrop-with-cape.json';
 import _teardrop_with_claw from '../life/still-life/strict-still-life/teardrop-with-claw.json';
 import _thirteen_loop from '../life/still-life/strict-still-life/thirteen-loop.json';
+import _trans_R_bee_and_R_loaf from '../life/still-life/strict-still-life/trans-R-bee-and-R-loaf.json';
 import _trans_barge_with_nine from '../life/still-life/strict-still-life/trans-barge-with-nine.json';
 import _trans_barge_with_tail from '../life/still-life/strict-still-life/trans-barge-with-tail.json';
 import _trans_block_on_long_hook from '../life/still-life/strict-still-life/trans-block-on-long-hook.json';
@@ -621,7 +680,6 @@ import _trans_long_barge_with_tail from '../life/still-life/strict-still-life/tr
 import _trans_long_boat_with_tail from '../life/still-life/strict-still-life/trans-long-boat-with-tail.json';
 import _trans_mango_with_tail from '../life/still-life/strict-still-life/trans-mango-with-tail.json';
 import _trans_mirrored_R_bee from '../life/still-life/strict-still-life/trans-mirrored-R-bee.json';
-import _trans_R_bee_and_R_loaf from '../life/still-life/strict-still-life/trans-R-bee-and-R-loaf.json';
 import _trans_rotated_R_bee from '../life/still-life/strict-still-life/trans-rotated-R-bee.json';
 import _trans_ship_on_table from '../life/still-life/strict-still-life/trans-ship-on-table.json';
 import _trans_snake_tie from '../life/still-life/strict-still-life/trans-snake-tie.json';
@@ -787,6 +845,9 @@ render((
       <nav><Link href='/billiard-table/mini-pressure-cooker'>{_mini_pressure_cooker.title}</Link></nav>
       <nav><Link href='/billiard-table/negentropy'>{_negentropy.title}</Link></nav>
       <nav><Link href='/billiard-table/new-five'>{_new_five.title}</Link></nav>
+      <nav><Link href='/billiard-table/pinwheel'>{_pinwheel.title}</Link></nav>
+      <nav><Link href='/billiard-table/pressure-cooker'>{_pressure_cooker.title}</Link></nav>
+      <nav><Link href='/billiard-table/protein'>{_protein.title}</Link></nav>
       <nav><Link href='/biting-off-more-than-they-can-chew'>{_biting_off_more_than_they_can_chew.title}</Link></nav>
       <nav><Link href='/blinkers-bit-pole'>{_blinkers_bit_pole.title}</Link></nav>
       <nav><Link href='/blocked-p4-1'>{_blocked_p4_1.title}</Link></nav>
@@ -944,6 +1005,7 @@ render((
       <nav><Link href='/muttering-moat/muttering-moat-1'>{_muttering_moat_1.title}</Link></nav>
       <nav><Link href='/muttering-moat/nonapole'>{_nonapole.title}</Link></nav>
       <nav><Link href='/muttering-moat/octapole'>{_octapole.title}</Link></nav>
+      <nav><Link href='/muttering-moat/pentapole'>{_pentapole.title}</Link></nav>
       <nav><Link href='/octagon-2'>{_octagon_2.title}</Link></nav>
       <nav><Link href='/octagon-4'>{_octagon_4.title}</Link></nav>
       <nav><Link href='/odd-keys'>{_odd_keys.title}</Link></nav>
@@ -966,6 +1028,49 @@ render((
       <nav><Link href='/p35-beehive-hassler'>{_p35_beehive_hassler.title}</Link></nav>
       <nav><Link href='/p35-honey-farm-hassler'>{_p35_honey_farm_hassler.title}</Link></nav>
       <nav><Link href='/p36-toad-hassler'>{_p36_toad_hassler.title}</Link></nav>
+      <nav><Link href='/p44-pi-heptomino-hassler'>{_p44_pi_heptomino_hassler.title}</Link></nav>
+      <nav><Link href='/p44-traffic-light-hassler'>{_p44_traffic_light_hassler.title}</Link></nav>
+      <nav><Link href='/p46-based-prng'>{_p46_based_prng.title}</Link></nav>
+      <nav><Link href='/p48-pi-hassler'>{_p48_pi_hassler.title}</Link></nav>
+      <nav><Link href='/p48-toad-hassler'>{_p48_toad_hassler.title}</Link></nav>
+      <nav><Link href='/p49-skewed-pulsar-hassler'>{_p49_skewed_pulsar_hassler.title}</Link></nav>
+      <nav><Link href='/p5-pipsquirter'>{_p5_pipsquirter.title}</Link></nav>
+      <nav><Link href='/p50-traffic-jam'>{_p50_traffic_jam.title}</Link></nav>
+      <nav><Link href='/p55-pre-pulsar-hassler'>{_p55_pre_pulsar_hassler.title}</Link></nav>
+      <nav><Link href='/p57-herschel-loop-1'>{_p57_herschel_loop_1.title}</Link></nav>
+      <nav><Link href='/p58-toadsucker'>{_p58_toadsucker.title}</Link></nav>
+      <nav><Link href='/p59-herschel-loop-1'>{_p59_herschel_loop_1.title}</Link></nav>
+      <nav><Link href='/p59-herschel-loop-2'>{_p59_herschel_loop_2.title}</Link></nav>
+      <nav><Link href='/p6-shuttle'>{_p6_shuttle.title}</Link></nav>
+      <nav><Link href='/p6-thumb'>{_p6_thumb.title}</Link></nav>
+      <nav><Link href='/p60-b-heptomino-hassler'>{_p60_b_heptomino_hassler.title}</Link></nav>
+      <nav><Link href='/p60-traffic-light-hassler'>{_p60_traffic_light_hassler.title}</Link></nav>
+      <nav><Link href='/p61-herschel-loop-1'>{_p61_herschel_loop_1.title}</Link></nav>
+      <nav><Link href='/p61-herschel-loop-2'>{_p61_herschel_loop_2.title}</Link></nav>
+      <nav><Link href='/p64-thunderbird-hassler'>{_p64_thunderbird_hassler.title}</Link></nav>
+      <nav><Link href='/p72-quasi-shuttle'>{_p72_quasi_shuttle.title}</Link></nav>
+      <nav><Link href='/pedestle'>{_pedestle.title}</Link></nav>
+      <nav><Link href='/penny-lane'>{_penny_lane.title}</Link></nav>
+      <nav><Link href='/pentadecathlon-on-37p7_1'>{_pentadecathlon_on_37p7_1.title}</Link></nav>
+      <nav><Link href='/pentadecathlon-on-snacker'>{_pentadecathlon_on_snacker.title}</Link></nav>
+      <nav><Link href='/pentadecathlon-on-thumb-1'>{_pentadecathlon_on_thumb_1.title}</Link></nav>
+      <nav><Link href='/pentadecathlon'>{_pentadecathlon.title}</Link></nav>
+      <nav><Link href='/pentant'>{_pentant.title}</Link></nav>
+      <nav><Link href='/pentoad-1h2'>{_pentoad_1h2.title}</Link></nav>
+      <nav><Link href='/pentoad-2'>{_pentoad_2.title}</Link></nav>
+      <nav><Link href='/pentoad'>{_pentoad.title}</Link></nav>
+      <h3>Phoenix</h3>
+      <nav><Link href='/phoenix/phoenix-1'>{_phoenix_1.title}</Link></nav>
+      <nav><Link href='/pi-orbital'>{_pi_orbital.title}</Link></nav>
+      <nav><Link href='/pi-portraitor'>{_pi_portraitor.title}</Link></nav>
+      <nav><Link href='/pipsquirter-1'>{_pipsquirter_1.title}</Link></nav>
+      <nav><Link href='/pipsquirter-2'>{_pipsquirter_2.title}</Link></nav>
+      <nav><Link href='/piston'>{_piston.title}</Link></nav>
+      <nav><Link href='/popover'>{_popover.title}</Link></nav>
+      <nav><Link href='/pseudo-barberpole-on-jasons-p22'>{_pseudo_barberpole_on_jasons_p22.title}</Link></nav>
+      <nav><Link href='/pseudo-barberpole-on-rattlesnake'>{_pseudo_barberpole_on_rattlesnake.title}</Link></nav>
+      <nav><Link href='/pseudo-barberpole'>{_pseudo_barberpole.title}</Link></nav>
+      <nav><Link href='/pulsar-quadrant'>{_pulsar_quadrant.title}</Link></nav>
       <nav><Link href='/pulsar'>{_pulsar.title}</Link></nav>
       <h3>Relay</h3>
       <nav><Link href='/relay/106P135'>{_106P135.title}</Link></nav>
@@ -974,6 +1079,13 @@ render((
       <nav><Link href='/relay/hectic'>{_hectic.title}</Link></nav>
       <nav><Link href='/relay/metamorphosis-II'>{_metamorphosis_II.title}</Link></nav>
       <nav><Link href='/relay/p26-glider-shuttle'>{_p26_glider_shuttle.title}</Link></nav>
+      <nav><Link href='/relay/p42-glider-shuttle'>{_p42_glider_shuttle.title}</Link></nav>
+      <nav><Link href='/relay/p43-snark-loop'>{_p43_snark_loop.title}</Link></nav>
+      <nav><Link href='/relay/p49-bumper-loop'>{_p49_bumper_loop.title}</Link></nav>
+      <nav><Link href='/relay/p49-glider-shuttle'>{_p49_glider_shuttle.title}</Link></nav>
+      <nav><Link href='/relay/p50-glider-shuttle'>{_p50_glider_shuttle.title}</Link></nav>
+      <nav><Link href='/relay/p57-bumper-loop'>{_p57_bumper_loop.title}</Link></nav>
+      <nav><Link href='/relay/p60-glider-shuttle'>{_p60_glider_shuttle.title}</Link></nav>
       <h3>Shuttle</h3>
       <nav><Link href='/shuttle/34P14-shuttle'>{_34P14_shuttle.title}</Link></nav>
       <nav><Link href='/shuttle/carnival-shuttle'>{_carnival_shuttle.title}</Link></nav>
@@ -988,6 +1100,11 @@ render((
       <nav><Link href='/shuttle/p28-pre-pulsar-shuttle'>{_p28_pre_pulsar_shuttle.title}</Link></nav>
       <nav><Link href='/shuttle/p29-pre-pulsar-shuttle'>{_p29_pre_pulsar_shuttle.title}</Link></nav>
       <nav><Link href='/shuttle/p36-shuttle'>{_p36_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p40-b-heptomino-shuttle'>{_p40_b_heptomino_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p47-pre-pulsar-shuttle'>{_p47_pre_pulsar_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p54-shuttle'>{_p54_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p56-b-heptomino-shuttle'>{_p56_b_heptomino_shuttle.title}</Link></nav>
+      <nav><Link href='/shuttle/p58-pre-pulsar-shuttle'>{_p58_pre_pulsar_shuttle.title}</Link></nav>
       <h3>T Nose</h3>
       <nav><Link href='/t-nose/blocked-p4-t-nose-hybrid'>{_blocked_p4_t_nose_hybrid.title}</Link></nav>
       <nav><Link href='/t-nose/blocked-p4-t-nose'>{_blocked_p4_t_nose.title}</Link></nav>
@@ -1013,6 +1130,10 @@ render((
       <nav><Link href='/strict-still-life/15-bent-paperclip'>{_15_bent_paperclip.title}</Link></nav>
       <nav><Link href='/strict-still-life/29-bit-still-life-no1'>{_29_bit_still_life_no1.title}</Link></nav>
       <nav><Link href='/strict-still-life/31_4'>{_31_4.title}</Link></nav>
+      <nav><Link href='/strict-still-life/R-bee-and-snake'>{_R_bee_and_snake.title}</Link></nav>
+      <nav><Link href='/strict-still-life/R-bee-on-beehive'>{_R_bee_on_beehive.title}</Link></nav>
+      <nav><Link href='/strict-still-life/R-bee-with-feather'>{_R_bee_with_feather.title}</Link></nav>
+      <nav><Link href='/strict-still-life/R-mango-and-house'>{_R_mango_and_house.title}</Link></nav>
       <nav><Link href='/strict-still-life/aircraft-carrier'>{_aircraft_carrier.title}</Link></nav>
       <nav><Link href='/strict-still-life/amphisbaena'>{_amphisbaena.title}</Link></nav>
       <nav><Link href='/strict-still-life/aries-betwixt-two-blocks'>{_aries_betwixt_two_blocks.title}</Link></nav>
@@ -1079,6 +1200,7 @@ render((
       <nav><Link href='/strict-still-life/carrier-tie-boat'>{_carrier_tie_boat.title}</Link></nav>
       <nav><Link href='/strict-still-life/carrier-tie-ship'>{_carrier_tie_ship.title}</Link></nav>
       <nav><Link href='/strict-still-life/carrier-with-feather'>{_carrier_with_feather.title}</Link></nav>
+      <nav><Link href='/strict-still-life/cis-R-bee-and-R-loaf'>{_cis_R_bee_and_R_loaf.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-barge-with-nine'>{_cis_barge_with_nine.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-barge-with-tail'>{_cis_barge_with_tail.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-block-on-long-hook'>{_cis_block_on_long_hook.title}</Link></nav>
@@ -1103,9 +1225,8 @@ render((
       <nav><Link href='/strict-still-life/cis-mirrored-R-bee'>{_cis_mirrored_R_bee.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm'>{_cis_mirrored_worm_siamese_cis_mirrored_worm.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-mirrored-worm'>{_cis_mirrored_worm.title}</Link></nav>
-      <nav><Link href='/strict-still-life/cis-R-bee-and-R-loaf'>{_cis_R_bee_and_R_loaf.title}</Link></nav>
-      <nav><Link href='/strict-still-life/cis-rotated-hook'>{_cis_rotated_hook.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-rotated-R-bee'>{_cis_rotated_R_bee.title}</Link></nav>
+      <nav><Link href='/strict-still-life/cis-rotated-hook'>{_cis_rotated_hook.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-shillelagh'>{_cis_shillelagh.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-ship-on-table'>{_cis_ship_on_table.title}</Link></nav>
       <nav><Link href='/strict-still-life/cis-snake-tie'>{_cis_snake_tie.title}</Link></nav>
@@ -1240,10 +1361,6 @@ render((
       <nav><Link href='/strict-still-life/pond'>{_pond.title}</Link></nav>
       <nav><Link href='/strict-still-life/professor'>{_professor.title}</Link></nav>
       <nav><Link href='/strict-still-life/python-siamese-snake'>{_python_siamese_snake.title}</Link></nav>
-      <nav><Link href='/strict-still-life/R-bee-and-snake'>{_R_bee_and_snake.title}</Link></nav>
-      <nav><Link href='/strict-still-life/R-bee-on-beehive'>{_R_bee_on_beehive.title}</Link></nav>
-      <nav><Link href='/strict-still-life/R-bee-with-feather'>{_R_bee_with_feather.title}</Link></nav>
-      <nav><Link href='/strict-still-life/R-mango-and-house'>{_R_mango_and_house.title}</Link></nav>
       <nav><Link href='/strict-still-life/rotated-c'>{_rotated_c.title}</Link></nav>
       <nav><Link href='/strict-still-life/rotated-table'>{_rotated_table.title}</Link></nav>
       <nav><Link href='/strict-still-life/scorpion'>{_scorpion.title}</Link></nav>
@@ -1274,6 +1391,7 @@ render((
       <nav><Link href='/strict-still-life/teardrop-with-cape'>{_teardrop_with_cape.title}</Link></nav>
       <nav><Link href='/strict-still-life/teardrop-with-claw'>{_teardrop_with_claw.title}</Link></nav>
       <nav><Link href='/strict-still-life/thirteen-loop'>{_thirteen_loop.title}</Link></nav>
+      <nav><Link href='/strict-still-life/trans-R-bee-and-R-loaf'>{_trans_R_bee_and_R_loaf.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-barge-with-nine'>{_trans_barge_with_nine.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-barge-with-tail'>{_trans_barge_with_tail.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-block-on-long-hook'>{_trans_block_on_long_hook.title}</Link></nav>
@@ -1294,7 +1412,6 @@ render((
       <nav><Link href='/strict-still-life/trans-long-boat-with-tail'>{_trans_long_boat_with_tail.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-mango-with-tail'>{_trans_mango_with_tail.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-mirrored-R-bee'>{_trans_mirrored_R_bee.title}</Link></nav>
-      <nav><Link href='/strict-still-life/trans-R-bee-and-R-loaf'>{_trans_R_bee_and_R_loaf.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-rotated-R-bee'>{_trans_rotated_R_bee.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-ship-on-table'>{_trans_ship_on_table.title}</Link></nav>
       <nav><Link href='/strict-still-life/trans-snake-tie'>{_trans_snake_tie.title}</Link></nav>
@@ -1333,7 +1450,7 @@ render((
       <nav><Link href='/strict-still-life/very-long-snake'>{_very_long_snake.title}</Link></nav>
       <nav><Link href='/strict-still-life/z-quad-loaf'>{_z_quad_loaf.title}</Link></nav>
     </article>
-    
+
     <Pattern path='/1-beacon' lifeData={_1_beacon} />
     <Pattern path='/101' lifeData={_101} />
     <Pattern path='/110P62' lifeData={_110P62} />
@@ -1453,6 +1570,9 @@ render((
     <Pattern path='/billiard-table/mini-pressure-cooker' lifeData={_mini_pressure_cooker} />
     <Pattern path='/billiard-table/negentropy' lifeData={_negentropy} />
     <Pattern path='/billiard-table/new-five' lifeData={_new_five} />
+    <Pattern path='/billiard-table/pinwheel' lifeData={_pinwheel} />
+    <Pattern path='/billiard-table/pressure-cooker' lifeData={_pressure_cooker} />
+    <Pattern path='/billiard-table/protein' lifeData={_protein} />
     <Pattern path='/biting-off-more-than-they-can-chew' lifeData={_biting_off_more_than_they_can_chew} />
     <Pattern path='/blinkers-bit-pole' lifeData={_blinkers_bit_pole} />
     <Pattern path='/blocked-p4-1' lifeData={_blocked_p4_1} />
@@ -1608,6 +1728,7 @@ render((
     <Pattern path='/muttering-moat/muttering-moat-1' lifeData={_muttering_moat_1} />
     <Pattern path='/muttering-moat/nonapole' lifeData={_nonapole} />
     <Pattern path='/muttering-moat/octapole' lifeData={_octapole} />
+    <Pattern path='/muttering-moat/pentapole' lifeData={_pentapole} />
     <Pattern path='/octagon-2' lifeData={_octagon_2} />
     <Pattern path='/octagon-4' lifeData={_octagon_4} />
     <Pattern path='/odd-keys' lifeData={_odd_keys} />
@@ -1630,6 +1751,48 @@ render((
     <Pattern path='/p35-beehive-hassler' lifeData={_p35_beehive_hassler} />
     <Pattern path='/p35-honey-farm-hassler' lifeData={_p35_honey_farm_hassler} />
     <Pattern path='/p36-toad-hassler' lifeData={_p36_toad_hassler} />
+    <Pattern path='/p44-pi-heptomino-hassler' lifeData={_p44_pi_heptomino_hassler} />
+    <Pattern path='/p44-traffic-light-hassler' lifeData={_p44_traffic_light_hassler} />
+    <Pattern path='/p46-based-prng' lifeData={_p46_based_prng} />
+    <Pattern path='/p48-pi-hassler' lifeData={_p48_pi_hassler} />
+    <Pattern path='/p48-toad-hassler' lifeData={_p48_toad_hassler} />
+    <Pattern path='/p49-skewed-pulsar-hassler' lifeData={_p49_skewed_pulsar_hassler} />
+    <Pattern path='/p5-pipsquirter' lifeData={_p5_pipsquirter} />
+    <Pattern path='/p50-traffic-jam' lifeData={_p50_traffic_jam} />
+    <Pattern path='/p55-pre-pulsar-hassler' lifeData={_p55_pre_pulsar_hassler} />
+    <Pattern path='/p57-herschel-loop-1' lifeData={_p57_herschel_loop_1} />
+    <Pattern path='/p58-toadsucker' lifeData={_p58_toadsucker} />
+    <Pattern path='/p59-herschel-loop-1' lifeData={_p59_herschel_loop_1} />
+    <Pattern path='/p59-herschel-loop-2' lifeData={_p59_herschel_loop_2} />
+    <Pattern path='/p6-shuttle' lifeData={_p6_shuttle} />
+    <Pattern path='/p6-thumb' lifeData={_p6_thumb} />
+    <Pattern path='/p60-b-heptomino-hassler' lifeData={_p60_b_heptomino_hassler} />
+    <Pattern path='/p60-traffic-light-hassler' lifeData={_p60_traffic_light_hassler} />
+    <Pattern path='/p61-herschel-loop-1' lifeData={_p61_herschel_loop_1} />
+    <Pattern path='/p61-herschel-loop-2' lifeData={_p61_herschel_loop_2} />
+    <Pattern path='/p64-thunderbird-hassler' lifeData={_p64_thunderbird_hassler} />
+    <Pattern path='/p72-quasi-shuttle' lifeData={_p72_quasi_shuttle} />
+    <Pattern path='/pedestle' lifeData={_pedestle} />
+    <Pattern path='/penny-lane' lifeData={_penny_lane} />
+    <Pattern path='/pentadecathlon-on-37p7_1' lifeData={_pentadecathlon_on_37p7_1} />
+    <Pattern path='/pentadecathlon-on-snacker' lifeData={_pentadecathlon_on_snacker} />
+    <Pattern path='/pentadecathlon-on-thumb-1' lifeData={_pentadecathlon_on_thumb_1} />
+    <Pattern path='/pentadecathlon' lifeData={_pentadecathlon} />
+    <Pattern path='/pentant' lifeData={_pentant} />
+    <Pattern path='/pentoad-1h2' lifeData={_pentoad_1h2} />
+    <Pattern path='/pentoad-2' lifeData={_pentoad_2} />
+    <Pattern path='/pentoad' lifeData={_pentoad} />
+    <Pattern path='/phoenix/phoenix-1' lifeData={_phoenix_1} />
+    <Pattern path='/pi-orbital' lifeData={_pi_orbital} />
+    <Pattern path='/pi-portraitor' lifeData={_pi_portraitor} />
+    <Pattern path='/pipsquirter-1' lifeData={_pipsquirter_1} />
+    <Pattern path='/pipsquirter-2' lifeData={_pipsquirter_2} />
+    <Pattern path='/piston' lifeData={_piston} />
+    <Pattern path='/popover' lifeData={_popover} />
+    <Pattern path='/pseudo-barberpole-on-jasons-p22' lifeData={_pseudo_barberpole_on_jasons_p22} />
+    <Pattern path='/pseudo-barberpole-on-rattlesnake' lifeData={_pseudo_barberpole_on_rattlesnake} />
+    <Pattern path='/pseudo-barberpole' lifeData={_pseudo_barberpole} />
+    <Pattern path='/pulsar-quadrant' lifeData={_pulsar_quadrant} />
     <Pattern path='/pulsar' lifeData={_pulsar} />
     <Pattern path='/relay/106P135' lifeData={_106P135} />
     <Pattern path='/relay/6-bits' lifeData={_6_bits} />
@@ -1637,6 +1800,13 @@ render((
     <Pattern path='/relay/hectic' lifeData={_hectic} />
     <Pattern path='/relay/metamorphosis-II' lifeData={_metamorphosis_II} />
     <Pattern path='/relay/p26-glider-shuttle' lifeData={_p26_glider_shuttle} />
+    <Pattern path='/relay/p42-glider-shuttle' lifeData={_p42_glider_shuttle} />
+    <Pattern path='/relay/p43-snark-loop' lifeData={_p43_snark_loop} />
+    <Pattern path='/relay/p49-bumper-loop' lifeData={_p49_bumper_loop} />
+    <Pattern path='/relay/p49-glider-shuttle' lifeData={_p49_glider_shuttle} />
+    <Pattern path='/relay/p50-glider-shuttle' lifeData={_p50_glider_shuttle} />
+    <Pattern path='/relay/p57-bumper-loop' lifeData={_p57_bumper_loop} />
+    <Pattern path='/relay/p60-glider-shuttle' lifeData={_p60_glider_shuttle} />
     <Pattern path='/shuttle/34P14-shuttle' lifeData={_34P14_shuttle} />
     <Pattern path='/shuttle/carnival-shuttle' lifeData={_carnival_shuttle} />
     <Pattern path='/shuttle/centinal' lifeData={_centinal} />
@@ -1650,6 +1820,11 @@ render((
     <Pattern path='/shuttle/p28-pre-pulsar-shuttle' lifeData={_p28_pre_pulsar_shuttle} />
     <Pattern path='/shuttle/p29-pre-pulsar-shuttle' lifeData={_p29_pre_pulsar_shuttle} />
     <Pattern path='/shuttle/p36-shuttle' lifeData={_p36_shuttle} />
+    <Pattern path='/shuttle/p40-b-heptomino-shuttle' lifeData={_p40_b_heptomino_shuttle} />
+    <Pattern path='/shuttle/p47-pre-pulsar-shuttle' lifeData={_p47_pre_pulsar_shuttle} />
+    <Pattern path='/shuttle/p54-shuttle' lifeData={_p54_shuttle} />
+    <Pattern path='/shuttle/p56-b-heptomino-shuttle' lifeData={_p56_b_heptomino_shuttle} />
+    <Pattern path='/shuttle/p58-pre-pulsar-shuttle' lifeData={_p58_pre_pulsar_shuttle} />
     <Pattern path='/t-nose/blocked-p4-t-nose-hybrid' lifeData={_blocked_p4_t_nose_hybrid} />
     <Pattern path='/t-nose/blocked-p4-t-nose' lifeData={_blocked_p4_t_nose} />
     <Pattern path='/toad' lifeData={_toad} />
@@ -1670,6 +1845,10 @@ render((
     <Pattern path='/strict-still-life/15-bent-paperclip' lifeData={_15_bent_paperclip} />
     <Pattern path='/strict-still-life/29-bit-still-life-no1' lifeData={_29_bit_still_life_no1} />
     <Pattern path='/strict-still-life/31_4' lifeData={_31_4} />
+    <Pattern path='/strict-still-life/R-bee-and-snake' lifeData={_R_bee_and_snake} />
+    <Pattern path='/strict-still-life/R-bee-on-beehive' lifeData={_R_bee_on_beehive} />
+    <Pattern path='/strict-still-life/R-bee-with-feather' lifeData={_R_bee_with_feather} />
+    <Pattern path='/strict-still-life/R-mango-and-house' lifeData={_R_mango_and_house} />
     <Pattern path='/strict-still-life/aircraft-carrier' lifeData={_aircraft_carrier} />
     <Pattern path='/strict-still-life/amphisbaena' lifeData={_amphisbaena} />
     <Pattern path='/strict-still-life/aries-betwixt-two-blocks' lifeData={_aries_betwixt_two_blocks} />
@@ -1736,6 +1915,7 @@ render((
     <Pattern path='/strict-still-life/carrier-tie-boat' lifeData={_carrier_tie_boat} />
     <Pattern path='/strict-still-life/carrier-tie-ship' lifeData={_carrier_tie_ship} />
     <Pattern path='/strict-still-life/carrier-with-feather' lifeData={_carrier_with_feather} />
+    <Pattern path='/strict-still-life/cis-R-bee-and-R-loaf' lifeData={_cis_R_bee_and_R_loaf} />
     <Pattern path='/strict-still-life/cis-barge-with-nine' lifeData={_cis_barge_with_nine} />
     <Pattern path='/strict-still-life/cis-barge-with-tail' lifeData={_cis_barge_with_tail} />
     <Pattern path='/strict-still-life/cis-block-on-long-hook' lifeData={_cis_block_on_long_hook} />
@@ -1760,9 +1940,8 @@ render((
     <Pattern path='/strict-still-life/cis-mirrored-R-bee' lifeData={_cis_mirrored_R_bee} />
     <Pattern path='/strict-still-life/cis-mirrored-worm-siamese-cis-mirrored-worm' lifeData={_cis_mirrored_worm_siamese_cis_mirrored_worm} />
     <Pattern path='/strict-still-life/cis-mirrored-worm' lifeData={_cis_mirrored_worm} />
-    <Pattern path='/strict-still-life/cis-R-bee-and-R-loaf' lifeData={_cis_R_bee_and_R_loaf} />
-    <Pattern path='/strict-still-life/cis-rotated-hook' lifeData={_cis_rotated_hook} />
     <Pattern path='/strict-still-life/cis-rotated-R-bee' lifeData={_cis_rotated_R_bee} />
+    <Pattern path='/strict-still-life/cis-rotated-hook' lifeData={_cis_rotated_hook} />
     <Pattern path='/strict-still-life/cis-shillelagh' lifeData={_cis_shillelagh} />
     <Pattern path='/strict-still-life/cis-ship-on-table' lifeData={_cis_ship_on_table} />
     <Pattern path='/strict-still-life/cis-snake-tie' lifeData={_cis_snake_tie} />
@@ -1897,10 +2076,6 @@ render((
     <Pattern path='/strict-still-life/pond' lifeData={_pond} />
     <Pattern path='/strict-still-life/professor' lifeData={_professor} />
     <Pattern path='/strict-still-life/python-siamese-snake' lifeData={_python_siamese_snake} />
-    <Pattern path='/strict-still-life/R-bee-and-snake' lifeData={_R_bee_and_snake} />
-    <Pattern path='/strict-still-life/R-bee-on-beehive' lifeData={_R_bee_on_beehive} />
-    <Pattern path='/strict-still-life/R-bee-with-feather' lifeData={_R_bee_with_feather} />
-    <Pattern path='/strict-still-life/R-mango-and-house' lifeData={_R_mango_and_house} />
     <Pattern path='/strict-still-life/rotated-c' lifeData={_rotated_c} />
     <Pattern path='/strict-still-life/rotated-table' lifeData={_rotated_table} />
     <Pattern path='/strict-still-life/scorpion' lifeData={_scorpion} />
@@ -1931,6 +2106,7 @@ render((
     <Pattern path='/strict-still-life/teardrop-with-cape' lifeData={_teardrop_with_cape} />
     <Pattern path='/strict-still-life/teardrop-with-claw' lifeData={_teardrop_with_claw} />
     <Pattern path='/strict-still-life/thirteen-loop' lifeData={_thirteen_loop} />
+    <Pattern path='/strict-still-life/trans-R-bee-and-R-loaf' lifeData={_trans_R_bee_and_R_loaf} />
     <Pattern path='/strict-still-life/trans-barge-with-nine' lifeData={_trans_barge_with_nine} />
     <Pattern path='/strict-still-life/trans-barge-with-tail' lifeData={_trans_barge_with_tail} />
     <Pattern path='/strict-still-life/trans-block-on-long-hook' lifeData={_trans_block_on_long_hook} />
@@ -1951,7 +2127,6 @@ render((
     <Pattern path='/strict-still-life/trans-long-boat-with-tail' lifeData={_trans_long_boat_with_tail} />
     <Pattern path='/strict-still-life/trans-mango-with-tail' lifeData={_trans_mango_with_tail} />
     <Pattern path='/strict-still-life/trans-mirrored-R-bee' lifeData={_trans_mirrored_R_bee} />
-    <Pattern path='/strict-still-life/trans-R-bee-and-R-loaf' lifeData={_trans_R_bee_and_R_loaf} />
     <Pattern path='/strict-still-life/trans-rotated-R-bee' lifeData={_trans_rotated_R_bee} />
     <Pattern path='/strict-still-life/trans-ship-on-table' lifeData={_trans_ship_on_table} />
     <Pattern path='/strict-still-life/trans-snake-tie' lifeData={_trans_snake_tie} />

@@ -1,0 +1,8 @@
+{
+  "title": "P40 B-heptomino shuttle",
+  "life": [
+    [0, 0, 0],
+    [0, 1, 0],
+    [0, 0, 0]
+  ]
+}
