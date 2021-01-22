@@ -12,7 +12,7 @@ And I also hope this repository is a [good starting point](https://github.com/Tr
 ## Demo
 
 ![Demo](./static/favicon.gif)  
-You can see every patterns in [here](https://troytae-game-of-life.netlify.app/)
+You can see every pattern in [here](https://troytae-game-of-life.netlify.app/)
 
 ## Contributors
 
