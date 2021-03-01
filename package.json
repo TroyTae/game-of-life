@@ -13,6 +13,7 @@
     "test:prettier": "prettier --check ./life",
     "test": "npm run test:prettier",
     "start": "parcel src/index.html --open",
-    "build": "node ./scripts/prebuild.js & parcel build src/index.html"
+    "build": "node ./scripts/prebuild.js & parcel build src/index.html",
+    "build:json": "node ./scripts/consolidate-json.js"
   }
 }
