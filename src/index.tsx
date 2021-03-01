@@ -4,6 +4,35 @@ import { Link } from 'preact-router/match';
 import Pattern from './pattern';
 import life from './life.json'
 
+// ===================== FULLTREE PARSE =====================
+
+// Get unique categories
+let categories = life.map(pat => pat.category)
+categories = new Set(categories)
+categories = Array.from(categories.values())
+
+// Organize patterns by categories
+let lifeByCategory = categories.map(cat => 
+    life.filter(pat => pat.category === cat))
+
+function organizeBySubcategory(sublife) {
+    // Get unique subcategories
+    let subcategories = sublife.map(pat => pat.subcategory)
+    subcategories = new Set(subcategories)
+    subcategories = Array.from(subcategories.values())
+
+    // Organize patterns by subcategories
+    let sublifeBySubcategory = subcategories.map(cat => 
+        sublife.filter(pat => pat.subcategory === cat))
+    return sublifeBySubcategory
+}
+
+// Get full tree
+let fullTree = lifeByCategory.map(organizeBySubcategory)
+console.log(fullTree)
+
+// ==========================================================
+
 const url = pat => '/' 
     + pat.category + '/' 
     + (pat.subcategory ? pat.subcategory + '/' : '')
