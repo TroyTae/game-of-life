@@ -4,7 +4,10 @@ import { Link } from 'preact-router/match';
 import Pattern from './pattern';
 import life from './life.json'
 
-const url = pat => '/' + pat.subcategory + '/' + pat.urlname
+const url = pat => '/' 
+    + pat.category + '/' 
+    + (pat.subcategory ? pat.subcategory + '/' : '')
+    + pat.urlname
 
 render((
     <Router>

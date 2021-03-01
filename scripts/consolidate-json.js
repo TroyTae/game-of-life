@@ -45,17 +45,13 @@ let transform = name =>
 let json = []
 walk(LIFE_DIRECTORY, fpath => {
     // Construct "category" and "subcategory" entries
-    // from folder/subfolder of the file. If the file 
-    // is not in a subfolder, the subcategory is the 
-    // same as the category.
+    // from folder/subfolder of the file.
     // also, for convenience, add urlname parameter
     let relpath = path.relative(LIFE_DIRECTORY, fpath)
     let parts = relpath.split(path.sep)
     let category = parts[0]
-    let subcategory = parts[parts.length > 2 ? 1 : 0]
+    let subcategory = parts.length > 2 ? parts[1] : null
     let urlname = parts[parts.length > 2 ? 2 : 1]
-    category = transform(category)
-    subcategory = transform(subcategory)
     urlname = path.basename(urlname, '.json')
 
     // Read data, add extra entries, and append to json array
