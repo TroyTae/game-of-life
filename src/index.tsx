@@ -6,30 +6,23 @@ import life from './life.json'
 
 // ===================== FULLTREE PARSE =====================
 
-function organizeBySubcategory(sublife) {
-    // Get unique subcategories
-    let subcategories = sublife.map(pat => pat.subcategory)
-    subcategories = new Set(subcategories)
-    subcategories = Array.from(subcategories.values())
+function groupByKey(key, list) {
+    // Get unique values of key
+    let values = list.map(obj => obj[key])
+    values = new Set(values)
+    values = Array.from(values.values())
 
-    // Organize patterns by subcategories
-    return subcategories.map(cat => ({
-        subcategory: cat,
-        patterns: sublife.filter(pat => pat.subcategory === cat)
+    // Organize list into groups by values of key
+    return values.map(value => ({
+        key: value,
+        list: list.filter(obj => obj[key] === value)
     }))
 }
 
-// Get unique categories
-let categories = life.map(pat => pat.category)
-categories = new Set(categories)
-categories = Array.from(categories.values())
-
-// Organize patterns by categories
-let lifeTree = categories.map(cat => ({
-    category: cat,
-    subcategories: organizeBySubcategory(
-        life.filter(pat => pat.category === cat)
-    )
+let lifeTree = groupByKey('category', life)
+lifeTree = lifeTree.map(cat => ({
+    ...cat,
+    list: groupByKey('subcategory', cat.list)
 }))
 
 // Get full tree
@@ -47,18 +40,17 @@ const title = name => name
     .map(word => word[0].toUpperCase() + word.substring(1))
     .join(' ')
 
-
 render((
     <Router>
         <article path='/'>
             <h1>Conway's Game of Life</h1>
             {lifeTree.map(category => (
-                <div>
-                    <h2>{title(category.category)}</h2>
-                    {category.subcategories.map(subcategory => (
-                        <div>
-                            {subcategory.subcategory && <h3>{title(subcategory.subcategory)}</h3>}
-                            {subcategory.patterns.map(pattern => (
+                <div key={category.key}>
+                    <h2>{title(category.key)}</h2>
+                    {category.list.map(subcategory => (
+                        <div key={subcategory.key}>
+                            {subcategory.key && <h3>{title(subcategory.key)}</h3>}
+                            {subcategory.list.map(pattern => (
                                 <nav>
                                     <Link href={url(pattern)}>{pattern.title}</Link>
                                 </nav>
