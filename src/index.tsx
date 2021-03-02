@@ -6,15 +6,6 @@ import life from './life.json'
 
 // ===================== FULLTREE PARSE =====================
 
-// Get unique categories
-let categories = life.map(pat => pat.category)
-categories = new Set(categories)
-categories = Array.from(categories.values())
-
-// Organize patterns by categories
-let lifeByCategory = categories.map(cat => 
-    life.filter(pat => pat.category === cat))
-
 function organizeBySubcategory(sublife) {
     // Get unique subcategories
     let subcategories = sublife.map(pat => pat.subcategory)
@@ -22,14 +13,27 @@ function organizeBySubcategory(sublife) {
     subcategories = Array.from(subcategories.values())
 
     // Organize patterns by subcategories
-    let sublifeBySubcategory = subcategories.map(cat => 
-        sublife.filter(pat => pat.subcategory === cat))
-    return sublifeBySubcategory
+    return subcategories.map(cat => ({
+        subcategory: cat,
+        patterns: sublife.filter(pat => pat.subcategory === cat)
+    }))
 }
 
+// Get unique categories
+let categories = life.map(pat => pat.category)
+categories = new Set(categories)
+categories = Array.from(categories.values())
+
+// Organize patterns by categories
+let lifeTree = categories.map(cat => ({
+    category: cat,
+    subcategories: organizeBySubcategory(
+        life.filter(pat => pat.category === cat)
+    )
+}))
+
 // Get full tree
-let fullTree = lifeByCategory.map(organizeBySubcategory)
-console.log(fullTree)
+console.log(lifeTree)
 
 // ==========================================================
 
@@ -42,12 +46,26 @@ render((
     <Router>
         <article path='/'>
             <h1>Conway's Game of Life</h1>
-            {life.map(pattern => (
-                <nav><Link href={url(pattern)}>{pattern.title}</Link></nav>
+            {lifeTree.map(category => (
+                <div>
+                    <h2>{category.category}</h2>
+                    {category.subcategories.map(subcategory => (
+                        <div>
+                            {subcategory.subcategory && <h3>{subcategory.subcategory}</h3>}
+                            {subcategory.patterns.map(pattern => (
+                                <nav>
+                                    <Link href={url(pattern)}>{pattern.title}</Link>
+                                </nav>
+                            ))}
+                        </div>
+                    ))}
+                </div>
             ))}
         </article>
         {life.map(pattern => (
-            <Pattern path={url(pattern)} lifeData={pattern}/>
+            <Pattern 
+                path={url(pattern)}
+                lifeData={pattern}/>
         ))}
     </Router>
 ), 
