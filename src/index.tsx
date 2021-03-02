@@ -42,16 +42,22 @@ const url = pat => '/'
     + (pat.subcategory ? pat.subcategory + '/' : '')
     + pat.urlname
 
+const title = name => name
+    .split('-')
+    .map(word => word[0].toUpperCase() + word.substring(1))
+    .join(' ')
+
+
 render((
     <Router>
         <article path='/'>
             <h1>Conway's Game of Life</h1>
             {lifeTree.map(category => (
                 <div>
-                    <h2>{category.category}</h2>
+                    <h2>{title(category.category)}</h2>
                     {category.subcategories.map(subcategory => (
                         <div>
-                            {subcategory.subcategory && <h3>{subcategory.subcategory}</h3>}
+                            {subcategory.subcategory && <h3>{title(subcategory.subcategory)}</h3>}
                             {subcategory.patterns.map(pattern => (
                                 <nav>
                                     <Link href={url(pattern)}>{pattern.title}</Link>
