@@ -6,3 +6,4 @@
 dist
 node_modules
 package-lock.json
+src/patterns.ts

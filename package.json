@@ -9,11 +9,9 @@
     "typescript": "4.2.3"
   },
   "scripts": {
-    "fix:prettier": "npx prettier --write ./life",
-    "test:prettier": "prettier --check ./life",
-    "test": "npm run test:prettier",
-    "start": "parcel src/index.html --open",
-    "prebuild": "node ./scripts/prebuild.js",
-    "build": "parcel build src/index.html -d docs --public-url ./ --experimental-scope-hoisting"
+    "fix": "npx prettier --write ./life",
+    "test": "prettier --check ./life",
+    "start": "parcel src/index.html",
+    "build": "node ./scripts/prebuild.js & parcel build src/index.html -d docs --public-url ./ --experimental-scope-hoisting"
   }
 }
