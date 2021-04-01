@@ -1,12 +1,11 @@
 {
   "private": true,
   "devDependencies": {
-    "fs-extra": "^9.0.1",
-    "parcel-bundler": "^1.12.4",
-    "preact": "^10.5.3",
-    "preact-router": "^3.2.1",
-    "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "fs-extra": "9.1.0",
+    "noliter": "0.9.6",
+    "parcel-bundler": "1.12.5",
+    "prettier": "2.2.1",
+    "typescript": "4.2.3"
   },
   "scripts": {
     "fix:prettier": "npx prettier --write ./life",
