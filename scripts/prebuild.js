@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { readDirectory } = require('./memfs');
 
-const distDir = 'dist';
+const distDir = 'docs';
 fs.emptyDirSync(distDir);
 const readPatterns = (directories) => {
   return directories.reduce((arr, obj) => {
@@ -16,9 +16,9 @@ const readPatterns = (directories) => {
 };
 
 fs.writeFileSync(
-  path.join('src', 'life.ts'),
+  path.join('src', 'patterns.ts'),
   `export default [
-${readPatterns(readDirectory('life'))
+${readPatterns(readDirectory('patterns'))
   .map((pattern) => JSON.stringify(pattern))
   .join(',\n')}
 ] as Array<{ title: string; life: Life[][]; }>;

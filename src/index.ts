@@ -1,10 +1,10 @@
 import { GameOfLifeEngine } from './engine';
 import { createElement, APPEND, CANVAS } from 'noliter';
-import LIFES from './life';
+import patterns from './patterns';
 
 document.body[APPEND](
   createElement(CANVAS, (cvs) => {
-    const engine = new GameOfLifeEngine(cvs, LIFES[0].life);
+    const engine = new GameOfLifeEngine(cvs, patterns[0].life);
     engine.startLife();
   })
 );
