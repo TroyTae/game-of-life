@@ -3,17 +3,7 @@ const path = require('path');
 const { readDirectory } = require('./memfs');
 
 const distDir = 'dist';
-const staticDir = 'static';
 fs.emptyDirSync(distDir);
-fs.copyFileSync(
-  path.join(staticDir, 'robots.txt'),
-  path.join(distDir, 'robots.txt')
-);
-fs.copyFileSync(
-  path.join(staticDir, '_redirects'),
-  path.join(distDir, '_redirects')
-);
-
 const directories =  readDirectory('life');
 const generateIndexes = (level, directories) => {
   return directories.reduce((arr, obj) => {
