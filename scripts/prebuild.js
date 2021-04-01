@@ -4,32 +4,23 @@ const { readDirectory } = require('./memfs');
 
 const distDir = 'dist';
 fs.emptyDirSync(distDir);
-const directories = readDirectory('life');
-const generatePatterns = (directories) => {
+const readPatterns = (directories) => {
   return directories.reduce((arr, obj) => {
     if (Array.isArray(obj.children)) {
-      generatePatterns(obj.children).forEach((v) => arr.push(v));
+      readPatterns(obj.children).forEach((v) => arr.push(v));
     } else {
-      arr.push(`../life/${obj.path.split(path.sep).slice(1).join('/')}`);
+      arr.push(require(path.join('..', obj.path)));
     }
     return arr;
   }, []);
 };
 
 fs.writeFileSync(
-  path.join('src', 'index.ts'),
-  `import { GameOfLifeEngine } from './engine';
-import { createElement, APPEND, CANVAS } from 'noliter';
-const lifes = [${generatePatterns(directories)
-    .map((path) => `import('${path}')`)
-    .join(',\n')}];
-document.body[APPEND](
-  createElement(CANVAS, (cvs) => {
-    lifes[0].then(({ life }) => {
-      const engine = new GameOfLifeEngine(cvs, life);
-      engine.startLife();
-    });
-  })
-);
+  path.join('src', 'life.ts'),
+  `export default [
+${readPatterns(readDirectory('life'))
+  .map((pattern) => JSON.stringify(pattern))
+  .join(',\n')}
+] as Array<{ title: string; life: Life[][]; }>;
 `
 );

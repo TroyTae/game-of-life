@@ -13,6 +13,7 @@
     "test:prettier": "prettier --check ./life",
     "test": "npm run test:prettier",
     "start": "parcel src/index.html --open",
-    "build": "node ./scripts/prebuild.js & parcel build src/index.html"
+    "prebuild": "node ./scripts/prebuild.js",
+    "build": "parcel build src/index.html -d docs --public-url ./ --experimental-scope-hoisting"
   }
 }
