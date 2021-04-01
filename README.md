@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/02463762-5814-4b93-89a9-6921a7c00a50/deploy-status)](https://app.netlify.com/sites/troytae-game-of-life/deploys)
-
 # Game of Life
 
 ## Description
