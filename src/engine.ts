@@ -17,24 +17,27 @@ const getCoordinateY = (y: number): number => {
 };
 
 export class GameOfLifeEngine {
-  public life: Life[][];
   public canvas: HTMLCanvasElement;
   public context: CanvasRenderingContext2D;
+  private life: Life[][];
   private intervalKey: null | number = null;
 
   constructor(cvs: HTMLCanvasElement, life: Life[][]) {
     const ctx = cvs.getContext('2d');
-
     if (ctx) {
-      cvs.width = getCoordinateX(life[0].length);
-      cvs.height = getCoordinateY(life.length);
-
-      this.life = life;
       this.canvas = cvs;
       this.context = ctx;
+      this.setLife(life);
+      this.startLife();
     } else {
       throw 'Failed to create context';
     }
+  }
+
+  setLife(life: Life[][]): void {
+    this.life = life;
+    this.canvas.width = getCoordinateX(life[0].length);
+    this.canvas.height = getCoordinateY(life.length);
   }
 
   public clear(): void {

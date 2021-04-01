@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "/*": ["./*"]
-    },
-    "jsx": "react",
-    "jsxFactory": "h"
+    "baseUrl": "src"
   },
+  "include": ["**/*.ts"],
+  "exclude": [],
   "compileOnSave": false
 }
