@@ -1,5 +1,16 @@
 import { GameOfLifeEngine } from './engine';
-import { createElement, APPEND, CANVAS, INPUT, DATALIST, OPTION, MAIN, VALUE, ADD_EVENT_LISTENER, CHANGE } from 'noliter';
+import {
+  createElement,
+  APPEND,
+  CANVAS,
+  INPUT,
+  DATALIST,
+  OPTION,
+  MAIN,
+  VALUE,
+  ADD_EVENT_LISTENER,
+  CHANGE,
+} from 'noliter';
 import patterns from './patterns';
 
 const canvas = createElement(CANVAS);
@@ -24,7 +35,9 @@ document.body[APPEND](
         input[VALUE] = patterns[0].title;
         input.setAttribute('list', DATALIST_ID);
         input[ADD_EVENT_LISTENER](CHANGE, () => {
-          const pattern = patterns.filter(({ title }) => title === input.value)[0];
+          const pattern = patterns.filter(
+            ({ title }) => title === input.value
+          )[0];
           if (pattern) {
             engine.setLife(pattern.life);
           }

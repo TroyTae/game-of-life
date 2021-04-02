@@ -9,8 +9,8 @@
     "typescript": "4.2.3"
   },
   "scripts": {
-    "fix": "npx prettier --write ./life",
-    "test": "prettier --check ./life",
+    "fix": "npx prettier --write ./patterns",
+    "test": "prettier --check ./patterns",
     "start": "parcel src/index.html",
     "build": "node ./scripts/prebuild.js & parcel build src/index.html -d docs --public-url ./ --experimental-scope-hoisting"
   }

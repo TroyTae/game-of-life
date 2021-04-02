@@ -49,7 +49,9 @@ export class GameOfLifeEngine {
     if (!this.intervalKey) {
       this.drawDots();
       this.intervalKey = window.setInterval(() => {
-        this.life = this.life.map((children, i) => children.map((isSurvive, j) => this.nextLife(j, i, isSurvive)));
+        this.life = this.life.map((children, i) =>
+          children.map((isSurvive, j) => this.nextLife(j, i, isSurvive))
+        );
         this.drawDots();
       }, 500);
     }
@@ -63,14 +65,21 @@ export class GameOfLifeEngine {
   }
 
   protected drawDot(x: number, y: number): void {
-    this.context.fillRect(getCoordinateX(x), getCoordinateY(y), DOTS_STYLE.WIDTH, DOTS_STYLE.HEIGHT);
+    this.context.fillRect(
+      getCoordinateX(x),
+      getCoordinateY(y),
+      DOTS_STYLE.WIDTH,
+      DOTS_STYLE.HEIGHT
+    );
   }
 
   protected drawDots(): void {
     this.clear();
     this.life.forEach((children, i) => {
       children.forEach((isSurvive, j) => {
-        this.context.fillStyle = isSurvive ? DOTS_STYLE.SURVIVE_COLOR : DOTS_STYLE.DEAD_COLOR;
+        this.context.fillStyle = isSurvive
+          ? DOTS_STYLE.SURVIVE_COLOR
+          : DOTS_STYLE.DEAD_COLOR;
         this.drawDot(j, i);
       });
     });
@@ -81,7 +90,15 @@ export class GameOfLifeEngine {
   }
 
   protected nextLife(x: number, y: number, isSurvive: Life): Life {
-    const count = this.isSurvive(x - 1, y - 1) + this.isSurvive(x, y - 1) + this.isSurvive(x + 1, y - 1) + this.isSurvive(x - 1, y) + this.isSurvive(x + 1, y) + this.isSurvive(x - 1, y + 1) + this.isSurvive(x, y + 1) + this.isSurvive(x + 1, y + 1);
+    const count =
+      this.isSurvive(x - 1, y - 1) +
+      this.isSurvive(x, y - 1) +
+      this.isSurvive(x + 1, y - 1) +
+      this.isSurvive(x - 1, y) +
+      this.isSurvive(x + 1, y) +
+      this.isSurvive(x - 1, y + 1) +
+      this.isSurvive(x, y + 1) +
+      this.isSurvive(x + 1, y + 1);
     return count === 3 || (isSurvive && count === 2) ? 1 : 0;
   }
 }
